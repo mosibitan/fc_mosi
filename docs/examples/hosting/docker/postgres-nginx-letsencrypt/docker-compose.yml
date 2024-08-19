@@ -1,28 +1,14 @@
 version: "3.7"
 services:
-    db:
-        image: postgres:13
-        expose:
-            - 5432
-        env_file: .env
-        environment:
-            - POSTGRES_USER=$PL_DATA_POSTGRES_USER
-            - POSTGRES_DB=$PL_DATA_POSTGRES_DATABASE
-            - POSTGRES_PASSWORD=$PL_DATA_POSTGRES_PASSWORD
-        volumes:
-            - data:/var/lib/postgresql/data
-        restart: unless-stopped
     server:
         image: padloc/server
         build:
             context: github.com/padloc/padloc.git#main
             dockerfile: Dockerfile-server
-        depends_on:
-            - db
         env_file: .env
         environment:
             - PL_DATA_BACKEND=postgres
-            - PL_DATA_POSTGRES_HOST=db
+            - PL_DATA_POSTGRES_HOST=pgm-uf620p911pv421vl5o.pg.rds.aliyuncs.com
             - PL_DATA_POSTGRES_PORT=5432
             - PL_DATA_POSTGRES_DATABASE
             - PL_DATA_POSTGRES_USER
