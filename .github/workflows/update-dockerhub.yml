@@ -29,12 +29,12 @@ jobs:
               uses: docker/build-push-action@v3
               with:
                   push: true
-                  tags: mosi/server:latest
+                  tags: mosibitan/mosi-server:latest
                   file: Dockerfile-server
 
             - name: Build and push Docker image (pwa)
               uses: docker/build-push-action@v3
               with:
                   push: true
-                  tags: mosi/pwa:latest
+                  tags: mosibitan/mosi-pwa:latest
                   file: Dockerfile-pwa
