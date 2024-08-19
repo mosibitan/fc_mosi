@@ -51,16 +51,58 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
 
-      - name: 在远程服务器上部署和运行 Docker 镜像
+      - name: 在远程服务器上部署和运行 pwa Docker 镜像
         env:
           SERVER_HOST: ${{ secrets.SERVER_HOST }}
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
           ssh $SERVER_USER@$SERVER_HOST << EOF
-            docker pull mosibitan/mosi-pwa:latest
-            docker stop mosibitan/mosi-pwa || true
-            docker rm mosibitan/mosi-pwa || true
-            docker run -d --name mosibitan/mosi-pwa -p 3000:3000 mosibitan/mosi-pwa:latest
+            docker pull mosi-pwa:latest
+            docker stop mosi-pwa || true
+            docker rm mosi-pwa || true
+            docker run -d \
+              -e PL_PWA_DIR='/pwa' \
+              -e PL_SERVER_URL='http://120.55.171.238/server' \
+              -e PL_PWA_URL='http://120.55.171.238' \
+              -e PL_PWA_PORT='80' \
+              -v pwa:/pwa \
+              --restart on-failure \
+              --name mosi-pwa \
+              -p 8080:8080 \
+              mosibitan/mosi-pwa:latest
+          EOF
+
+      - name: 在远程服务器上部署和运行 server Docker 镜像
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+        run: |
+          ssh $SERVER_USER@$SERVER_HOST << EOF
+            docker pull mosi-server:latest
+            docker stop mosi-server || true
+            docker rm mosi-server || true
+            docker run -d \
+              -e PL_ADMIN_EMAIL=${PL_ADMIN_EMAIL} \
+              -e PL_DATA_BACKEND=${PL_DATA_BACKEND} \
+              -e PL_DATA_POSTGRES_DATABASE=${PL_DATA_POSTGRES_DATABASE} \
+              -e PL_DATA_POSTGRES_HOST=${PL_DATA_POSTGRES_HOST} \
+              -e PL_DATA_POSTGRES_PASSWORD=${PL_DATA_POSTGRES_PASSWORD} \
+              -e PL_DATA_POSTGRES_PORT=${PL_DATA_POSTGRES_PORT} \
+              -e PL_DATA_POSTGRES_USER=${PL_DATA_POSTGRES_USER} \
+              -e PL_EMAIL_BACKEND=${PL_EMAIL_BACKEND} \
+              -e PL_EMAIL_SMTP_FROM=${PL_EMAIL_SMTP_FROM} \
+              -e PL_EMAIL_SMTP_HOST=${PL_EMAIL_SMTP_HOST} \
+              -e PL_EMAIL_SMTP_PASSWORD=${PL_EMAIL_SMTP_PASSWORD} \
+              -e PL_EMAIL_SMTP_PORT=${PL_EMAIL_SMTP_PORT} \
+              -e PL_EMAIL_SMTP_USER=${PL_EMAIL_SMTP_USER} \
+              -e PL_HOSTNAME=${PL_HOSTNAME} \
+              -e PL_SERVER_CLIENT_URL=https://${PL_HOSTNAME} \
+              -e PL_SERVER_REPORT_ERRORS=${PL_ADMIN_EMAIL} \
+              -p 3000:3000 \
+              -v attachments:/attachments \
+              --restart unless-stopped \
+              --name mosi-server \
+              mosibitan/mosi-server:latest
           EOF
 
       - name: 清理 SSH 密钥
