@@ -22,9 +22,9 @@ jobs:
             - name: dockerusername
               run: |
                 if [ -n "${{ secrets.DOCKER_USERNAME }}" ]; then
-                    echo "DOCKER_REGISTRY 已设置，长度为 ${#DOCKER_REGISTRY} 个字符"
-                    echo "DOCKER_USERNAME 已设置，长度为 ${#DOCKER_USERNAME} 个字符"
-                    echo "DOCKER_PASSWORD 已设置，长度为 ${#DOCKER_PASSWORD} 个字符"
+                    echo "DOCKER_REGISTRY 已设置，长度为 ${DOCKER_REGISTRY} 个字符"
+                    echo "DOCKER_USERNAME 已设置，长度为 ${DOCKER_USERNAME} 个字符"
+                    echo "DOCKER_PASSWORD 已设置，长度为 ${DOCKER_PASSWORD} 个字符"
                 fi
                 env:
                     DOCKER_REGISTRY: ${{ secrets.DOCKER_REGISTRY }}                
