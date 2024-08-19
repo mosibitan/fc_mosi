@@ -57,10 +57,10 @@ jobs:
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
           ssh $SERVER_USER@$SERVER_HOST << EOF
-            docker pull mosi-pwa:latest
-            docker stop mosi-pwa || true
-            docker rm mosi-pwa || true
-            docker run -d \
+            sudo docker pull mosi-pwa:latest
+            sudo docker stop mosi-pwa || true
+            sudo docker rm mosi-pwa || true
+            sudo docker run -d \
               -e PL_PWA_DIR='/pwa' \
               -e PL_SERVER_URL='http://120.55.171.238/server' \
               -e PL_PWA_URL='http://120.55.171.238' \
@@ -78,10 +78,10 @@ jobs:
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
           ssh $SERVER_USER@$SERVER_HOST << EOF
-            docker pull mosi-server:latest
-            docker stop mosi-server || true
-            docker rm mosi-server || true
-            docker run -d \
+            sudo docker pull mosi-server:latest
+            sudo docker stop mosi-server || true
+            sudo docker rm mosi-server || true
+            sudo docker run -d \
               -e PL_ADMIN_EMAIL=mosibitan@163.com \
               -e PL_DATA_BACKEND=postgres \
               -e PL_DATA_POSTGRES_DATABASE=mosi \
