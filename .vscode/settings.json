@@ -8,5 +8,8 @@
     "deno.enable": false,
     "deno.lint": true,
     "deno.unstable": true,
-    "deno.enablePaths": ["./docs/checksums/web"]
+    "deno.enablePaths": [
+        "./docs/checksums/web"
+    ],
+    "deepscan.enable": true
 }

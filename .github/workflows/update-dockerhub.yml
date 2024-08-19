@@ -1,40 +1,67 @@
 name: Update Dockerhub
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 
-    push:
-        branches:
-            - "main"
-        paths:
-            - "packages/app/**"
-            - "packages/core/**"
-            - "packages/locale/**"
-            - "assets/**"
+  push:
+    branches:
+      - "main"
+    paths:
+      - "packages/app/**"
+      - "packages/core/**"
+      - "packages/locale/**"
+      - "assets/**"
 
 jobs:
-    update_dockerhub:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Check out the repo
-              uses: actions/checkout@v3
+  update_dockerhub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
 
-            - name: Log in to Docker Hub
-              uses: docker/login-action@v2
-              with:
-                  username: ${{ secrets.DOCKER_USERNAME }}
-                  password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-            - name: Build and push Docker image (server)
-              uses: docker/build-push-action@v3
-              with:
-                  push: true
-                  tags: mosibitan/mosi-server:latest
-                  file: Dockerfile-server
+      - name: Build and push Docker image (server)
+        uses: docker/build-push-action@v3
+        with:
+          push: true
+          tags: mosibitan/mosi-server:latest
+          file: Dockerfile-server
 
-            - name: Build and push Docker image (pwa)
-              uses: docker/build-push-action@v3
-              with:
-                  push: true
-                  tags: mosibitan/mosi-pwa:latest
-                  file: Dockerfile-pwa
+      - name: Build and push Docker image (pwa)
+        uses: docker/build-push-action@v3
+        with:
+          push: true
+          tags: mosibitan/mosi-pwa:latest
+          file: Dockerfile-pwa
+
+      - name: 安装 SSH 客户端
+        run: sudo apt-get install -y openssh-client
+
+      - name: 设置 SSH 密钥
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+      - name: 在远程服务器上部署和运行 Docker 镜像
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+        run: |
+          ssh $SERVER_USER@$SERVER_HOST << EOF
+            docker pull mosibitan/mosi-pwa:latest
+            docker stop mosibitan/mosi-pwa || true
+            docker rm mosibitan/mosi-pwa || true
+            docker run -d --name mosibitan/mosi-pwa -p 3000:3000 mosibitan/mosi-pwa:latest
+          EOF
+
+      - name: 清理 SSH 密钥
+        run: rm -rf ~/.ssh
