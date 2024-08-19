@@ -82,22 +82,22 @@ jobs:
             docker stop mosi-server || true
             docker rm mosi-server || true
             docker run -d \
-              -e PL_ADMIN_EMAIL=${PL_ADMIN_EMAIL} \
-              -e PL_DATA_BACKEND=${PL_DATA_BACKEND} \
-              -e PL_DATA_POSTGRES_DATABASE=${PL_DATA_POSTGRES_DATABASE} \
-              -e PL_DATA_POSTGRES_HOST=${PL_DATA_POSTGRES_HOST} \
-              -e PL_DATA_POSTGRES_PASSWORD=${PL_DATA_POSTGRES_PASSWORD} \
-              -e PL_DATA_POSTGRES_PORT=${PL_DATA_POSTGRES_PORT} \
-              -e PL_DATA_POSTGRES_USER=${PL_DATA_POSTGRES_USER} \
-              -e PL_EMAIL_BACKEND=${PL_EMAIL_BACKEND} \
-              -e PL_EMAIL_SMTP_FROM=${PL_EMAIL_SMTP_FROM} \
-              -e PL_EMAIL_SMTP_HOST=${PL_EMAIL_SMTP_HOST} \
-              -e PL_EMAIL_SMTP_PASSWORD=${PL_EMAIL_SMTP_PASSWORD} \
-              -e PL_EMAIL_SMTP_PORT=${PL_EMAIL_SMTP_PORT} \
-              -e PL_EMAIL_SMTP_USER=${PL_EMAIL_SMTP_USER} \
-              -e PL_HOSTNAME=${PL_HOSTNAME} \
-              -e PL_SERVER_CLIENT_URL=https://${PL_HOSTNAME} \
-              -e PL_SERVER_REPORT_ERRORS=${PL_ADMIN_EMAIL} \
+              -e PL_ADMIN_EMAIL=mosibitan@163.com \
+              -e PL_DATA_BACKEND=postgres \
+              -e PL_DATA_POSTGRES_DATABASE=mosi \
+              -e PL_DATA_POSTGRES_HOST=pgm-uf620p911pv421vl.pg.rds.aliyuncs.com \
+              -e PL_DATA_POSTGRES_PASSWORD=VPV7MB50NJKtFdZgkTdU \
+              -e PL_DATA_POSTGRES_PORT=5432 \
+              -e PL_DATA_POSTGRES_USER=yuanxi \
+              -e PL_EMAIL_BACKEND=smtp \
+              -e PL_EMAIL_SMTP_FROM="摩斯管理员 <admin@mosi.link>" \
+              -e PL_EMAIL_SMTP_HOST=gz-smtp.qcloudmail.com \
+              -e PL_EMAIL_SMTP_PASSWORD=2Uj5kn1Co4jLfhSpv1Tn \
+              -e PL_EMAIL_SMTP_PORT=465 \
+              -e PL_EMAIL_SMTP_USER=admin@mosi.link \
+              -e PL_HOSTNAME=mosi.link \
+              -e PL_SERVER_CLIENT_URL=http://120.55.171.238 \
+              -e PL_SERVER_REPORT_ERRORS=mosibitan@163.com \
               -p 3000:3000 \
               -v attachments:/attachments \
               --restart unless-stopped \
