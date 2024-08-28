@@ -62,9 +62,10 @@ jobs:
             sudo docker rm mosi-pwa || true
             sudo docker run -d \
               -e PL_PWA_DIR='/pwa' \
-              -e PL_SERVER_URL='http://120.55.171.238/server' \
-              -e PL_PWA_URL='http://120.55.171.238' \
-              -e PL_PWA_PORT='80' \
+              -e PL_PWA_PORT='8080' \
+              -e PL_PWA_URL='http://120.55.171.238:8080' \
+              -e PL_PWA_DISABLE_CSP='true' \
+              -e PL_SERVER_URL='http://localhost:3000'
               -v pwa:/pwa \
               --restart on-failure \
               --name mosi-pwa \
@@ -84,19 +85,19 @@ jobs:
             sudo docker run -d \
               -e PL_ADMIN_EMAIL=mosibitan@163.com \
               -e PL_DATA_BACKEND=postgres \
-              -e PL_DATA_POSTGRES_DATABASE=mosi \
               -e PL_DATA_POSTGRES_HOST=pgm-uf620p911pv421vl.pg.rds.aliyuncs.com \
-              -e PL_DATA_POSTGRES_PASSWORD=VPV7MB50NJKtFdZgkTdU \
               -e PL_DATA_POSTGRES_PORT=5432 \
               -e PL_DATA_POSTGRES_USER=yuanxi \
+              -e PL_DATA_POSTGRES_PASSWORD=VPV7MB50NJKtFdZgkTdU \
+              -e PL_DATA_POSTGRES_DATABASE=mosi \
               -e PL_EMAIL_BACKEND=smtp \
-              -e PL_EMAIL_SMTP_FROM="摩斯管理员 <admin@mosi.link>" \
-              -e PL_EMAIL_SMTP_HOST=gz-smtp.qcloudmail.com \
-              -e PL_EMAIL_SMTP_PASSWORD=2Uj5kn1Co4jLfhSpv1Tn \
+              -e PL_EMAIL_SMTP_HOST=smtp.qq.com \
               -e PL_EMAIL_SMTP_PORT=465 \
-              -e PL_EMAIL_SMTP_USER=admin@mosi.link \
-              -e PL_HOSTNAME=mosi.link \
-              -e PL_SERVER_CLIENT_URL=http://120.55.171.238 \
+              -e PL_EMAIL_SMTP_USER=94176107@qq.com \
+              -e PL_EMAIL_SMTP_PASSWORD=dhelpnuhdyoebgjc \
+              -e PL_EMAIL_SMTP_FROM="摩斯管理员 <94176107@qq.com>" \
+              -e PL_HOSTNAME=0.0.0.0 \
+              -e PL_SERVER_CLIENT_URL=http://120.55.171.238:8080 \
               -e PL_SERVER_REPORT_ERRORS=mosibitan@163.com \
               -p 3000:3000 \
               -v attachments:/attachments \
