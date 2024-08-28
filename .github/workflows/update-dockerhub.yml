@@ -96,7 +96,10 @@ jobs:
               -e PL_EMAIL_SMTP_USER=94176107@qq.com \
               -e PL_EMAIL_SMTP_PASSWORD=dhelpnuhdyoebgjc \
               -e PL_EMAIL_SMTP_FROM="摩斯管理员 <94176107@qq.com>" \
-              -e PL_HOSTNAME=0.0.0.0 \
+              -e PL_HOSTNAME=120.55.171.238 \
+              -e PL_PWA_PORT=8080 \
+              -e PL_PWA_DIR=./dist \
+              -e PL_PWA_URL=http://120.55.171.238:8080 \
               -e PL_SERVER_CLIENT_URL=http://120.55.171.238:8080 \
               -e PL_SERVER_REPORT_ERRORS=mosibitan@163.com \
               -p 3000:3000 \
