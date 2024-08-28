@@ -65,7 +65,7 @@ jobs:
               -e PL_PWA_PORT='8080' \
               -e PL_PWA_URL='http://120.55.171.238:8080' \
               -e PL_PWA_DISABLE_CSP='true' \
-              -e PL_SERVER_URL='http://localhost:3000'
+              -e PL_SERVER_URL='http://localhost:3000' \
               -v pwa:/pwa \
               --restart on-failure \
               --name mosi-pwa \
