@@ -19,6 +19,7 @@ packages/electron/dist
 /.env
 packages/server/.env
 packages/pwa/dist
+packages/pwa/.env
 packages/server/logs
 packages/server/data
 packages/server/attachments

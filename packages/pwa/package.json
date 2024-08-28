@@ -46,6 +46,7 @@
         "build": "webpack",
         "dev": "webpack serve",
         "start": "http-server ${PL_PWA_DIR:-dist} -s -p ${PL_PWA_PORT:-8080} --proxy ${PL_PWA_URL:-http://0.0.0.0:${PL_PWA_PORT:-8080}}?",
+        "start-w": "cross-env-shell PL_PWA_DIR=${PL_PWA_DIR:-dist} PL_PWA_PORT=${PL_PWA_PORT:-8080} PL_PWA_URL=${PL_PWA_URL:-http://0.0.0.0:$PL_PWA_PORT} \"http-server %PL_PWA_DIR% -s -p %PL_PWA_PORT% --proxy %PL_PWA_URL%?\"",
         "build_and_start": "npm run build && npm start"
     }
 }

@@ -49,6 +49,7 @@ export class SMTPSender implements Messenger {
                 pass: config.password,
             };
         }
+        config.secure = config.port === 465 ? true : false;
         this._transporter = createTransport({
             host: config.host,
             port: config.port,

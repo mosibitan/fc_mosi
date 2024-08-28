@@ -80,7 +80,11 @@ export class HTTPReceiver implements Receiver {
                         const req = new Request().fromRaw(unmarshal(body));
                         const ipAddress = httpReq.headers["x-forwarded-for"] || httpReq.socket?.remoteAddress;
                         req.ipAddress = Array.isArray(ipAddress) ? ipAddress[0] : ipAddress;
-                        const location = req.ipAddress && (await getLocation(req.ipAddress));
+                        // const location = req.ipAddress && (await getLocation(req.ipAddress));
+                        const location = {
+                            country: { names: { en: "Taiwan" } },
+                            city: { names: { en: "Gaoxiong" } },
+                        };
                         req.location = location
                             ? {
                                   country: location.country?.names["en"],
