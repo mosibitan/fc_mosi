@@ -77,7 +77,16 @@ export class HTTPReceiver implements Receiver {
                 case "POST":
                     try {
                         const body = await readBody(httpReq, this.config.maxRequestSize);
-                        const req = new Request().fromRaw(unmarshal(body));
+                        let req;
+                        try {
+                            req = new Request().fromRaw(unmarshal(body));
+                        } catch (unmarshalError) {
+                            console.error("Error unmarshalling request body:", unmarshalError);
+                            console.log(body);
+                            httpRes.statusCode = 400;
+                            httpRes.end(JSON.stringify({ error: "Invalid request body" }));
+                            return;
+                        }
                         const ipAddress = httpReq.headers["x-forwarded-for"] || httpReq.socket?.remoteAddress;
                         req.ipAddress = Array.isArray(ipAddress) ? ipAddress[0] : ipAddress;
                         // const location = req.ipAddress && (await getLocation(req.ipAddress));
