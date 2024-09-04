@@ -70,6 +70,7 @@ export function resolveLanguage(locale: string, supportedLanguages: { [lang: str
  */
 export function translate(msg: string, ...fmtArgs: string[]) {
     // Choose translations for current language
+    console.log("defaultLanguage", defaultLanguage);
     const lang = languages.get(defaultLanguage);
 
     // Look up translation. If no translation is found, use the original message.
