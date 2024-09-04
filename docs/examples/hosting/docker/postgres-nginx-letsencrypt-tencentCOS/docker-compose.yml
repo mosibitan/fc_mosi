@@ -1,9 +1,8 @@
 version: "3.7"
 services:
     server:
-        image: padloc/server
         build:
-            context: github.com/padloc/padloc.git#main
+            context: ../../../../../
             dockerfile: Dockerfile-server
         env_file: .env
         environment:
@@ -27,7 +26,6 @@ services:
             - attachments:/attachments
         restart: unless-stopped
     pwa:
-        image: padloc/pwa
         env_file: .env
         environment:
             PL_PWA_DIR: /pwa
@@ -35,7 +33,7 @@ services:
             PL_PWA_URL: https://$PL_HOSTNAME
             PL_PWA_PORT: 443
         build:
-            context: github.com/padloc/padloc.git#main
+            context: ../../../../../
             dockerfile: Dockerfile-pwa
         volumes:
             - pwa:/pwa
