@@ -1,6 +1,6 @@
 const loadLanguagePromises = new Map<string, Promise<void>>();
 const languages = new Map<string, Map<string, string>>();
-let defaultLanguage = "en";
+let defaultLanguage = "tw";
 
 export function setDefaultLanguage(lang: string) {
     defaultLanguage = lang;
