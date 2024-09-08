@@ -520,6 +520,7 @@ export class App {
         Object.assign(this.state.device, rest);
 
         try {
+            console.log('locale', this.state.device.locale);
             await loadLanguage(this.state.device.locale);
         } catch (e) {
             // Failed to load language, so we'll fallback to default (English)

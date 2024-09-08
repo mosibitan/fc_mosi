@@ -11,6 +11,7 @@ export function getDefaultLanguage() {
 }
 
 export async function loadLanguage(lang: string, setDefault = true): Promise<void> {
+    console.log("loadLanguage", lang);
     lang = lang.toLowerCase();
 
     if (loadLanguagePromises.has(lang)) {
@@ -20,6 +21,7 @@ export async function loadLanguage(lang: string, setDefault = true): Promise<voi
     const promise = (async () => {
         try {
             const { default: items } = await import(`../res/translations/${lang}.json`);
+            console.log("items", items);
 
             languages.set(lang, new Map<string, string>(items));
 
@@ -27,6 +29,7 @@ export async function loadLanguage(lang: string, setDefault = true): Promise<voi
                 defaultLanguage = lang;
             }
         } catch (e) {
+            console.log('error', e)
             const dashIndex = lang.lastIndexOf("-");
             if (dashIndex !== -1) {
                 return loadLanguage(lang.substring(0, dashIndex));
@@ -70,7 +73,6 @@ export function resolveLanguage(locale: string, supportedLanguages: { [lang: str
  */
 export function translate(msg: string, ...fmtArgs: string[]) {
     // Choose translations for current language
-    console.log("defaultLanguage", defaultLanguage);
     const lang = languages.get(defaultLanguage);
 
     // Look up translation. If no translation is found, use the original message.
