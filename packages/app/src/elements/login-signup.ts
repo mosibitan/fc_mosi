@@ -790,9 +790,8 @@ export class LoginOrSignup extends StartForm {
                             <div class="spacer"></div>
 
                             <div class="hint">
-                                Hi there, <strong class="break-words">${this._nameInput?.value || "Stranger"}</strong>!
-                                Let's set up your brand new ${process.env.PL_APP_NAME} account! (This will only take a
-                                few moments.)
+                                ${$l("Hi there,")} <strong class="break-words">${this._nameInput?.value || $l("Stranger")}</strong>!
+                                ${$l("Let's set up your brand new {0} account! (This will only take a few moments.)", process.env.PL_APP_NAME!)}
                             </div>
 
                             <pl-input
@@ -814,8 +813,8 @@ export class LoginOrSignup extends StartForm {
                             <div class="small padded">
                                 <label>
                                     <input type="checkbox" id="tosCheckbox" @input=${() => this.requestUpdate()} />
-                                    I have read and agree to the
-                                    <a href="${process.env.PL_TERMS_OF_SERVICE || "#"}">Terms of Service</a>
+                                    ${$l("I have read and agree to the")}
+                                    <a href="${process.env.PL_TERMS_OF_SERVICE || "#"}">${$l("Terms of Service")}</a>
                                 </label>
                             </div>
 

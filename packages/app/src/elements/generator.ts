@@ -150,13 +150,13 @@ export class Generator extends LitElement {
                     <pl-button class="slim ghost" @click=${() => this.generate()}>
                         <div>
                             <pl-icon class="inline" icon="refresh"></pl-icon>
-                            Regenerate
+                            ${$l("Regenerate")}
                         </div>
                     </pl-button>
                     <pl-button class="slim ghost" @click=${() => setClipboard(value)}>
                         <div>
                             <pl-icon class="inline" icon="copy"></pl-icon>
-                            Copy
+                            ${$l("Copy")}
                         </div>
                     </pl-button>
                 </div>

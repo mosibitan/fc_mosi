@@ -288,7 +288,7 @@ export class VaultView extends Routing(StateMixin(LitElement)) {
 
                     <pl-input
                         class="transparent large bold skinny stretch"
-                        placeholder="Enter Vault Name"
+                        placeholder=${$l("Enter Vault Name")}
                         id="nameInput"
                         @change=${() => this.requestUpdate()}
                         >${vault.name}</pl-input

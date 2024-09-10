@@ -1,6 +1,6 @@
 const loadLanguagePromises = new Map<string, Promise<void>>();
 const languages = new Map<string, Map<string, string>>();
-let defaultLanguage = "tw";
+let defaultLanguage = "zh-CN";
 
 export function setDefaultLanguage(lang: string) {
     defaultLanguage = lang;
@@ -11,7 +11,6 @@ export function getDefaultLanguage() {
 }
 
 export async function loadLanguage(lang: string, setDefault = true): Promise<void> {
-    console.log("loadLanguage", lang);
     lang = lang.toLowerCase();
 
     if (loadLanguagePromises.has(lang)) {
@@ -21,7 +20,6 @@ export async function loadLanguage(lang: string, setDefault = true): Promise<voi
     const promise = (async () => {
         try {
             const { default: items } = await import(`../res/translations/${lang}.json`);
-            console.log("items", items);
 
             languages.set(lang, new Map<string, string>(items));
 

@@ -502,7 +502,7 @@ export class Menu extends Routing(StateMixin(LitElement)) {
                                                     >
                                                         <pl-icon icon="${icon}"></pl-icon>
 
-                                                        <div class="stretch ellipsis">${label}</div>
+                                                        <div class="stretch ellipsis">${$l(label)}</div>
 
                                                         ${app.getOrgProvisioning(org).status !==
                                                             ProvisioningStatus.Active && path === "dashboard"

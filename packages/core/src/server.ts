@@ -769,7 +769,7 @@ export class Controller extends API {
         // Provision the private vault for this account
         const vault = new Vault();
         vault.id = await uuid();
-        vault.name = "My Vault";
+        vault.name = $l("My Vault");
         vault.owner = account.id;
         vault.created = new Date();
         vault.updated = new Date();
@@ -949,7 +949,7 @@ export class Controller extends API {
         // Create a new private vault, discarding the old one
         const mainVault = new Vault();
         mainVault.id = account.mainVault.id;
-        mainVault.name = "My Vault";
+        mainVault.name = $l("My Vault");
         mainVault.owner = account.id;
         mainVault.created = new Date();
         mainVault.updated = new Date();

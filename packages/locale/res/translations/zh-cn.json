@@ -169,7 +169,7 @@
   ],
   [
     "You have entered too many email addresses! Please delete some before submitting!",
-    "您输入了过多Email地址！请在送出前删除一些！"
+    "您输入了过多Email地址！请在提交前删除一些！"
   ],
   [
     "Some of the emails you entered appear to be invalid!",
@@ -193,7 +193,7 @@
   ],
   [
     "Submit",
-    "送出"
+    "提交"
   ],
   [
     "New Vault Item",
@@ -303,6 +303,10 @@
     "Copy",
     "复制"
   ],
+  [
+    "Regenerate",
+    "重新生成"
+  ],  
   [
     "Edit",
     "编辑"
@@ -501,31 +505,31 @@
   ],
   [
     "Choose the correct column names and types for each column below.",
-    "为下方的每一行选择正确的行名称与类型"
+    "为下方的每一列选择正确的列名称与类型"
   ],
   [
     "First row contains field names",
-    "第一列含有表格名称"
+    "第一行含有字段名称"
   ],
   [
     "Name Column",
-    "名称行"
+    "名称列"
   ],
   [
     "Tags Column",
-    "标签行"
+    "标签列"
   ],
   [
     "Column {0}",
-    "行 {0}"
+    "列 {0}"
   ],
   [
     "Field Name",
-    "表格名称"
+    "字段名称"
   ],
   [
     "Field Type",
-    "表格类型"
+    "字段类型"
   ],
   [
     "Import {0} Items",
@@ -545,7 +549,7 @@
   ],
   [
     "expired",
-    "已逾期"
+    "已过期"
   ],
   [
     "accepted",
@@ -561,7 +565,7 @@
   ],
   [
     "You have successfully accepted the invite. You'll be notified once you've been granted access.",
-    "您已成功接受邀请。您将在在获得权限时收到通知。"
+    "您已成功接受邀请。您将在获得权限时收到通知。"
   ],
   [
     "Invite Accepted",
@@ -593,7 +597,7 @@
   ],
   [
     "This invite has expired",
-    "此邀请已逾期"
+    "此邀请已过期"
   ],
   [
     "Accepted",
@@ -601,7 +605,7 @@
   ],
   [
     "expires {0}",
-    "逾期 {0}"
+    "过期 {0}"
   ],
   [
     "{0} requested to confirm your membership with",
@@ -617,75 +621,75 @@
   ],
   [
     "This invite has expired!",
-    "此邀请已逾期！"
+    "此邀请已过期！"
   ],
   [
     "Please enter the confirmation code provided to you by the organization owner!",
-    "請輸入由組織擁有者提供的驗證碼！"
+    "请输入由组织拥有者提供的验证码！"
   ],
   [
     "Confirmation Code",
-    "驗證碼"
+    "验证码"
   ],
   [
     "Are you sure you want to delete this invite?",
-    "您確定要刪除此邀請嗎？"
+    "您确定要删除此邀请吗？"
   ],
   [
     "Delete Invite",
-    "刪除邀請"
+    "删除邀请"
   ],
   [
     "{0} was successfully added to your organization!",
-    "{0} 已成功加入到您的組織！"
+    "{0} 已成功加入到您的组织！"
   ],
   [
     "No invite selected.",
-    "沒有已選擇的邀請。"
+    "没有已选择的邀请。"
   ],
   [
     "They will also need the following confirmation code, which you should communicate to them separately:",
-    "他們會需要以下的確認碼，因此您應該分開發送給他們："
+    "他们会需要以下的确认码，因此您应该分开发送给他们："
   ],
   [
     "Resend",
-    "重新發送"
+    "重新发送"
   ],
   [
     "No item selected.",
-    "沒有已選擇的項目。"
+    "没有已选择的项目。"
   ],
   [
     "Enter Item Name",
-    "輸入項目名稱"
+    "输入项目名称"
   ],
   [
     "Favorite",
-    "最愛"
+    "收藏"
   ],
   [
     "Field",
-    "表格"
+    "字段"
   ],
   [
     "More Options",
-    "更多選項"
+    "更多选项"
   ],
   [
     "Move To Vault ...",
-    "移動到密碼庫..."
+    "移动到密码库..."
   ],
   [
     "Delete Item",
-    "刪除項目"
+    "删除项目"
   ],
   [
     "tags",
-    "標籤"
+    "标签"
   ],
   [
     "Add Field",
-    "新增表格"
+    "新增字段"
   ],
   [
     "Attachments",
@@ -693,7 +697,7 @@
   ],
   [
     "Click or drag files here to add an attachment!",
-    "點擊這裡或是將檔案拖移到這裡來增新附件！"
+    "点击这里或是将文件拖移到这里来增新附件！"
   ],
   [
     "Expiration",
@@ -705,7 +709,7 @@
   ],
   [
     "days after being updated.",
-    "天距離上次更新。"
+    "天距离上次更新。"
   ],
   [
     "Remove Expiration",
@@ -725,83 +729,83 @@
   ],
   [
     "History",
-    "歷史"
+    "历史"
   ],
   [
     "Current Version",
-    "目前版本"
+    "当前版本"
   ],
   [
     "Are you sure you want to remove this field?",
-    "您確定要刪除此表格嗎？"
+    "您确定要删除此字段吗？"
   ],
   [
     "Remove Field",
-    "刪除表格"
+    "删除字段"
   ],
   [
     "Are you sure you want to delete this item?",
-    "您確定要刪除此項目嗎？"
+    "您确定要删除此项目吗？"
   ],
   [
     "Delete Vault Item",
-    "刪除密碼庫項目"
+    "删除密码库项目"
   ],
   [
     "Items with attachments cannot be moved!",
-    "無法移動帶有附件的項目！"
+    "无法移动带有附件的项目！"
   ],
   [
     "The selected file is too large! Only files of up to 5 MB are supported.",
-    "選取的檔案過大！僅支援至多 5MB 的檔案。"
+    "选取的文件过大！仅支持至多 5MB 的文件。"
   ],
   [
     "File uploaded successfully!",
-    "檔案上傳成功"
+    "文件上传成功"
   ],
   [
     "New Item",
-    "新項目"
+    "新项目"
   ],
   [
     "copied",
-    "已複製"
+    "已复制"
   ],
   [
     "No Fields",
-    "沒有表格"
+    "没有字段"
   ],
   [
     "This item has no fields.",
-    "此項目沒有表格"
+    "此项目没有字段"
   ],
   [
     "Your search did not match any items.",
-    "找不到任何符合您搜尋條件的任何項目。"
+    "找不到任何符合您搜索条件的任何项目。"
   ],
   [
     "This vault does not have any items yet.",
-    "此密碼庫目前沒有任何項目。"
+    "此密码库目前没有任何项目。"
   ],
   [
     "You don't have any attachments yet.",
-    "您目前沒有任何附件。"
+    "您目前没有任何附件。"
   ],
   [
     "You don't have any favorites yet.",
-    "您目前沒有任何最愛。"
+    "您目前没有任何收藏。"
   ],
   [
     "You don't have any recently used items!",
-    "您目前沒有任何近期使用項目。"
+    "您目前没有任何近期使用项目。"
   ],
   [
     "You don't have any items yet.",
-    "您目前沒有任何項目。"
+    "您目前没有任何项目。"
   ],
   [
     "Favorites",
-    "最愛"
+    "收藏"
   ],
   [
     "Recently Used",
@@ -809,15 +813,15 @@
   ],
   [
     "Type To Search",
-    "輸入以搜尋"
+    "输入以搜索"
   ],
   [
     "{0} items selected",
-    "已選擇 {0} 個項目"
+    "已选择 {0} 个项目"
   ],
   [
     "Some items in your selection are from Vaults you don't have write access to and cannot be deleted. Do you want to proceed deleting the other items?",
-    "您沒有部分選擇項目的密碼庫寫入權限，因此無法刪除。是否繼續刪除其他項目？"
+    "您没有部分选择项目的密码库写入权限，因此无法删除。是否继续删除其他项目？"
   ],
   [
     "Yes",
@@ -829,111 +833,111 @@
   ],
   [
     "Are you sure you want to delete these items? This action can not be undone!",
-    "您是否確定要刪除這些項目？此動作無法被還原！"
+    "您是否确定要删除这些项目？此操作无法被还原！"
   ],
   [
     "Delete {0} Items",
-    "已刪除 {0} 個項目"
+    "已删除 {0} 个项目"
   ],
   [
     "Some items in your selection have attachments and cannot be moved. Do you want to proceed moving the other items?",
-    "部分您選擇的項目帶有附件，因此無法移動。是否繼續移動其他項目？"
+    "部分您选择的项目带有附件，因此无法移动。是否继续移动其他项目？"
   ],
   [
     "Some items in your selection are from Vaults you don't have write access to and cannot be moved. Do you want to proceed moving the other items?",
-    "您沒有部分選擇項目的密碼庫寫入權限，因此無法移動。是否繼續移動其他項目？"
+    "您没有部分选择项目的密码库写入权限，因此无法移动。是否继续移动其他项目？"
   ],
   [
     "An account with this email address does not exist!",
-    "使用此Email地址的帳戶並不存在！"
+    "使用此Email地址的账户并不存在！"
   ],
   [
     "Sign Up",
-    "註冊"
+    "注册"
   ],
   [
     "Do you want to add this device as a trusted device?",
-    "您是否要將此裝置新增到信任的裝置？"
+    "您是否要将此设备新增到信任的设备？"
   ],
   [
     "Add Trusted Device",
-    "新增信任的裝置"
+    "新增信任的设备"
   ],
   [
     "We failed to verify your email address. Please start over!",
-    "我們無法驗證您的Email地址。請重新開始！"
+    "我们无法验证您的Email地址。请重新开始！"
   ],
   [
     "Wrong master password. Please try again!",
-    "錯誤的主密碼。請重試！"
+    "错误的主密码。请重试！"
   ],
   [
     "Can't remember your master password?",
-    "記不住主密碼？"
+    "记不住主密码？"
   ],
   [
     "Recover Account",
-    "恢復帳戶"
+    "恢复账户"
   ],
   [
     "We failed to verify your session. Please start over!",
-    "我們無法驗證您的連線階段。請重新開始！"
+    "我们无法验证您的连接会话。请重新开始！"
   ],
   [
     "We recommend using a randomly generated password that is both strong and easy to remember.",
-    "我們建議使用隨機產生的密碼，強度高又好記。"
+    "我们建议使用随机生成的密码，强度高又好记。"
   ],
   [
     "Keep This One",
-    "使用這一個"
+    "使用这一个"
   ],
   [
     "Generate Another",
-    "產生另一個"
+    "生成另一个"
   ],
   [
     "Choose My Own",
-    "選擇自己的密碼"
+    "选择自己的密码"
   ],
   [
     "Want A Different Master Password?",
-    "想換一個主密碼？"
+    "想换一个主密码？"
   ],
   [
     "Choose Own Master Password",
-    "選擇自己的主密碼"
+    "选择自己的主密码"
   ],
   [
     "The password you entered is weak which makes it easier for attackers to break the encryption used to protect your data. Try to use a longer password or include a variation of uppercase, lowercase and special characters as well as numbers!",
-    "您輸入的密碼強度不足，容易使您的加密資料遭到竊取。請試著使用長一點或帶有大小寫、特殊符號與數字的密碼！"
+    "您输入的密码强度不足，容易使您的加密数据遭到窃取。请试着使用长一点或带有大小写、特殊符号与数字的密码！"
   ],
   [
     "Choose Different Password",
-    "選擇不同的密碼"
+    "选择不同的密码"
   ],
   [
     "Use Anyway",
-    "照樣使用"
+    "照样使用"
   ],
   [
     "WARNING: Weak Password",
-    "警告：低強度密碼"
+    "警告：低强度密码"
   ],
   [
     "You didn't repeat your master password correctly. Try again!",
-    "您沒有正確的重複主密碼。請重試！"
+    "您没有正确地重复主密码。请重试！"
   ],
   [
     "Server error.",
-    "伺服器錯誤。"
+    "服务器错误。"
   ],
   [
     "An account with this email address already exists!",
-    "使用此Email的帳戶已存在！"
+    "使用此Email的账户已存在！"
   ],
   [
     "Login",
-    "登入"
+    "登录"
   ],
   [
     "Change Email",
@@ -941,111 +945,111 @@
   ],
   [
     "Account Exists",
-    "帳戶已存在"
+    "账户已存在"
   ],
   [
     "You don't have a Padloc 4 account yet but we've found an account from an older version. Would you like to migrate your account to Padloc 4 now?",
-    "您沒有 Padloc 4 的帳戶，但在我們在舊版本找到您的帳戶。您是否要將帳號轉移至 Padloc 4 ？"
+    "您没有 Padloc 4 的账户，但在我们在旧版本找到您的账户。您是否要将账号迁移至 Padloc 4 ？"
   ],
   [
     "Migrate",
-    "轉移"
+    "迁移"
   ],
   [
     "Learn More",
-    "更多資訊"
+    "更多信息"
   ],
   [
     "Migrating Account",
-    "正在轉移帳戶"
+    "正在迁移账户"
   ],
   [
     "Your account and all associated data was migrated successfully! Do you want to delete your old account now?",
-    "您的帳戶與所有相關資料皆已轉移成功！您是否要刪除帳戶？"
+    "您的账户与所有相关数据均已迁移成功！您是否要删除账户？"
   ],
   [
     "Delete Legacy Account",
-    "刪除舊版帳戶"
+    "删除旧版账户"
   ],
   [
     "All done! Please note that you won't be able to access your Padloc 4 account with older versions of the app, so please make sure you have the latest version installed on all your devices! (You can find download links for all platforms at https://padloc.app/downloads/). Enjoy using Padloc 4!",
-    "大功告成！請留意您無法使用舊版本應用程式存取您的 Padloc 4 帳戶，所以請務必在您的所有裝置使用最新版本！ (可以在 https://padloc.app/downloads/ 取得適用於所有平臺的下載連結) 祝您使用愉快！"
+    "大功告成！请留意您无法使用旧版本应用程序访问您的 Padloc 4 账户，所以请务必在您的所有设备使用最新版本！ (可以在 https://padloc.app/downloads/ 取得适用于所有平台的下载链接) 祝您使用愉快！"
   ],
   [
     "Migration Complete",
-    "轉移完成"
+    "迁移完成"
   ],
   [
     "Unfortunately we could not complete migration of your data.",
-    "很不幸地，我們無法完全轉移您的資料。"
+    "很遗憾，我们无法完全迁移您的数据。"
   ],
   [
     "Admin Portal",
-    "管理員入口"
+    "管理员入口"
   ],
   [
     "has invited you to join their organization",
-    "已邀請您加入他們的組織"
+    "已邀请您加入他们的组织"
   ],
   [
     "Welcome! Please enter your email address to continue.",
-    "歡迎！請輸入您的Email地址以繼續。"
+    "欢迎！请输入您的Email地址以继续。"
   ],
   [
     "Your Name (Optional)",
-    "你的名稱 (非必要)"
+    "你的名称 (非必要)"
   ],
   [
     "Create Account",
-    "創建帳戶"
+    "创建账户"
   ],
   [
     "Master Password",
-    "主密碼"
+    "主密码"
   ],
   [
     "Say hello to your",
-    "打聲招呼吧！這是您的"
+    "打声招呼吧！这是您的"
   ],
   [
     "[Tap To Reveal]",
-    "[點擊以揭示]"
+    "[点击以揭示]"
   ],
   [
     "[Hover To Reveal]",
-    "[懸浮在此以揭示]"
+    "[悬浮在此以揭示]"
   ],
   [
     "This random passphrase was generated just for you and is designed to be both secure and easy to remember.",
-    "此密碼片語是獨一無二的，且特意設計的即安全又好記。"
+    "此密码短语是独一无二的，且特意设计的既安全又好记。"
   ],
   [
     "Don't like it?",
-    "不喜歡嗎？"
+    "不喜欢吗？"
   ],
   [
     "Try Another One",
-    "試試另一個"
+    "试试另一个"
   ],
   [
     "Choose Your Own",
-    "選擇自己的"
+    "选择自己的"
   ],
   [
     "Change Name",
-    "更改名稱"
+    "更改名称"
   ],
   [
     "Repeat Master Password",
-    "重複一次主密碼"
+    "重复一次主密码"
   ],
   [
     "Your master password is the last password you'll ever have to remember! Please memorize it and never reveal it to anyone - not even us! We recommend writing it down on a piece of paper and storing it somewhere safe, at least until you have it safely memorized.",
-    "您的主密碼將會是您最後一個需要記住的密碼！請記住它並且不將它告訴任何人；甚至連我們也不行！我們建議將主密碼寫在紙條上並儲存在安全的地方；至少在您牢記之前這麼做。"
+    "您的主密码将会是您最后一个需要记住的密码！请记住它并且不将它告诉任何人；甚至连我们也不行！我们建议将主密码写在纸条上并储存在安全的地方；至少在您牢记之前这么做。"
   ],
   [
     "Change Password",
-    "更改密碼"
+    "更改密码"
   ],
   [
     "All set!",
@@ -1053,179 +1057,183 @@
   ],
   [
     "Your account was created successfully. Enjoy using {0}!",
-    "您的帳戶已成功創建。歡迎使用 {0} ！"
+    "您的账户已成功创建。欢迎使用 {0} ！"
   ],
   [
     "Get Started",
-    "入門"
+    "入门"
   ],
   [
     "Owner",
-    "擁有者"
+    "拥有者"
   ],
   [
     "Admin",
-    "管理員"
+    "管理员"
   ],
   [
     "Provisioned",
-    "已開通"
+    "已开通"
   ],
   [
     "Suspended",
-    "已暫停"
+    "已暂停"
   ],
   [
     "Something went wrong while processing your request. Please try again later!",
-    "在處理您的要求時發生錯誤。請稍後再試！"
+    "在处理您的请求时发生错误。请稍后再试！"
   ],
   [
     "Are you sure you want to remove this member from this organization?",
-    "您確定要將此成員從此組織移除嗎？"
+    "您确定要将此成员从此组织移除吗？"
   ],
   [
     "Are you sure you want to make this member an admin? Admins can manage vaults, groups and permissions.",
-    "您確定要讓成員成為管理員嗎？管理員可以編輯密碼庫、團隊及權限。"
+    "您确定要让成员成为管理员吗？管理员可以编辑密码库、团队及权限。"
   ],
   [
     "Make Admin",
-    "給予管理員權限"
+    "给予管理员权限"
   ],
   [
     "Are you sure you want to transfer this organization's ownership to {0}?",
-    "您確定要將此組織的所有權轉移給 {0} 嗎？"
+    "您确定要将此组织的所有权转移给 {0} 吗？"
   ],
   [
     "Make Owner",
-    "轉移所有權"
+    "转移所有权"
   ],
   [
     "The organization ownership was transferred successfully!",
-    "所有權已成功轉移！"
+    "所有权已成功转移！"
   ],
   [
     "Are you sure you want to remove this member as admin?",
-    "您確定要移除此成員的管理員權限嗎？"
+    "您确定要移除此成员的管理员权限吗？"
   ],
   [
     "Remove Admin",
-    "移除管理員權限"
+    "移除管理员权限"
   ],
   [
     "Are you sure you want to suspend this member?",
-    "您確定要暫停這位成員嗎？"
+    "您确定要暂停这位成员吗？"
   ],
   [
     "Suspend Member",
-    "暫停成員"
+    "暂停成员"
   ],
   [
     "No member selected.",
-    "沒有已選擇的成員。"
+    "没有已选择的成员。"
   ],
   [
     "Suspend",
-    "暫停"
+    "暂停"
   ],
   [
     "Unsuspend",
-    "解除暫停"
+    "解除暂停"
   ],
   [
     "Groups",
-    "團隊"
+    "团队"
   ],
   [
     "No more Groups available",
-    "沒有更多團隊"
+    "没有更多团队"
   ],
   [
     "Remove From Group",
-    "從團隊移除"
+    "从团队移除"
   ],
   [
     "This member is not part of any groups yet.",
-    "此成員目前不屬於任何團隊"
+    "此成员目前不属于任何团队"
   ],
   [
     "Via Groups",
-    "透過團隊"
+    "通过团队"
   ],
   [
     "This member does not have access to any vaults yet.",
-    "此成員目前沒有存取任何密碼庫的權限。"
+    "此成员目前没有访问任何密码库的权限。"
   ],
   [
     "Close",
-    "關閉"
+    "关闭"
   ],
   [
     "Dashboard",
-    "主控臺"
+    "控制台"
   ],
   [
     "Settings",
-    "設定"
+    "设置"
   ],
   [
     "Invites",
-    "邀請"
+    "邀请"
   ],
   [
     "A newer version of {0} is required to synchronize this vault. Please update to the latest version now!",
-    "必須要使用新版本的 {0} 才能同步此密碼庫。請立即更新至最新版本！"
+    "必须要使用新版本的 {0} 才能同步此密码库。请立即更新至最新版本！"
   ],
   [
     "This vault could not be synchronized because you no longer have access to it.",
-    "因您不再有存取權限，此密碼庫無法同步"
+    "因您不再有访问权限，此密码库无法同步"
   ],
   [
     "This vault could not be synchronized because you currently don't have access to it's data.",
-    "因您目前無法存取資料，此密碼庫當前無法同步"
+    "因您目前无法访问数据，此密码库当前无法同步"
   ],
   [
     "An unknown error occured while synchronizing this vault. If this problem persists please contact customer support.",
-    "在同步密碼庫時發生了未知錯誤。如果持續發生此狀況，請聯絡客戶支援。"
+    "在同步密码库时发生了未知错误。如果持续发生此状况，请联系客户支持。"
   ],
   [
     "Vaults & Items",
-    "密碼庫與項目"
+    "密码库与项目"
   ],
   [
     "My Vault",
-    "我的密碼庫"
+    "我的密码库"
   ],
   [
     "New Vault",
-    "新密碼庫"
+    "新密码库"
+  ],
+  [
+    "Enter Vault Name",
+    "输入密码库名称"
   ],
   [
     "Manage Tags",
-    ""
+    "管理标签"
   ],
   [
     "Orgs & Teams",
-    "團隊與小組"
+    "团队与小组"
   ],
   [
     "New Organization",
-    "新團隊"
+    "新团队"
   ],
   [
     "Security Report",
-    "安全性報告"
+    "安全性报告"
   ],
   [
     "Support",
-    "支援"
+    "支持"
   ],
   [
     "Lock App",
-    "鎖定應用程式"
+    "锁定应用程序"
   ],
   [
     "Theme:",
-    "主題："
+    "主题："
   ],
   [
     "Last Sync:",
@@ -1233,111 +1241,111 @@
   ],
   [
     "Never",
-    "從未"
+    "从未"
   ],
   [
     "{0} Items",
-    "{0} 個項目"
+    "{0} 个项目"
   ],
   [
     "Move {0} To",
-    "移動 {0} 到"
+    "移动 {0} 到"
   ],
   [
     "No target vaults available!",
-    "沒有可用的目標！"
+    "没有可用的目标！"
   ],
   [
     "Vault",
-    "密碼庫"
+    "密码库"
   ],
   [
     "Move Item",
-    "移動項目"
+    "移动项目"
   ],
   [
     "Move Items",
-    "移動項目"
+    "移动项目"
   ],
   [
     "Successfully created {0} invites!",
-    "成功創建 {0} 個邀請！"
+    "成功创建 {0} 个邀请！"
   ],
   [
     "This org is frozen",
-    "此組織已凍結"
+    "此组织已冻结"
   ],
   [
     "Show All",
-    "顯示全部"
+    "显示全部"
   ],
   [
     "This organization does not have any groups yet.",
-    "此組織目前沒有任何團隊。"
+    "此组织目前没有任何团队。"
   ],
   [
     "Create Group",
-    "創建團隊"
+    "创建团队"
   ],
   [
     "This organization does not have any vaults yet.",
-    "此組織目前沒有任何密碼庫。"
+    "此组织目前没有任何密码库。"
   ],
   [
     "Create Vault",
-    "創建密碼庫"
+    "创建密码库"
   ],
   [
     "Search...",
-    "搜尋..."
+    "搜索..."
   ],
   [
     "Are you sure you want to delete this organization? All associated vaults and the data within them will be lost! This action can not be undone.",
-    "您確定要刪除此組織嗎？所有相關的密碼庫與其中的資料將會消失。此動作無法被還原。"
+    "您确定要删除此组织吗？所有相关的密码库与其中的数据将会消失。此动作无法被还原。"
   ],
   [
     "Delete Organization",
-    "刪除組織"
+    "删除组织"
   ],
   [
     "Type 'DELETE' to confirm",
-    "輸入 'DELETE' 以確認"
+    "输入 'DELETE' 以确认"
   ],
   [
     "Organization deleted successfully.",
-    "組織已成功刪除。"
+    "组织已成功删除。"
   ],
   [
     "Rename Organization",
-    "更改組織名稱"
+    "更改组织名称"
   ],
   [
     "Company Name",
-    "企業名稱"
+    "企业名称"
   ],
   [
     "Please enter a name!",
-    "請輸入名稱！"
+    "请输入名称！"
   ],
   [
     "Do you want to rotate this organization's cryptographic keys? All organization memberships will have to be reconfirmed but no data will be lost.",
-    "您確定要倒換此組織的密鑰？所有組織成員會需要重新確認，但不會對資料產生任何影響。"
+    "您确定要倒换此组织的密钥？所有组织成员会需要重新确认，但不会对数据产生任何影响。"
   ],
   [
     "Confirm",
-    "確認"
+    "确认"
   ],
   [
     "The organization's cryptographic keys have been rotated successfully and membership confirmation requests for all members have been sent out.",
-    "組織的密鑰已倒換成功，且所有成員的確認請求也已經送出。"
+    "组织的密钥已倒换成功，且所有成员的确认请求也已经发送。"
   ],
   [
     "Do you want to enable Directory Sync via SCIM for this organization? You will be given a unique URL to provide to your Active Directory or LDAP server for synchronizing and provisioning members.",
-    "您是否要在此組織啟用透過 SCIM 同步字典？您將會得到一個用以啟用字典或 LDAP 伺服器的唯一網址，得以同步或啟用成員。"
+    "您是否要在此组织启用通过 SCIM 同步目录？您将会得到一个用以启用目录或 LDAP 服务器的唯一网址，得以同步或启用成员。"
   ],
   [
     "Do you want to disable Directory Sync? Your members will no longer be automatically synchronized and provisioned.",
-    "您是否要停用字典同步？您的成員將不再會自動同步及啟用。"
+    "您是否要停用目录同步？您的成员将不再会自动同步及启用。"
   ],
   [
     "Security",
@@ -1345,83 +1353,83 @@
   ],
   [
     "Rotate Cryptographic Keys",
-    "倒換密鑰"
+    "倒换密钥"
   ],
   [
     "Change Organization Name",
-    "更改組織名稱"
+    "更改组织名称"
   ],
   [
     "Directory Sync",
-    "字典同步"
+    "目录同步"
   ],
   [
     "Enable Directory Sync",
-    "啟用字典"
+    "启用目录"
   ],
   [
     "SCIM Tenant Url",
-    "SCIM 用戶網址"
+    "SCIM 用户网址"
   ],
   [
     "Tenant URL",
-    "用戶網址"
+    "用户网址"
   ],
   [
     "SCIM Secret Token",
-    "SCIM 安全性權杖"
+    "SCIM 安全性令牌"
   ],
   [
     "Secret Token",
-    "安全性權杖"
+    "安全性令牌"
   ],
   [
     "Organizations allow you to securely share passwords, documents and other data within your family, team or any other kind of group!",
-    "您可以透過組織在家庭、團隊或任何團隊中安全地分享密碼、文件與其他資料！"
+    "您可以通过组织在家庭、团队或任何团队中安全地分享密码、文件与其他数据！"
   ],
   [
     "Failed to scan QR code. Error: ",
-    "QR碼掃描失敗。錯誤："
+    "QR码扫描失败。错误："
   ],
   [
     "Public Key Fingerprint",
-    "公鑰指紋"
+    "公钥指纹"
   ],
   [
     "Back To Login",
-    "返回至登入"
+    "返回至登录"
   ],
   [
     "Please enter your email address and new master password.",
-    "請輸入您的Email地址及新主密碼。"
+    "请输入您的Email地址及新主密码。"
   ],
   [
     "New Master Password",
-    "新主密碼"
+    "新主密码"
   ],
   [
     "WARNING: Weak Password!",
-    "警告：低強度密碼！"
+    "警告：低强度密码！"
   ],
   [
     "IMPORTANT, READ CAREFULLY: {0} is designed in a way that makes it impossible for us to access the data encrypted in any of your vaults even if we wanted to. While this is essential to ensuring the security of your data, it also has the following implications:",
-    "重要，請詳讀： {0} 設計上使得我們無論如何都無法存取您密碼庫中的任何資料。這在確保資料安全的同時，也會造成以下影響："
+    "重要，请详读： {0} 设计上使得我们无论如何都无法访问您密码库中的任何数据。这在确保数据安全的同时，也会造成以下影响："
   ],
   [
     "Any data stored in your private vault can not be recovered and will be permantently lost.",
-    "任何保存在您私人密碼庫中的資料都將無法被還原並將永久遺失。"
+    "任何保存在您私人密码库中的数据都将无法被还原并将永久遗失。"
   ],
   [
     "All your organization memberships will be suspended temporarily until confirmed by the organization owner.",
-    "您的組織中的所有成員將會被暫停，直至組織擁有者確認為止。"
+    "您的组织中的所有成员将会被暂停，直至组织拥有者确认为止。"
   ],
   [
     "All members of organizations you own will be suspended temporarily until confirmed by you.",
-    "所有在您所擁有的組織中的成員將會被暫停，直至您確認為止。"
+    "所有在您所拥有的组织中的成员将会被暂停，直至您确认为止。"
   ],
   [
     "Please enter a master password!",
-    "請輸入一個主密碼！"
+    "请输入一个主密码！"
   ],
   [
     "All data in your personal vault **WILL BE DELETED** and cannot be recovered!",
@@ -1433,35 +1441,35 @@
   ],
   [
     "Account recovery successful!",
-    "帳戶復原成功！"
+    "账户恢复成功！"
   ],
   [
     "Account Recovery",
-    "復原帳戶"
+    "恢复账户"
   ],
   [
     "Report Errors",
-    "錯誤回報"
+    "错误报告"
   ],
   [
     "{0} Errors Detected",
-    "偵測到 {0} 個錯誤"
+    "检测到 {0} 个错误"
   ],
   [
     "Padloc has registered {0} errors during your use of the app. These errors may not have any impact on functionality and can often be ignored, but reporting them may help us diagnose problems, identify possible failure modes and generally improve the stability of the app.",
-    "Padloc 在您使用的過程中記錄下了 {0} 錯誤。這些錯誤或許不會有任何影響且可以被忽略，但將回報它們可以幫助我們找出問題，並以此改進應用程式的穩定性。"
+    "Padloc 在您使用的过程中记录下了 {0} 错误。这些错误或许不会有任何影响且可以被忽略，但将报告它们可以帮助我们找出问题，并以此改进应用程序的稳定性。"
   ],
   [
     "All Security Reports have been disabled.",
-    "已停用所有安全性報告。"
+    "已停用所有安全性报告。"
   ],
   [
     "Enable In Settings",
-    "在設定中開啟"
+    "在设置中开启"
   ],
   [
     "Nothing Found",
-    "沒有找到任何東西"
+    "没有找到任何东西"
   ],
   [
     "Text Mode",
@@ -1469,183 +1477,183 @@
   ],
   [
     "Bold",
-    "粗體"
+    "粗体"
   ],
   [
     "Italic",
-    "斜體"
+    "斜体"
   ],
   [
     "Strikethrough",
-    "刪除線"
+    "删除线"
   ],
   [
     "Unordered List",
-    "無序號的清單"
+    "无序号的列表"
   ],
   [
     "Ordered List",
-    "有序號的清單"
+    "有序号的列表"
   ],
   [
     "Blockquote",
-    "引用區塊"
+    "引用区块"
   ],
   [
     "Code Block",
-    "碼塊"
+    "代码块"
   ],
   [
     "Insert Horizontal Line",
-    "插入垂直線"
+    "插入水平线"
   ],
   [
     "Are you sure you want to change your email address to {0}? Please enter your master password to continue.",
-    ""
+    "您确定要将电子邮件地址更改为 {0} 吗？请输入您的主密码以继续。"
   ],
   [
     "WARNING: You'll be suspended from any organizations you're not an owner of and will lose access to any shared vaults of that organization until the organization owner unsuspends you.",
-    ""
+    "警告：您将被暂停参与任何您不是所有者的组织，并且将失去访问该组织的任何共享保管库的权限，直到组织所有者取消您的暂停状态。"
   ],
   [
     "Change Email Address",
-    ""
+    "更改电子邮件地址"
   ],
   [
     "Your email address has been changed successfully!",
-    ""
+    "您的电子邮件地址已成功更改！"
   ],
   [
     "Do you really want to log out?",
-    "您是否確定要登出？"
+    "您确定要退出吗？"
   ],
   [
     "Log Out",
-    "登出"
+    "退出"
   ],
   [
     "Please enter your master password to proceed.",
-    "輸入您的主密碼以繼續。"
+    "输入您的主密码以继续。"
   ],
   [
     "Delete Account",
-    "刪除帳戶"
+    "删除账户"
   ],
   [
     "Are you sure you want to delete this account? All associated vaults and the data within them will be lost and any active subscriptions will be canceled immediately. This action can not be undone!",
-    "您是否確定要刪除此帳戶？所有相關的密碼庫與其中的資料將會消失，所有現有訂閱也將被取消。此動作無法被還原。"
+    "您确定要删除此账户吗？所有相关的密码库与其中的数据将会消失，所有现有订阅也将被取消。此操作无法被还原。"
   ],
   [
     "The following organizations are owned by you and will be deleted along with your account:",
-    "以下的組織由您擁有，因此也將隨您的帳號同時被刪除："
+    "以下的组织由您拥有，因此也将随您的账号同时被删除："
   ],
   [
     "Account",
-    "帳戶"
+    "账户"
   ],
   [
     "Profile",
-    "個人資料"
+    "个人资料"
   ],
   [
     "Email",
-    "Email"
+    "电子邮件"
   ],
   [
     "Display Name",
-    "顯示名稱"
+    "显示名称"
   ],
   [
     "Billing",
-    "帳單"
+    "账单"
   ],
   [
     "Display",
-    "顯示"
+    "显示"
   ],
   [
     "Theme",
-    "主題"
+    "主题"
   ],
   [
     "Favicons",
-    "網頁圖示"
+    "网页图标"
   ],
   [
     "If this option is enabled, {0} will automatically load and display website icons for vault items that have at least one URL field.",
-    "如果啟用此選項，{0} 將會對所有至少有一個網址的項目自動載入並顯示網頁圖示。"
+    "如果启用此选项，{0} 将会对所有至少有一个网址的项目自动加载并显示网页图标。"
   ],
   [
     "Enable Favicons",
-    "啟用網頁圖示"
+    "启用网页图标"
   ],
   [
     "Masked Fields",
-    "欄位遮罩"
+    "字段遮罩"
   ],
   [
     "If this option is enabled, masked fields such as passwords or credit card numbers will be unmasked when you move your mouse over them. Disable this option if you would rather use an explicit button.",
-    "如果啟用此選項，所有欄位遮罩如密碼及信用卡等將在游標懸浮在上方的時候揭示。如果您想要一個明確、獨立的按鈕，請停用此選項。"
+    "如果启用此选项，所有字段遮罩如密码及信用卡等将在鼠标悬浮在上方的时候显示。如果您想要一个明确、独立的按钮，请停用此选项。"
   ],
   [
     "Reveal On Hover",
-    "懸浮時揭示"
+    "悬浮时显示"
   ],
   [
     "Extension",
-    "擴充"
+    "扩展"
   ],
   [
     "Badge",
-    "角標"
+    "角标"
   ],
   [
     "If this option is enabled, the extension icon will show a badge with the number of matching items (if any) for the currently active tab. NOTE: Changing this setting can take up to a minute to take effect.",
-    "如果啟用此選項，擴充圖示將分頁顯示一個帶有符合項目（如有）數量的角標。提醒：設定可能需要至多一分鐘才會生效。"
+    "如果启用此选项，扩展图标将在标签页显示一个带有匹配项目（如有）数量的角标。提醒：设置可能需要至多一分钟才会生效。"
   ],
   [
     "Enable Badge",
-    "啟用角標"
+    "启用角标"
   ],
   [
     "Please enter your current password!",
-    "請輸入您目前的密碼！"
+    "请输入您目前的密码！"
   ],
   [
     "Change Master Password",
-    "更改主密碼"
+    "更改主密码"
   ],
   [
     "Enter Current Password",
-    "輸入目前的密碼"
+    "输入目前的密码"
   ],
   [
     "Now choose a new master password!",
-    "現在請選擇一個新的主密碼！"
+    "现在请选择一个新的主密码！"
   ],
   [
     "Enter New Password",
-    "輸入新的主密碼"
+    "输入新的主密码"
   ],
   [
     "Please enter a password!",
-    "請輸入一個密碼！"
+    "请输入一个密码！"
   ],
   [
     "Please confirm your new password!",
-    "請確認您的新密碼！"
+    "请确认您的新密码！"
   ],
   [
     "Repeat New Password",
-    "重複新的密碼"
+    "重复新的密码"
   ],
   [
     "Master password changed successfully.",
-    "已成功更改主密碼。"
+    "已成功更改主密码。"
   ],
   [
     "Are you sure you want to disable biometric unlock for this device?",
-    "您是否要在此裝置上停用生物識別解鎖？"
+    "您是否要在此设备上停用生物识别解锁？"
   ],
   [
     "Disable",
@@ -1653,99 +1661,99 @@
   ],
   [
     "Disable Biometric Unlock",
-    "停用生物識別解鎖"
+    "停用生物识别解锁"
   ],
   [
     "What kind of multi-factor authenticator would you like to add?",
-    "您要新增什麼類型的多重要素驗證？"
+    "您要新增什么类型的多重要素验证？"
   ],
   [
     "Failed to add authenticator",
-    "驗證新增失敗"
+    "验证新增失败"
   ],
   [
     "Are you sure you want to delete this authenticator?",
-    "您是否要刪除此驗證？"
+    "您是否要删除此验证？"
   ],
   [
     "Delete Authenticator",
-    "刪除驗證"
+    "删除验证"
   ],
   [
     "Are you sure you want to revoke this session?",
-    "您是否要撤回此連線階段？"
+    "您是否要撤销此连接会话？"
   ],
   [
     "Revoke",
-    "撤回"
+    "撤销"
   ],
   [
     "Revoke Session",
-    "撤回連線階段"
+    "撤销连接会话"
   ],
   [
     "Are you sure you want to remove this device from your trusted devices?",
-    "您是否要將此裝置從信任的裝置移除？"
+    "您是否要将此设备从信任的设备移除？"
   ],
   [
     "Remove Trusted Device",
-    "移除信任的裝置"
+    "移除信任的设备"
   ],
   [
     "The test was successfull!",
-    "測試成功！"
+    "测试成功！"
   ],
   [
     "Test Authenticator",
-    "測試驗證"
+    "测试验证"
   ],
   [
     "Test failed!",
-    "測試失敗！"
+    "测试失败！"
   ],
   [
     "Test failed! Error: {0}",
-    "測試失敗！錯誤： {0}"
+    "测试失败！错误： {0}"
   ],
   [
     "Are you sure you want to revoke biometric unlock for the device \"{0}\"?",
-    "您是否要從裝置 \"{0}\" 撤回生物識別解鎖？"
+    "您是否要从设备 \"{0}\" 撤销生物识别解锁？"
   ],
   [
     "Revoke Biometric Unlock",
-    "撤回生物識別解鎖"
+    "撤销生物识别解锁"
   ],
   [
     "Multi-Factor Authentication",
-    "多重要素驗證？"
+    "多重要素验证"
   ],
   [
     "not activated",
-    "未啟用"
+    "未启用"
   ],
   [
     "revoked",
-    "已撤回"
+    "已撤销"
   ],
   [
     "never",
-    "永不"
+    "从不"
   ],
   [
     "Test",
-    "測試"
+    "测试"
   ],
   [
     "Add MFA Method",
-    "新增多重要素驗證方式"
+    "新增多重要素验证方式"
   ],
   [
     "Active Sessions",
-    "已啟用的連線階段"
+    "已启用的连接会话"
   ],
   [
     "Active sessions indicate which devices or browsers are currently logged into your account. Note that sessions are not automatically revoked if you close or uninstall the Padloc app (or close the browser tab if you're using the web app). So it's possible that some devices that you haven't used Padloc on in a while still show up as active sessions. If you're unsure which device a session belongs to, simply revoke it.",
-    "已啟用的連線階段顯示哪些裝置或瀏覽器已登入您的帳戶。連線階段不會在您關閉或移除 Padloc 應用程式或分頁時自動撤回，因此有些您長時間未使用的裝置仍然會顯示為已啟用的連線階段。如果您不確定該連線階段屬於哪個裝置，撤回即可。"
+    "已启用的连接会话显示哪些设备或浏览器已登录您的账户。连接会话不会在您关闭或移除 Padloc 应用程序或标签页时自动撤销，因此有些您长时间未使用的设备仍然会显示为已启用的连接会话。如果您不确定该连接会话属于哪个设备，撤销即可。"
   ],
   [
     "Unknown",
@@ -1757,75 +1765,75 @@
   ],
   [
     "Unknown Country",
-    "未知國家"
+    "未知国家"
   ],
   [
     "Unknown Device",
-    "未知裝置"
+    "未知设备"
   ],
   [
     "Current Session",
-    "當前的連線階段"
+    "当前的连接会话"
   ],
   [
     "Trusted Devices",
-    "信任的裝置"
+    "信任的设备"
   ],
   [
     "Trusted devices are devices that are excluded from multi-factor authentication, which means that logging in from these devices will only require your email and master password. If you have lost or don't recognise any of these devices, please make sure to remove them.",
-    "多重要素驗證不包含信任的裝置，因此這些裝置只需要Email及主密碼即可登入。如果您遺失或不認得這些裝置，請務必移除它們。"
+    "多重要素验证不包含信任的设备，因此这些设备只需要电子邮件及主密码即可登录。如果您遗失或不认得这些设备，请务必移除它们。"
   ],
   [
     "Current Device",
-    "當前的裝置"
+    "当前的设备"
   ],
   [
     "You don't have any trusted devices yet.",
-    "您目前沒有任何信任的裝置。"
+    "您目前没有任何信任的设备。"
   ],
   [
     "Supported",
-    "支援"
+    "支持"
   ],
   [
     "Not Supported",
-    "不支援"
+    "不支持"
   ],
   [
     "Weak Passwords",
-    "低強度密碼"
+    "低强度密码"
   ],
   [
     "Reused Passwords",
-    "重複使用​的密碼"
+    "重复使用的密码"
   ],
   [
     "Compromised Passwords",
-    "已洩漏的密碼"
+    "已泄露的密码"
   ],
   [
     "Expiring or Expired Items",
-    "即將或已經過期的項目"
+    "即将或已经过期的项目"
   ],
   [
     "Email Notifications",
-    "Email 通知"
+    "电子邮件通知"
   ],
   [
     "Failed Login Attempts",
-    "失敗的登入嘗試"
+    "失败的登录尝试"
   ],
   [
     "New Logins (on new or untrusted devices)",
-    "新的登入（或信任的裝置）"
+    "新的登录（或信任的设备）"
   ],
   [
     "Auto Lock",
-    "自動鎖定"
+    "自动锁定"
   ],
   [
     "Lock Automatically",
-    "自動鎖定"
+    "自动锁定"
   ],
   [
     " min",
@@ -1833,55 +1841,55 @@
   ],
   [
     "After",
-    "之後"
+    "之后"
   ],
   [
     "Please enter the new tag name.",
-    ""
+    "请输入新的标签名称。"
   ],
   [
     "Rename Tag",
-    ""
+    "重命名标签"
   ],
   [
     "Create Tag",
-    ""
+    "创建标签"
   ],
   [
     "Are you sure you want to delete this tag? This will remove it from all vault items.",
-    ""
+    "您确定要删除此标签吗？这将从所有保管库项目中移除它。"
   ],
   [
     "Delete Tag",
-    ""
+    "删除标签"
   ],
   [
     "You don't have any tags yet.",
-    "您目前沒有任何標籤。"
+    "您目前没有任何标签。"
   ],
   [
     "Rename",
-    ""
+    "重命名"
   ],
   [
     "Unlist",
-    ""
+    "取消列出"
   ],
   [
     "Unlisted",
-    ""
+    "未列出"
   ],
   [
     "Unlisted tags still show up on vault items but are hidden from the main menu and from suggestions.",
-    ""
+    "未列出的标签仍会显示在保管库项目上，但会在主菜单和建议中隐藏。"
   ],
   [
     "You don't have any unlisted tags.",
-    ""
+    "您没有任何未列出的标签。"
   ],
   [
     "Remove From Unlisted",
-    ""
+    "从未列出中移除"
   ],
   [
     "Tools",
@@ -1889,167 +1897,167 @@
   ],
   [
     "Import / Export",
-    "匯入 / 匯出"
+    "导入 / 导出"
   ],
   [
     "Import...",
-    "匯入..."
+    "导入..."
   ],
   [
     "Export...",
-    "匯出..."
+    "导出..."
   ],
   [
     "Type tag name...",
-    "輸入標籤名稱..."
+    "输入标签名称..."
   ],
   [
     "Choose A Template",
-    "選擇一個模板"
+    "选择一个模板"
   ],
   [
     "Invalid Code",
-    "無效的代碼"
+    "无效的代码"
   ],
   [
     "Welcome back! Please enter your master password to unlock the app.",
-    "歡迎回來！請輸入您的主密碼以解鎖應用程式。"
+    "欢迎回来！请输入您的主密码以解锁应用程序。"
   ],
   [
     "Logged In As",
-    "登入為"
+    "登录为"
   ],
   [
     "Unlock",
-    "解鎖"
+    "解锁"
   ],
   [
     "Failed to unlock too many times. You will have to login again.",
-    "解鎖失敗次數過多。您需要重新登入。"
+    "解锁失败次数过多。您需要重新登录。"
   ],
   [
     "Failed To Unlock",
-    "解鎖失敗"
+    "解锁失败"
   ],
   [
     "Wrong password! Please try again.",
-    "密碼錯誤！請重試。"
+    "密码错误！请重试。"
   ],
   [
     "Are you sure you want to log out of this account?",
-    "您是否要從此帳戶登入？"
+    "您是否要从此账户退出？"
   ],
   [
     "Biometric unlock expired. Complete setup to reeneable.",
-    "生物識別解鎖已逾期。完成設置以重新啟用。"
+    "生物识别解锁已过期。完成设置以重新启用。"
   ],
   [
     "Biometric Unlock Failed",
-    "生物識別解鎖失敗"
+    "生物识别解锁失败"
   ],
   [
     "Biometric unlock failed! Reason: {0}",
-    "生物識別解鎖失敗！ (原因: {0})"
+    "生物识别解锁失败！ (原因: {0})"
   ],
   [
     "Storage limit exceeded!",
-    "已達儲存上限！"
+    "已达存储上限！"
   ],
   [
     "Upload failed! Please try again!",
-    "上傳失敗！請重試！"
+    "上传失败！请重试！"
   ],
   [
     "Upload Attachment",
-    "上傳附件"
+    "上传附件"
   ],
   [
     "uploading... {0}/{1}",
-    "上傳中... {0}/{1}"
+    "上传中... {0}/{1}"
   ],
   [
     "Unkown File Type",
-    "未知的檔案類型"
+    "未知的文件类型"
   ],
   [
     "Retry Upload",
-    "重新上傳"
+    "重新上传"
   ],
   [
     "Upload",
-    "上傳"
+    "上传"
   ],
   [
     "Please enter a Vault name!",
-    "請輸入密碼庫名稱！"
+    "请输入保管库名称！"
   ],
   [
     "Vault name required!",
-    "必須要有密碼庫名稱！"
+    "必须要有保管库名称！"
   ],
   [
     "Please enter a different Vault name!",
-    "請輸入一個不同的密碼庫名稱！"
+    "请输入一个不同的保管库名称！"
   ],
   [
     "Reserved Name!",
-    "已保留的名稱！"
+    "已保留的名称！"
   ],
   [
     "Please assign at least one member or group to this vault!",
-    "請指派至少一個成員或團隊至此密碼庫！"
+    "请指派至少一个成员或团队至此密码库！"
   ],
   [
     "Are you sure you want to delete this vault? All the data stored in it will be lost! This action can not be undone.",
-    "您確定要刪除此密碼庫嗎？其中的所有資料將會消失！此動作無法被還原。"
+    "您确定要删除此密码库吗？其中的所有数据将会消失！此操作无法被还原。"
   ],
   [
     "Delete Vault",
-    "刪除密碼庫"
+    "删除密码库"
   ],
   [
     "Vault deleted successfully!",
-    "密碼庫已成功刪除！"
+    "密码库已成功删除！"
   ],
   [
     "No vault selected.",
-    "沒有已選擇的密碼庫。"
+    "没有已选择的密码库。"
   ],
   [
     "No Groups have been given access to this vault yet.",
-    "尚未授予任何團隊此密碼庫的存取權。"
+    "尚未授予任何团队此密码库的访问权。"
   ],
   [
     "No Members have been given access to this vault yet.",
-    "尚未授予任何成員此密碼庫的存取權。"
+    "尚未授予任何成员此密码库的访问权。"
   ],
   [
     "The app could not establish a connection with our servers, please check your internet connection or try again later!",
-    "應用程式無法與我們的伺服器建立連線，請檢查您的網路連線或是稍後重試！"
+    "应用程序无法与我们的服务器建立连接，请检查您的网络连接或是稍后重试！"
   ],
   [
     "You don't have any items with weak passwords!",
-    "您沒有任何項目含有低強度密碼！"
+    "您没有任何项目含有低强度密码！"
   ],
   [
     "You don't have any items with reused passwords!",
-    "您沒有任何項目含有重複使用的密碼！"
+    "您没有任何项目含有重复使用的密码！"
   ],
   [
     "You don't have any items with compromised passwords!",
-    "您沒有任何項目含有已洩漏密碼！"
+    "您没有任何项目含有已泄露密码！"
   ],
   [
     "You don't have any expired items!",
-    "您沒有任何已到期的項目！"
+    "您没有任何已到期的项目！"
   ],
   [
     "You don't have any insecure items!",
-    "您沒有任何不安全的項目！"
+    "您没有任何不安全的项目！"
   ],
   [
     "Expired Items",
-    "已到期項目"
+    "已到期项目"
   ],
   [
     "Insecure",
@@ -2057,27 +2065,27 @@
   ],
   [
     "Passwords are considered weak if they're too short, don't have a lot of variation or contain commonly used words or phrases. These passwords generally don't offer enough protection against automated guessing attempts and should be replaced with strong, randomly generated passwords.",
-    "過短、變化過少或帶有常見單字的密碼將被視為低強度的。這些密碼通常沒有足夠的能力抵抗自動暴力破解，因此應該以一個高強度、自動產生的密碼取代。"
+    "过短、变化过少或带有常见单词的密码将被视为低强度的。这些密码通常没有足够的能力抵抗自动暴力破解，因此应该以一个高强度、自动生成的密码取代。"
   ],
   [
     "Using the same password in multiple places is strongly discouraged as a data leak in one of those places will automatically compromise all other accounts/logins using the same password. We recommend generating strong, random and unique passwords for every single vault item.",
-    "在多個地方使用相同的密碼會造成單一洩漏損害其他使用相同密碼之帳戶的安全。我們建議給每個項目使用使用一個高強度、隨機且獨一無二的密碼。"
+    "在多个地方使用相同的密码会造成单一泄露损害其他使用相同密码之账户的安全。我们建议给每个项目使用一个高强度、随机且独一无二的密码。"
   ],
   [
     "Compromised passwords are those that have been identified as having been leaked in the past by comparing them against a database of known data breaches. These passwords can no longer be considered secure and should be changed immediately.",
-    "已洩漏的密碼表示在資料庫中比對出相同的外洩密碼。這些密碼已經不再安全且應該被立即更改。"
+    "已泄露的密码表示在数据库中比对出相同的外泄密码。这些密码已经不再安全且应该被立即更改。"
   ],
   [
     "Expired items are those that have been identified as being past their set expiry date, which haven't been updated in a given number of days. These items should be rotated as soon as possible.",
-    "已經到達所設定期限而未有任何更新的項目，將被判定為已到期的項目。這些項目應該要儘快被輪換。"
+    "已经到达所设定期限而未有任何更新的项目，将被判定为已到期的项目。这些项目应该要尽快被轮换。"
   ],
   [
     "Card Number",
-    "卡號"
+    "卡号"
   ],
   [
     "Card Owner",
-    "卡片擁有者"
+    "卡片拥有者"
   ],
   [
     "Valid Until",
@@ -2085,23 +2093,23 @@
   ],
   [
     "CVC",
-    "安全碼"
+    "安全码"
   ],
   [
     "Notes",
-    "筆記"
+    "笔记"
   ],
   [
     "One-Time Password",
-    "一次性密碼"
+    "一次性密码"
   ],
   [
     "Other Username",
-    "其他使用者名稱"
+    "其他用户名称"
   ],
   [
     "Cardholder Name",
-    "卡片持有者名稱"
+    "卡片持有者名称"
   ],
   [
     "Expiry Date",
@@ -2109,7 +2117,7 @@
   ],
   [
     "Zip Code",
-    "郵遞區號"
+    "邮政编码"
   ],
   [
     "Full Name",
@@ -2117,7 +2125,7 @@
   ],
   [
     "Phone Number",
-    "電話號碼"
+    "电话号码"
   ],
   [
     "Address 1",
@@ -2133,7 +2141,7 @@
   ],
   [
     "Country",
-    "國家"
+    "国家"
   ],
   [
     "State",
@@ -2141,59 +2149,59 @@
   ],
   [
     "{0} on {1}",
-    "{0} 適用於 {1}"
+    "{0} 适用于 {1}"
   ],
   [
     "{0} Device",
-    "{0} 個裝置"
+    "{0} 个设备"
   ],
   [
     "Authentication type not supported!",
-    "不支援的驗證類型！"
+    "不支持的验证类型！"
   ],
   [
     "Setup Canceled",
-    "設置已取消"
+    "设置已取消"
   ],
   [
     "The request was canceled.",
-    "請求已取消。"
+    "请求已取消。"
   ],
   [
     "Your account has been frozen, meaning you can still access your existing data, but you won't be able to create new vault items or edit existing ones.",
-    "您的帳戶已被凍結，您依然可以存取已有密碼庫，但您無法創建新的或編輯現存的密碼庫。"
+    "您的账户已被冻结，您仍然可以访问已有密码库，但您无法创建新的或编辑现存的密码库。"
   ],
   [
     "Your account has been suspended, meaning you can no longer use this service. If you believe your account has been suspended in error, please contact your service administrator or customer support.",
-    "您的帳戶已被暫停，您不再能使用此服務。如果您覺得此暫停是個錯誤，請聯絡您的服務管理員或客戶支援。"
+    "您的账户已被暂停，您不再能使用此服务。如果您觉得此暂停是个错误，请联系您的服务管理员或客户支持。"
   ],
   [
     "You don't currently have permission to use this service. Please contact the service administrator to request access.",
-    "您目前沒有權限使用此服務。請聯絡服務管理員以請求存取權。"
+    "您目前没有权限使用此服务。请联系服务管理员以请求访问权。"
   ],
   [
     "Active",
-    "啟用"
+    "启用"
   ],
   [
     "Account Deleted",
-    "帳戶已刪除"
+    "账户已删除"
   ],
   [
     "Account Frozen",
-    "帳戶已凍結"
+    "账户已冻结"
   ],
   [
     "Account Suspended",
-    "帳戶已暫停"
+    "账户已暂停"
   ],
   [
     "Access Denied",
-    "存取被拒絕"
+    "访问被拒绝"
   ],
   [
     "Your session has expired. Please log in again!",
-    "您的連線階段已逾期。請重新登入！"
+    "您的连接会话已过期。请重新登录！"
   ],
   [
     "Some data associated with your account was saved with a newer version of this app and cannot be decoded. Please install the latest version!",
@@ -2205,19 +2213,19 @@
   ],
   [
     "Are you sure you want to leave this page? Any changes will be lost.",
-    "您是否要離開此頁面？將會遺失所有更改。"
+    "您是否要离开此页面？将会丢失所有更改。"
   ],
   [
     "A new update is ready to install! Do you want to install it now?",
-    "一個更新已準備好安裝！您是否要現在安裝？"
+    "一个更新已准备好安装！您是否要现在安装？"
   ],
   [
     "Install & Reload",
-    "安裝並重新載入"
+    "安装并重新加载"
   ],
   [
     "Later",
-    "稍後"
+    "稍后"
   ],
   [
     "Update Available",
@@ -2225,19 +2233,19 @@
   ],
   [
     "Created",
-    "已創建"
+    "已创建"
   ],
   [
     "Orgs",
-    "組織"
+    "组织"
   ],
   [
     "owner",
-    "擁有者"
+    "拥有者"
   ],
   [
     "Raw Data",
-    "原始資料"
+    "原始数据"
   ],
   [
     "Done",
@@ -2245,11 +2253,11 @@
   ],
   [
     "Accounts",
-    "帳戶"
+    "账户"
   ],
   [
     "Logs",
-    "記錄"
+    "记录"
   ],
   [
     "lines",
@@ -2257,23 +2265,23 @@
   ],
   [
     "Time",
-    "時間"
+    "时间"
   ],
   [
     "Class",
-    "類型"
+    "类型"
   ],
   [
     "User",
-    "使用者"
+    "用户"
   ],
   [
     "Device",
-    "裝置"
+    "设备"
   ],
   [
     "App Version",
-    "應用程式版本"
+    "应用程序版本"
   ],
   [
     "Location",
@@ -2285,23 +2293,23 @@
   ],
   [
     "Changes",
-    "改變"
+    "改变"
   ],
   [
     "Object",
-    "物件"
+    "对象"
   ],
   [
     "Audit Logs",
-    "審核記錄"
+    "审核记录"
   ],
   [
     "API Requests",
-    "API 請求"
+    "API 请求"
   ],
   [
     "Display events between",
-    "顯示其中的事件"
+    "显示其中的事件"
   ],
   [
     "and",
@@ -2309,39 +2317,39 @@
   ],
   [
     "Apply",
-    "應用"
+    "应用"
   ],
   [
     "Filter By Email Address...",
-    "以 Email 地址篩選..."
+    "以电子邮件地址筛选..."
   ],
   [
     "Action",
-    "動作"
+    "动作"
   ],
   [
     "Endpoint",
-    "終點"
+    "终点"
   ],
   [
     "Response Time",
-    "回應時間"
+    "响应时间"
   ],
   [
     "Delete Org",
-    "刪除組織"
+    "删除组织"
   ],
   [
     "Org",
-    "組織"
+    "组织"
   ],
   [
     "admin",
-    "管理員"
+    "管理员"
   ],
   [
     "Request",
-    "請求"
+    "请求"
   ],
   [
     "Method",
@@ -2349,31 +2357,31 @@
   ],
   [
     "Params",
-    "參數"
+    "参数"
   ],
   [
     "You have been granted access to this vault, but before you can see its contents somebody else with access to it has to log into their account first. Once you have full access, this warning will disappear automatically.",
-    "您已獲得此密碼庫的存取權。但在您可以看見其內容之前，任何一位有存取權的用戶必須登入帳戶。一旦您有完全存取權，此警告將自動消失。"
+    "您已获得此密码库的访问权。但在您可以看见其内容之前，任何一位有访问权的用户必须登录账户。一旦您有完全访问权，此警告将自动消失。"
   ],
   [
     "Local changes to this vault could not be synchronized because there was a problem retrieving information for this vault's organization. If this problem persists please contact customer support!",
-    "對此密碼庫的本機變更無法被同步，因為在取得密碼庫所屬組織的資訊時發生了錯誤。如果此問題持續發生，請聯絡客戶支援！"
+    "对此密码库的本地更改无法被同步，因为在获取密码库所属组织的信息时发生了错误。如果此问题持续发生，请联系客户支持！"
   ],
   [
     "Syncing local changes failed because the organization this vault belongs to is frozen.",
-    "對此密碼庫的本機變更無法被同步，因為此密碼庫屬於的組織已被凍結。"
+    "对此密码库的本地更改无法被同步，因为此密码库属于的组织已被冻结。"
   ],
   [
     "Syncing local changes failed because you don't have write permissions for this vault.",
-    "對此密碼庫的本機變更無法被同步，因為您沒有此密碼庫的寫入權限。"
+    "对此密码库的本地更改无法被同步，因为您没有此密码库的写入权限。"
   ],
   [
     "This group name is not available!",
-    "此團隊名稱不可用！"
+    "此团队名称不可用！"
   ],
   [
     "Open",
-    "開啟"
+    "打开"
   ],
   [
     "Date",
@@ -2385,27 +2393,27 @@
   ],
   [
     "Credit Card Number",
-    "信用卡卡號"
+    "信用卡卡号"
   ],
   [
     "PIN",
-    "PIN碼"
+    "PIN码"
   ],
   [
     "Plain Text",
-    "純文字"
+    "纯文本"
   ],
   [
     "Richtext / Markdown",
-    "富文字 / Markdown"
+    "富文本 / Markdown"
   ],
   [
     "Website / App",
-    "網站 / 應用程式"
+    "网站 / 应用程序"
   ],
   [
     "Computer",
-    "電腦"
+    "电脑"
   ],
   [
     "Credit Card",
@@ -2413,35 +2421,35 @@
   ],
   [
     "Bank Account",
-    "銀行帳戶"
+    "银行账户"
   ],
   [
     "Account Owner",
-    "帳戶擁有者"
+    "账户拥有者"
   ],
   [
     "IBAN",
-    "國際銀行帳戶號碼(IBAN)"
+    "国际银行账户号码(IBAN)"
   ],
   [
     "BIC",
-    "業務識別碼(BIC)"
+    "业务识别码(BIC)"
   ],
   [
     "Card PIN",
-    "卡片PIN碼"
+    "卡片PIN码"
   ],
   [
     "WIFI Password",
-    "WIFI密碼"
+    "WIFI密码"
   ],
   [
     "Passport",
-    "護照"
+    "护照"
   ],
   [
     "Passport Number",
-    "護照號碼"
+    "护照号码"
   ],
   [
     "Birthdate",
@@ -2453,15 +2461,15 @@
   ],
   [
     "Issued On",
-    "發行於"
+    "发行于"
   ],
   [
     "Note",
-    "筆記"
+    "笔记"
   ],
   [
     "Authenticator",
-    "驗證器"
+    "验证器"
   ],
   [
     "Document",
@@ -2469,10 +2477,34 @@
   ],
   [
     "Custom",
-    "自訂"
+    "自定义"
   ],
   [
     "unknown location",
     "未知的位置"
+  ],
+  [
+    "Hi there,",
+    "嗨，您好，"
+  ],
+  [
+    "Stranger",
+    "陌生人"
+  ],
+  [
+    "Let's set up your brand new {0} account! (This will only take a few moments.)",
+    "让我们为您设置一个新的 {0} 账户！（这只需要几分钟。）"
+  ],
+  [
+    "I have read and agree to the",
+    "我已阅读并同意"
+  ],
+  [
+    "Terms of Service",
+    "服务条款"
+  ],
+  [
+    "Add Tag...",
+    "添加标签..."
   ]
 ]

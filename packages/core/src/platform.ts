@@ -31,7 +31,7 @@ export class DeviceInfo extends Serializable {
     userAgent: string = "";
 
     /** The devices locale setting */
-    locale: string = "tw";
+    locale: string = "zh-CN";
 
     /** The device manufacturer, if available */
     manufacturer: string = "";

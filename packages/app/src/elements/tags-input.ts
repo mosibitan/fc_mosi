@@ -166,7 +166,7 @@ export class TagsInput extends LitElement {
 
                     <input
                         class="stretch"
-                        placeholder="Add Tag..."
+                        placeholder=${$l("Add Tag...")}
                         @keydown=${this._keydown}
                         @input=${() => this.requestUpdate()}
                         ?readonly=${this.readonly}
