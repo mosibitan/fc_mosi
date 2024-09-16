@@ -14,7 +14,7 @@
 // export function appSpec(): Spec {
 //     console.log("testing app");
 
-//     const clientUrl = "https://padloc.app";
+//     const clientUrl = "https://mosi.link";
 //     const messenger = new StubMessenger();
 //     const server = new Server(
 //         new ServerConfig({ clientUrl, reportErrors: "support@padloc.app" }),

@@ -2111,7 +2111,7 @@ export class Controller extends API {
         if (!provider) {
             throw new Err(
                 ErrorCode.NOT_SUPPORTED,
-                `This multi factor authentication type is not supported by this server!`
+                $l(`This multi factor authentication type is not supported by this server!`)
             );
         }
         return provider;

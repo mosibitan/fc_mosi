@@ -9,7 +9,7 @@
   ],
   [
     "It looks like the app cannot connect to the {0} servers right now, probably due to a missing internet connection. You can still access your vaults and even create or edit Vault Items but your changes won't be synchronized until you're back online.",
-    "应用程序现在似乎无法连线至服务器 {0} 。 您仍然可以编辑密码库中的项目，但需要在网络连线恢复时才会进行同步。"
+    "应用程序现在似乎无法连线至服务器 {0} 。 您仍然可以编辑保险库中的项目，但需要在网络连线恢复时才会进行同步。"
   ],
   [
     "You're Offline",
@@ -197,11 +197,11 @@
   ],
   [
     "New Vault Item",
-    "新密码库项目"
+    "新保险库项目"
   ],
   [
     "Select Vault",
-    "选择密码库"
+    "选择保险库"
   ],
   [
     "What kind of item you would like to add?",
@@ -245,7 +245,7 @@
   ],
   [
     "All Vaults",
-    "全部密码库"
+    "全部保险库"
   ],
   [
     "Export Data",
@@ -253,7 +253,7 @@
   ],
   [
     "Target Vault",
-    "目标密码库"
+    "目标保险库"
   ],
   [
     "Format",
@@ -437,15 +437,15 @@
   ],
   [
     "Vaults",
-    "密码库"
+    "保险库"
   ],
   [
     "No more Vaults available",
-    "没有更多密码库"
+    "没有更多保险库"
   ],
   [
     "Remove Vault",
-    "移除密码库"
+    "移除保险库"
   ],
   [
     "Write Permission",
@@ -457,7 +457,7 @@
   ],
   [
     "This group does not have access to any vaults yet.",
-    "此团队目前没有权限访问任何密码库"
+    "此团队目前没有权限访问任何保险库"
   ],
   [
     "by {0}",
@@ -677,7 +677,7 @@
   ],
   [
     "Move To Vault ...",
-    "移动到密码库..."
+    "移动到保险库..."
   ],
   [
     "Delete Item",
@@ -749,7 +749,7 @@
   ],
   [
     "Delete Vault Item",
-    "删除密码库项目"
+    "删除保险库项目"
   ],
   [
     "Items with attachments cannot be moved!",
@@ -785,7 +785,7 @@
   ],
   [
     "This vault does not have any items yet.",
-    "此密码库目前没有任何项目。"
+    "此保险库目前没有任何项目。"
   ],
   [
     "You don't have any attachments yet.",
@@ -821,7 +821,7 @@
   ],
   [
     "Some items in your selection are from Vaults you don't have write access to and cannot be deleted. Do you want to proceed deleting the other items?",
-    "您没有部分选择项目的密码库写入权限，因此无法删除。是否继续删除其他项目？"
+    "您没有部分选择项目的保险库写入权限，因此无法删除。是否继续删除其他项目？"
   ],
   [
     "Yes",
@@ -845,7 +845,7 @@
   ],
   [
     "Some items in your selection are from Vaults you don't have write access to and cannot be moved. Do you want to proceed moving the other items?",
-    "您没有部分选择项目的密码库写入权限，因此无法移动。是否继续移动其他项目？"
+    "您没有部分选择项目的保险库写入权限，因此无法移动。是否继续移动其他项目？"
   ],
   [
     "An account with this email address does not exist!",
@@ -972,8 +972,8 @@
     "删除旧版账户"
   ],
   [
-    "All done! Please note that you won't be able to access your Padloc 4 account with older versions of the app, so please make sure you have the latest version installed on all your devices! (You can find download links for all platforms at https://padloc.app/downloads/). Enjoy using Padloc 4!",
-    "大功告成！请留意您无法使用旧版本应用程序访问您的 Padloc 4 账户，所以请务必在您的所有设备使用最新版本！ (可以在 https://padloc.app/downloads/ 取得适用于所有平台的下载链接) 祝您使用愉快！"
+    "All done! Please note that you won't be able to access your Padloc 4 account with older versions of the app, so please make sure you have the latest version installed on all your devices! (You can find download links for all platforms at https://mosi.link/downloads/). Enjoy using Padloc 4!",
+    "大功告成！请留意您无法使用旧版本应用程序访问您的 Padloc 4 账户，所以请务必在您的所有设备使用最新版本！ (可以在 https://mosi.link/downloads/ 取得适用于所有平台的下载链接) 祝您使用愉快！"
   ],
   [
     "Migration Complete",
@@ -1089,7 +1089,7 @@
   ],
   [
     "Are you sure you want to make this member an admin? Admins can manage vaults, groups and permissions.",
-    "您确定要让成员成为管理员吗？管理员可以编辑密码库、团队及权限。"
+    "您确定要让成员成为管理员吗？管理员可以编辑保险库、团队及权限。"
   ],
   [
     "Make Admin",
@@ -1157,7 +1157,7 @@
   ],
   [
     "This member does not have access to any vaults yet.",
-    "此成员目前没有访问任何密码库的权限。"
+    "此成员目前没有访问任何保险库的权限。"
   ],
   [
     "Close",
@@ -1177,35 +1177,35 @@
   ],
   [
     "A newer version of {0} is required to synchronize this vault. Please update to the latest version now!",
-    "必须要使用新版本的 {0} 才能同步此密码库。请立即更新至最新版本！"
+    "必须要使用新版本的 {0} 才能同步此保险库。请立即更新至最新版本！"
   ],
   [
     "This vault could not be synchronized because you no longer have access to it.",
-    "因您不再有访问权限，此密码库无法同步"
+    "因您不再有访问权限，此保险库无法同步"
   ],
   [
     "This vault could not be synchronized because you currently don't have access to it's data.",
-    "因您目前无法访问数据，此密码库当前无法同步"
+    "因您目前无法访问数据，此保险库当前无法同步"
   ],
   [
     "An unknown error occured while synchronizing this vault. If this problem persists please contact customer support.",
-    "在同步密码库时发生了未知错误。如果持续发生此状况，请联系客户支持。"
+    "在同步保险库时发生了未知错误。如果持续发生此状况，请联系客户支持。"
   ],
   [
     "Vaults & Items",
-    "密码库与项目"
+    "保险库与项目"
   ],
   [
     "My Vault",
-    "我的密码库"
+    "我的保险库"
   ],
   [
     "New Vault",
-    "新密码库"
+    "新保险库"
   ],
   [
     "Enter Vault Name",
-    "输入密码库名称"
+    "输入保险库名称"
   ],
   [
     "Manage Tags",
@@ -1257,7 +1257,7 @@
   ],
   [
     "Vault",
-    "密码库"
+    "保险库"
   ],
   [
     "Move Item",
@@ -1289,11 +1289,11 @@
   ],
   [
     "This organization does not have any vaults yet.",
-    "此组织目前没有任何密码库。"
+    "此组织目前没有任何保险库。"
   ],
   [
     "Create Vault",
-    "创建密码库"
+    "创建保险库"
   ],
   [
     "Search...",
@@ -1301,7 +1301,7 @@
   ],
   [
     "Are you sure you want to delete this organization? All associated vaults and the data within them will be lost! This action can not be undone.",
-    "您确定要删除此组织吗？所有相关的密码库与其中的数据将会消失。此动作无法被还原。"
+    "您确定要删除此组织吗？所有相关的保险库与其中的数据将会消失。此动作无法被还原。"
   ],
   [
     "Delete Organization",
@@ -1413,11 +1413,11 @@
   ],
   [
     "IMPORTANT, READ CAREFULLY: {0} is designed in a way that makes it impossible for us to access the data encrypted in any of your vaults even if we wanted to. While this is essential to ensuring the security of your data, it also has the following implications:",
-    "重要，请详读： {0} 设计上使得我们无论如何都无法访问您密码库中的任何数据。这在确保数据安全的同时，也会造成以下影响："
+    "重要，请详读： {0} 设计上使得我们无论如何都无法访问您保险库中的任何数据。这在确保数据安全的同时，也会造成以下影响："
   ],
   [
     "Any data stored in your private vault can not be recovered and will be permantently lost.",
-    "任何保存在您私人密码库中的数据都将无法被还原并将永久遗失。"
+    "任何保存在您私人保险库中的数据都将无法被还原并将永久遗失。"
   ],
   [
     "All your organization memberships will be suspended temporarily until confirmed by the organization owner.",
@@ -1541,7 +1541,7 @@
   ],
   [
     "Are you sure you want to delete this account? All associated vaults and the data within them will be lost and any active subscriptions will be canceled immediately. This action can not be undone!",
-    "您确定要删除此账户吗？所有相关的密码库与其中的数据将会消失，所有现有订阅也将被取消。此操作无法被还原。"
+    "您确定要删除此账户吗？所有相关的保险库与其中的数据将会消失，所有现有订阅也将被取消。此操作无法被还原。"
   ],
   [
     "The following organizations are owned by you and will be deleted along with your account:",
@@ -2005,31 +2005,31 @@
   ],
   [
     "Please assign at least one member or group to this vault!",
-    "请指派至少一个成员或团队至此密码库！"
+    "请指派至少一个成员或团队至此保险库！"
   ],
   [
     "Are you sure you want to delete this vault? All the data stored in it will be lost! This action can not be undone.",
-    "您确定要删除此密码库吗？其中的所有数据将会消失！此操作无法被还原。"
+    "您确定要删除此保险库吗？其中的所有数据将会消失！此操作无法被还原。"
   ],
   [
     "Delete Vault",
-    "删除密码库"
+    "删除保险库"
   ],
   [
     "Vault deleted successfully!",
-    "密码库已成功删除！"
+    "保险库已成功删除！"
   ],
   [
     "No vault selected.",
-    "没有已选择的密码库。"
+    "没有已选择的保险库。"
   ],
   [
     "No Groups have been given access to this vault yet.",
-    "尚未授予任何团队此密码库的访问权。"
+    "尚未授予任何团队此保险库的访问权。"
   ],
   [
     "No Members have been given access to this vault yet.",
-    "尚未授予任何成员此密码库的访问权。"
+    "尚未授予任何成员此保险库的访问权。"
   ],
   [
     "The app could not establish a connection with our servers, please check your internet connection or try again later!",
@@ -2169,7 +2169,7 @@
   ],
   [
     "Your account has been frozen, meaning you can still access your existing data, but you won't be able to create new vault items or edit existing ones.",
-    "您的账户已被冻结，您仍然可以访问已有密码库，但您无法创建新的或编辑现存的密码库。"
+    "您的账户已被冻结，您仍然可以访问已有保险库，但您无法创建新的或编辑现存的保险库。"
   ],
   [
     "Your account has been suspended, meaning you can no longer use this service. If you believe your account has been suspended in error, please contact your service administrator or customer support.",
@@ -2361,19 +2361,19 @@
   ],
   [
     "You have been granted access to this vault, but before you can see its contents somebody else with access to it has to log into their account first. Once you have full access, this warning will disappear automatically.",
-    "您已获得此密码库的访问权。但在您可以看见其内容之前，任何一位有访问权的用户必须登录账户。一旦您有完全访问权，此警告将自动消失。"
+    "您已获得此保险库的访问权。但在您可以看见其内容之前，任何一位有访问权的用户必须登录账户。一旦您有完全访问权，此警告将自动消失。"
   ],
   [
     "Local changes to this vault could not be synchronized because there was a problem retrieving information for this vault's organization. If this problem persists please contact customer support!",
-    "对此密码库的本地更改无法被同步，因为在获取密码库所属组织的信息时发生了错误。如果此问题持续发生，请联系客户支持！"
+    "对此保险库的本地更改无法被同步，因为在获取保险库所属组织的信息时发生了错误。如果此问题持续发生，请联系客户支持！"
   ],
   [
     "Syncing local changes failed because the organization this vault belongs to is frozen.",
-    "对此密码库的本地更改无法被同步，因为此密码库属于的组织已被冻结。"
+    "对此保险库的本地更改无法被同步，因为此保险库属于的组织已被冻结。"
   ],
   [
     "Syncing local changes failed because you don't have write permissions for this vault.",
-    "对此密码库的本地更改无法被同步，因为您没有此密码库的写入权限。"
+    "对此保险库的本地更改无法被同步，因为您没有此保险库的写入权限。"
   ],
   [
     "This group name is not available!",
@@ -2506,5 +2506,37 @@
   [
     "Add Tag...",
     "添加标签..."
+  ],
+  [
+    "New MFA-Method",
+    "新 MFA 方法"
+  ],
+  [
+    "Add MFA-Method",
+    "添加 MFA 方法"
+  ],
+  [
+    "Hardware Key",
+    "硬件密钥"
+  ],
+  [
+    "Yubikey, Google Titan etc.",
+    "Yubikey, Google Titan 等。"
+  ],
+  [
+    "Google Authenticator, Authy etc.",
+    "Google Authenticator, Authy 等。"
+  ],
+  [
+    "This multi factor authentication type is not supported by this server!",
+    "此多重身份验证类型不受此服务支持！"
+  ],
+  [
+    "Please scan the following qr-code in your authenticator app, then enter the displayed code to confirm!",
+    "请在您的身份验证器应用程序中扫描以下二维码，然后输入显示的代码以确认！"
+  ],
+  [
+    "Enter Verification Code",
+    "输入验证码"
   ]
 ]

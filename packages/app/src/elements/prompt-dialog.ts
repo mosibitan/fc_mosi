@@ -105,11 +105,11 @@ export class PromptDialog extends Dialog<PromptOptions, any> {
                         class="${this.type === "destructive" ? "negative" : "primary"}"
                         @click=${() => this._confirm()}
                     >
-                        ${this.confirmLabel}
+                        ${$l(this.confirmLabel)}
                     </pl-button>
 
                     <pl-button @click=${() => this.done(null)} ?hidden=${!this.cancelLabel}>
-                        ${this.cancelLabel}
+                        ${$l(this.cancelLabel)}
                     </pl-button>
                 </div>
             </div>

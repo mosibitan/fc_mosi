@@ -1,11 +1,11 @@
 {
     "name": "padloc",
     "private": true,
-    "version": "4.3.0",
+    "version": "1.0.0",
     "description": "A minimalist password manager",
     "author": "Martin Kleinschrodt <martin@maklesoft.com>",
     "license": "GPL-3.0",
-    "homepage": "https://padloc.app/",
+    "homepage": "https://mosi.link/",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/padloc/padloc.git"

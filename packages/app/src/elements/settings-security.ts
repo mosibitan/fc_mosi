@@ -194,8 +194,8 @@ export class SettingsSecurity extends StateMixin(Routing(LitElement)) {
                 label: html`
                     <pl-icon icon="usb" class="large horizontally-half-margined"></pl-icon>
                     <div class="left-padded text-left-aligning stretch">
-                        <div>Hardware Key</div>
-                        <div class="small subtle">Yubikey, Google Titan etc.</div>
+                        <div>${$l("Hardware Key")}</div>
+                        <div class="small subtle">${$l("Yubikey, Google Titan etc.")}</div>
                     </div>
                 `,
             });
@@ -218,7 +218,7 @@ export class SettingsSecurity extends StateMixin(Routing(LitElement)) {
                     <pl-icon icon="totp" class="large horizontally-half-margined"></pl-icon>
                     <div class="left-padded text-left-aligning stretch">
                         <div>TOTP</div>
-                        <div class="small subtle">Google Authenticator, Authy etc.</div>
+                        <div class="small subtle">${$l("Google Authenticator, Authy etc.")}</div>
                     </div>
                 `,
             });
@@ -230,7 +230,7 @@ export class SettingsSecurity extends StateMixin(Routing(LitElement)) {
             $l("What kind of multi-factor authenticator would you like to add?"),
             choices.map((c) => c.label),
             {
-                title: "New MFA-Method",
+                title: $l("New MFA-Method"),
                 icon: "key",
             }
         );

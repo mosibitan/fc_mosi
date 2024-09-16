@@ -783,7 +783,7 @@ export class StripeProvisioner extends BasicProvisioner {
             case "unpaid":
                 account.status = ProvisioningStatus.Frozen;
                 account.actionLabel = "Learn More";
-                account.actionUrl = "https://padloc.app/help/"; // TODO: Point to specific article/section
+                account.actionUrl = "https://mosi.link/help/"; // TODO: Point to specific article/section
                 break;
             default:
                 account.status = ProvisioningStatus.Active;

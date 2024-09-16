@@ -15115,7 +15115,7 @@ let Settings = class Settings extends (0,_mixins_state__WEBPACK_IMPORTED_MODULE_
         (0,_lib_dialog__WEBPACK_IMPORTED_MODULE_4__.alert)((0,_padloc_locale_src_translate__WEBPACK_IMPORTED_MODULE_0__.translate)("Master password changed successfully."), { type: "success" });
     }
     _openWebsite() {
-        window.open("https://padloc.app", "_system");
+        window.open("https://mosi.link", "_system");
     }
     _sendMail() {
         const email = "support@padloc.app" || 0;
@@ -16296,7 +16296,7 @@ class StartForm extends _base__WEBPACK_IMPORTED_MODULE_3__.BaseElement {
             options: [(0,_padloc_locale_src_translate__WEBPACK_IMPORTED_MODULE_0__.translate)("Migrate"), (0,_padloc_locale_src_translate__WEBPACK_IMPORTED_MODULE_0__.translate)("Learn More"), (0,_padloc_locale_src_translate__WEBPACK_IMPORTED_MODULE_0__.translate)("Cancel")]
         });
         if (choice === 1) {
-            window.open("https://padloc.app/help/migrate-v3", "_system");
+            window.open("https://mosi.link/help/migrate-v3", "_system");
             return this._migrateAccount(email, password, legacyToken, signupToken, name);
         }
         else if (choice === 2) {
@@ -16343,7 +16343,7 @@ class StartForm extends _base__WEBPACK_IMPORTED_MODULE_3__.BaseElement {
             await (0,_lib_dialog__WEBPACK_IMPORTED_MODULE_5__.alert)((0,_padloc_locale_src_translate__WEBPACK_IMPORTED_MODULE_0__.translate)("All done! Please note that you won't be able to access your Padloc 3 account " +
                 "with older versions of the app, so please make sure you have the latest version installed " +
                 "on all your devices! (You can find download links for all platforms at " +
-                "https://padloc.app/downloads/). Enjoy using Padloc 3!"), {
+                "https://mosi.link/downloads/). Enjoy using Padloc 3!"), {
                 title: (0,_padloc_locale_src_translate__WEBPACK_IMPORTED_MODULE_0__.translate)("Migration Complete"),
                 type: "success"
             });
