@@ -1,3 +1,4 @@
+import { translate as $l } from "@padloc/locale/src/translate";
 export type MessageData = { [param: string]: string };
 
 /**
@@ -18,7 +19,7 @@ export class EmailAuthMessage extends Message<{ code: string; requestId: string 
 
     get title() {
         const appName = process.env.PL_APP_NAME;
-        return `${appName ? appName + " " : ""}Email Verification (Request ID: ${this.data.requestId})`;
+        return `${appName ? appName + " " : ""}${$l("Email Verification (Request ID: {0})", this.data.requestId)}`;
     }
 }
 

@@ -23,7 +23,9 @@ export function loadScript(src: string, global?: string): Promise<any> {
 
 export async function formatDateFromNow(date: Date | string | number, addSuffix = true) {
     const { formatDistanceToNow } = await import(/* webpackChunkName: "date-fns" */ "date-fns");
-    return formatDistanceToNow(new Date(date), { addSuffix });
+    const { zhCN } = await import(/* webpackChunkName: "date-fns-locale" */ "date-fns/locale");
+    const distance = formatDistanceToNow(new Date(date), { locale: zhCN });
+    return addSuffix ? `${distance}前` : distance;
 }
 
 export function formatDate(date: Date | string | number) {

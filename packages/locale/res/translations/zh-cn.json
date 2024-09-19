@@ -1213,11 +1213,11 @@
   ],
   [
     "Orgs & Teams",
-    "团队与小组"
+    "组织与团队"
   ],
   [
     "New Organization",
-    "新团队"
+    "新组织"
   ],
   [
     "Security Report",
@@ -1329,7 +1329,7 @@
   ],
   [
     "Do you want to rotate this organization's cryptographic keys? All organization memberships will have to be reconfirmed but no data will be lost.",
-    "您确定要倒换此组织的密钥？所有组织成员会需要重新确认，但不会对数据产生任何影响。"
+    "您确定要轮换此组织的密钥？所有组织成员会需要重新确认，但不会对数据产生任何影响。"
   ],
   [
     "Confirm",
@@ -1337,7 +1337,7 @@
   ],
   [
     "The organization's cryptographic keys have been rotated successfully and membership confirmation requests for all members have been sent out.",
-    "组织的密钥已倒换成功，且所有成员的确认请求也已经发送。"
+    "组织的密钥已轮换成功，且所有成员的确认请求也已经发送。"
   ],
   [
     "Do you want to enable Directory Sync via SCIM for this organization? You will be given a unique URL to provide to your Active Directory or LDAP server for synchronizing and provisioning members.",
@@ -1353,7 +1353,7 @@
   ],
   [
     "Rotate Cryptographic Keys",
-    "倒换密钥"
+    "轮换密钥"
   ],
   [
     "Change Organization Name",
@@ -2538,5 +2538,29 @@
   [
     "Enter Verification Code",
     "输入验证码"
+  ],
+  [
+    "Enter Group Name",
+    "输入团队名称"
+  ],
+  [
+    "Email Authentication",
+    "电子邮件身份验证"
+  ],
+  [
+    "Please enter the six digit verification code sent to {0}!",
+    "请输入发送到 {0} 的六位验证码！"
+  ],
+  [
+    "Sent:",
+    "发送于："
+  ],
+  [
+    "Subject:",
+    "主题："
+  ],
+  [
+    "Email Verification (Request ID: {0})",
+    "电子邮件验证（请求 ID：{0}）"
   ]
 ]

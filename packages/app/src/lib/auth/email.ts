@@ -23,8 +23,8 @@ export class EmailAuthClient implements AuthClient {
                     ${$l(`Please enter the six digit verification code sent to {0}!`, email)}
                 </div>
                 <div class="tiny subtle top-margined">
-                    <span class="semibold">Sent:</span> ${sentString}<br />
-                    <span class="semibold">Subject:</span> ${subject}
+                    <span class="semibold">${$l("Sent:")}</span> ${sentString}<br />
+                    <span class="semibold">${$l("Subject:")}</span> ${subject}
                 </div>`;
         };
 

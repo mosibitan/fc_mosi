@@ -262,7 +262,7 @@ export class GroupView extends Routing(StateMixin(LitElement)) {
 
                     <pl-input
                         class="transparent large bold skinny stretch"
-                        placeholder="Enter Group Name"
+                        placeholder=${$l("Enter Group Name")}
                         id="nameInput"
                         @input=${() => this.requestUpdate()}
                     >
