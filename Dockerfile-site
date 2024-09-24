@@ -7,7 +7,7 @@ WORKDIR /padloc
 COPY packages/site/package*.json ./packages/site/
 
 # Install dependencies and bootstrap packages
-RUN npm ci --unsafe-perm
+RUN npm install
 
 # Now copy over source files and assets
 COPY packages/site/src ./packages/site/src
