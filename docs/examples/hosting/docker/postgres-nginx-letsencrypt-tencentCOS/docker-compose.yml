@@ -1,9 +1,12 @@
 version: "3.7"
 services:
     server:
+        image: mosilink/mosi-server
         build:
             context: ../../../../../
             dockerfile: Dockerfile-server
+            args:
+                - IMAGE_NAME=mosilink/mosi-server
         env_file: .env
         environment:
             - PL_DATA_BACKEND=postgres
@@ -35,8 +38,22 @@ services:
         build:
             context: ../../../../../
             dockerfile: Dockerfile-pwa
+            args:
+                - IMAGE_NAME=mosilink/mosi-pwa
         volumes:
             - pwa:/pwa
+        command: ["build"]
+        restart: on-failure
+    site:
+        environment:
+            PL_SITE_DIR: /site
+        build:
+            context: ../../../../../
+            dockerfile: Dockerfile-site
+            args:
+                - IMAGE_NAME=mosilink/mosi-site
+        volumes:
+            - site:/site
         command: ["build"]
         restart: on-failure
     nginx:
@@ -47,6 +64,7 @@ services:
         restart: always
         volumes:
             - pwa:/pwa
+            - site:/site
             - ./nginx.conf:/etc/nginx/nginx.conf
             - /etc/letsencrypt/live/$PL_HOSTNAME/fullchain.pem:/tls/cert
             - /etc/letsencrypt/live/$PL_HOSTNAME/privkey.pem:/tls/key
@@ -68,3 +86,4 @@ volumes:
     data:
     attachments:
     pwa:
+    site:

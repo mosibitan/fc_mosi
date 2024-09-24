@@ -1,0 +1,21 @@
+@@include('header.htm')
+
+@@include('components/navbar.htm',{
+"nav": "contact"
+})
+
+<!-- @@include('components/single-page-hero.htm',{
+"inner-page-hero-title": "Contact us <br> for any Question & Needs",
+"col":"col-lg-6",
+"display":"d-none",
+"padding" : "pt-22 pb-10",
+}) -->
+@@include('components/contact-hero.htm',{
+  "inner-page-hero-title": "联系我们 <br> 解答任何问题和需求",
+  "hero-inner-class": "contact-hero"
+})
+@@include('components/contact-form.htm')
+
+@@include('components/footer.htm')
+
+@@include('footer.htm')

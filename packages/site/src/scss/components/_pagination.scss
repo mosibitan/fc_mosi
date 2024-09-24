@@ -1,0 +1,146 @@
+/********** 
+  17. Pagination Section Styles
+**********/
+.pagination {
+  align-items: center;
+  margin-bottom: 0;
+  background: $color-gray;
+  @include media-breakpoint-down-md {
+    justify-content: center;
+  }
+  .page-item {
+    &:focus-visible {
+      outline: 0;
+    }
+    &:nth-child(1) {
+      margin-right: auto;
+      border: none;
+    }
+    &:last-child {
+      .page-link {
+        display: block;
+        svg {
+          transform: translate(-5px, 2px);
+          @include media-breakpoint-down-sm {
+            transform: translate(-6px, 2px);
+            width: 15px;
+            height: 15px;
+          }
+        }
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    .page-link {
+      font-size: $base-font-size;
+      padding: 6px 12px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-weight: $medium-font-weight;
+      transition: $base-transition;
+      .icon {
+        margin-left: 16px;
+        @include media-breakpoint-down-sm {
+          margin-left: 0;
+        }
+      }
+      svg {
+        display: block;
+      }
+      &:hover {
+        color: $color-primary;
+        background-color: #ebebeb;
+        border-color: transparent;
+        border-radius: 8px;
+      }
+    }
+    &.active {
+      .page-link {
+        color: $color-primary;
+        background-color: #ebebeb;
+        border-color: transparent;
+        border-radius: 8px;
+      }
+    }
+    .page-link:focus,
+    .page-link:focus-visible {
+      color: $color-primary;
+      background-color: transparent;
+      border-color: transparent;
+      border-radius: 8px;
+      box-shadow: none;
+    }
+  }
+}
+.page-item.disabled .page-link {
+  font-size: $base-font-size !important;
+  font-weight: $medium-font-weight !important;
+  color: #060a11 !important;
+  &:hover {
+    color: #060a11 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    border-radius: 0 !important;
+  }
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  color: $color-black;
+  background-color: $color-white;
+  border: 1px solid rgba(7, 12, 19, 0);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: $bold-font-weight;
+  width: 40px;
+  height: 40px;
+  @include media-breakpoint-down-sm {
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    z-index: 2;
+    color: $color-primary;
+    background-color: #ebebeb;
+    border-color: transparent;
+  }
+
+  &:focus {
+    z-index: 3;
+    color: $color-primary;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.page-item {
+  margin-right: 8px;
+  @include media-breakpoint-down-sm {
+    margin-right: 4px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:not(:first-child) .page-link {
+    margin-left: 0;
+  }
+
+  &.active .page-link {
+    z-index: 3;
+    color: $color-primary;
+    border-color: transparent;
+  }
+
+  &.next-page .page-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background: transparent !important;
+    }
+  }
+}

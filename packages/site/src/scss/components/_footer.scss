@@ -1,0 +1,96 @@
+/********** 
+15. Footer Section Styles
+**********/
+.footer {
+  position: relative;
+  padding-bottom: 90px;
+  background: $color-secondary;
+  @include media-breakpoint-down-lg {
+    padding-bottom: 60px;
+  }
+  &-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    @include media-breakpoint-down-md {
+      //text-align: center;
+      padding: 0 10px;
+    }
+    .footer-logo {
+      @include media-breakpoint-down-lg {
+        margin-bottom: 0;
+      }
+      a {
+        margin-bottom: 48px;
+        @include media-breakpoint-down-lg {
+          margin-bottom: 16px;
+        }
+        @include media-breakpoint-down-md {
+          margin-bottom: 8px;
+        }
+      }
+      @include media-breakpoint-down-lg {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-widget {
+    h6 {
+      margin-bottom: 40px;
+      color: $color-text;
+      font-family: $font-primary;
+      font-size: 14px;
+      font-weight: normal;
+      @include media-breakpoint-down-md {
+        margin-bottom: 24px;
+      }
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        display: block;
+        a {
+          padding: 14px 0px 14px;
+          color: $color-text;
+          font-weight: $medium-font-weight;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  &-social-items {
+    border-top: 1px solid #ebebeb;
+    margin-top: 20px;
+    padding-top: 20px;
+    ul {
+      gap: 10px;
+    }
+    li {
+      a {
+        width: 48px;
+        height: 48px;
+        position: relative;
+        border-radius: 100%;
+        background: $color-primary;
+        transition: $base-transition;
+        border: 1px solid $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        line-height: 14px;
+        font-size: 28px;
+        &:hover {
+          transition: $base-transition;
+          background: $color-white;
+          color: $color-primary;
+        }
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

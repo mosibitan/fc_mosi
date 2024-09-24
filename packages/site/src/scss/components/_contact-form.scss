@@ -1,0 +1,212 @@
+/********** 
+ 19. Contact Form Page Styles
+**********/
+.contact-form {
+  position: relative;
+  background: $color-gray;
+  @include media-breakpoint-down-md {
+    margin-bottom: 100px;
+  }
+  .shape-carve-top {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    width: 100%;
+    //z-index: -1;
+    svg {
+      width: 100%;
+      path {
+        stroke: $color-border;
+        fill: $color-gray;
+      }
+    }
+  }
+  .btn {
+    &:hover {
+      color: $color-header;
+    }
+    &-submit {
+      font-size: 18px;
+    }
+    &-social {
+      font-size: 16px;
+    }
+  }
+  &-body {
+    background: $color-white;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    max-width: 65%;
+    margin-inline: auto;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
+    //z-index: 1;
+    h2 {
+      font-size: $base-font-size * 3.125;
+      color: $color-header;
+      line-height: 1.4;
+      text-align: center;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid $color-border;
+    }
+    @include media-breakpoint-down-xxl {
+      padding: 70px 100px 100px;
+    }
+    @include media-breakpoint-down-xl {
+      padding: 70px;
+    }
+    @include media-breakpoint-down-md {
+      padding: 50px 30px;
+      max-width: 100%;
+    }
+  }
+  &-items {
+    label {
+      color: $color-header;
+      font-size: $base-font-size;
+      font-weight: $medium-font-weight;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    textarea {
+      min-height: 210px;
+      resize: none;
+      margin-bottom: 50px;
+    }
+  }
+  &-radio-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include media-breakpoint-down-xl {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include media-breakpoint-down-md {
+      justify-content: flex-start;
+    }
+    @include media-breakpoint-down-sm {
+    }
+    &-item {
+      label {
+        margin-bottom: 0;
+        @include media-breakpoint-down-xl {
+          margin-bottom: 12px;
+        }
+        @include media-breakpoint-down-md {
+          padding: 10px 8px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .btn-check:checked[type="radio"] + label {
+    background: $color-border;
+    color: $color-header !important;
+  }
+  .login {
+    padding: 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    @include media-breakpoint-down-xxl {
+      padding: 70px 100px 100px;
+    }
+    @include media-breakpoint-down-xl {
+      padding: 70px;
+    }
+    @include media-breakpoint-down-md {
+      padding: 50px 30px;
+    }
+    .form-check {
+      opacity: 0.8;
+      .forget-password {
+        color: $color-header;
+      }
+    }
+    .form-check-input {
+      background-color: transparent;
+      border-color: $color-border;
+      border-radius: 4px;
+      // & + label{
+      //   font-weight: $font-weight-base;
+      // }
+    }
+    .create-account {
+      font-size: $base-font-size * 1.25;
+      font-weight: $semibold-font-weight;
+      line-height: 1.75;
+      text-align: center;
+      color: $color-header;
+      display: block;
+      margin-top: 8px;
+    }
+    .input-group-text {
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px solid $color-border;
+      border-left-width: 0;
+      margin-left: 0 !important;
+      cursor: pointer;
+    }
+    .has-right-icon {
+      border-right-width: 0;
+    }
+  }
+  .input-group-password {
+    display: block;
+    .form-control {
+      width: 100%;
+      border: 1px solid $color-border;
+      border-radius: 10px !important;
+      &:focus {
+        color: $color-header;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: $color-primary;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    .input-group-text {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      border: 0;
+      background: transparent;
+      z-index: 11;
+      transform: translateY(-50%);
+      margin-right: 10px;
+      font-size: $base-font-size * 1.5;
+      color: $color-header;
+      padding: 0;
+    }
+  }
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $color-header;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border: 1px solid $color-border;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    color: $color-header;
+    border-color: $color-primary;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%231fadad' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}

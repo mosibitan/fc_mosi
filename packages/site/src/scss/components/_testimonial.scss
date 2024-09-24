@@ -1,0 +1,91 @@
+/********** 
+  11. Testimonial Section Styles 
+**********/
+.testimonial {
+  background-color: $color-primary;
+  position: relative;
+  &-profile {
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-down-lg {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    img {
+      border-radius: 10px;
+      max-width: 100%;
+    }
+    .pattem {
+      position: absolute;
+      top: -11%;
+      left: -15%;
+      z-index: -1;
+      @include media-breakpoint-down-lg {
+        left: 18%;
+      }
+      @include media-breakpoint-down-md {
+        left: 7%;
+      }
+    }
+  }
+  &-content {
+    padding-left: 17px;
+    padding-right: 32px;
+    @include media-breakpoint-down-xxl {
+      padding: 0;
+    }
+    @include media-breakpoint-down-lg {
+      text-align: center;
+    }
+    h2 {
+      font-size: $base-font-size * 1.9;
+      font-family: $font-primary;
+      font-weight: $bold-font-weight;
+      margin-bottom: 50px;
+      color: $color-white;
+      @include media-breakpoint-down-xxl {
+        margin-bottom: 48px;
+      }
+      @include media-breakpoint-down-xxl {
+        font-size: $base-font-size * 1.5;
+        margin-bottom: 32px;
+      }
+    }
+    .info {
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        @include media-breakpoint-down-lg {
+          justify-content: center;
+        }
+        h5 {
+          margin-bottom: 0;
+          color: $color-white;
+          font-size: $base-font-size * 1.1;
+          font-family: $font-primary;
+          font-weight: $medium-font-weight;
+          margin-left: 30px;
+          padding-left: 14px;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 2px;
+            background: $color-white;
+            top: 50%;
+            left: -7%;
+          }
+        }
+      }
+      h4 {
+        font-size: $base-font-size * 1.5;
+        font-family: $font-primary;
+        font-weight: $semibold-font-weight;
+        color: $color-white;
+      }
+    }
+  }
+}

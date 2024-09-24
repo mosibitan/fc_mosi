@@ -1,0 +1,107 @@
+/********** 
+  10. Access Section Styles
+**********/
+.access {
+  padding-bottom: 40px;
+  background: $color-secondary-dark;
+  position: relative;
+  @include media-breakpoint-down-xl {
+    padding-bottom: 0;
+  }
+  .shape-carve-top {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    @include media-breakpoint-down-xxl {
+      top: -40px;
+    }
+    @include media-breakpoint-down-xl {
+      top: -30px;
+    }
+    @include media-breakpoint-down-lg {
+      top: -20px;
+    }
+    @include media-breakpoint-down-sm {
+      top: -12px;
+    }
+    svg {
+      width: 100%;
+      path {
+        fill: $color-secondary-dark;
+      }
+    }
+  }
+  .shape-carve-bottom {
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    width: 100%;
+    svg {
+      width: 100%;
+    }
+    @include media-breakpoint-down-xxl {
+      bottom: -40px;
+    }
+    @include media-breakpoint-down-xl {
+      bottom: -30px;
+    }
+    @include media-breakpoint-down-lg {
+      bottom: -20px;
+    }
+    @include media-breakpoint-down-sm {
+      bottom: -12px;
+    }
+  }
+  .section-header {
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+  .access-wrapper {
+    display: inline-block;
+    text-align: center;
+    .item {
+      text-align: center;
+      display: inline-block;
+      width: 200px;
+      margin-bottom: 56px;
+      @include media-breakpoint-down-xxl {
+        width: 180px;
+      }
+      @include media-breakpoint-down-lg {
+        width: 165px;
+      }
+      .logo {
+        width: 86px;
+        height: 86px;
+        background: #e4fbff;
+        line-height: 86px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        margin: 0 auto 24px;
+        svg {
+          path {
+            transition: all 0.3s ease-in-out;
+            fill: #383b3f;
+          }
+        }
+      }
+      p {
+        font-size: $base-font-size * 1.2;
+        font-weight: $medium-font-weight;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid $color-secondary-dark-border;
+  }
+
+  .accordion-item, .accordion-button {
+    background-color: $color-secondary-dark;
+  }  
+}

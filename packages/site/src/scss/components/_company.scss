@@ -1,0 +1,170 @@
+/********** 
+  7. Company Page and Sections Styles
+**********/
+.company {
+  position: relative;
+  margin-top: -350px;
+  margin-bottom: 24px;
+  @include media-breakpoint-down-lg {
+    margin-top: -160px;
+  }
+  @include media-breakpoint-down-md {
+    margin-top: -128px;
+  }
+  .section-header {
+    padding-top: 0;
+    margin-top: -144px;
+    margin-bottom: 64px;
+    @include media-breakpoint-down-lg {
+      margin-top: -80px;
+    }
+    @include media-breakpoint-down-md {
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    .shape {
+      top: 75%;
+      @include media-breakpoint-down-sm {
+        top: 84%;
+      }
+    }
+  }
+  .client-wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    @include media-breakpoint-down-lg {
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down-sm {
+      display: block;
+    }
+    .item {
+      @include media-breakpoint-down-lg {
+        margin-bottom: 32px;
+        @include media-breakpoint-down-lg {
+          flex-basis: 33%;
+        }
+        @include media-breakpoint-down-md {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+}
+
+/* Company Details Page*/
+.company-details {
+  position: relative;
+  background: $color-gray;
+  margin-top: 56px;
+  .shape-carve-top {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    width: 100%;
+    z-index: -11;
+  }
+  &-thumb {
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 20px);
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    svg {
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: $color-secondary;
+      border-radius: 10px;
+      border: 3px solid $color-primary;
+      left: 20px;
+      top: 20px;
+      z-index: -1;
+    }
+  }
+  &-info {
+    h2 {
+      font-size: $base-font-size * 2.625;
+      margin-bottom: 44px;
+      @include media-breakpoint-down-md {
+        font-size: $base-font-size * 2;
+      }
+    }
+    p {
+      font-size: $base-font-size * 1.5;
+      font-weight: $semibold-font-weight;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      @include media-breakpoint-down-md {
+        font-size: $base-font-size;
+      }
+    }
+  }
+}
+
+/* Company Accordion Section */
+.company-accordion {
+  position: relative;
+  background: $color-gray;
+  margin-top: 56px;
+  .shape-carve-top {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    width: 100%;
+    z-index: -11;
+  }
+  .accordion-item {
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 0;
+    padding: 30px 0;
+  }
+  .accordion-button {
+    background: transparent;
+    font-family: $font-primary;
+    font-weight: 900;
+    font-size: $base-font-size * 1.875;
+    line-height: 1.6;
+    color: $color-black;
+    //padding: $padding * 2.5 0;
+    @include media-breakpoint-down-md {
+      font-size: $base-font-size * 1.5;
+      //padding: $padding * 1.5 0;
+    }
+    &::after {
+      width: 40px;
+      height: 40px;
+      background-size: 40px;
+      transition: $base-transition;
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    //padding: $padding *2.5  0 0;
+    color: $color-black;
+    background: transparent;
+    box-shadow: none;
+    &::after {
+      rotate: 0;
+    }
+  }
+  .accordion-body {
+    padding: 16px 0 0;
+    p {
+      max-width: 800px;
+      margin-bottom: 0;
+    }
+  }
+}

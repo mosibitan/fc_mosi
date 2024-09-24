@@ -1,0 +1,58 @@
+<!--
+  #############
+  Feature Hero Section-->
+<section class="feature-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="feature-hero-dashboard"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-once="true"
+        >
+          <div class="dashboard-shape-one">
+            <img
+              src="images/feature/feature-card-one.png"
+              alt="svg"
+            />
+          </div>
+          <div class="dashboard-shape-two">
+            <img
+              src="images/feature/feature-card-two.png"
+              alt="svg"
+            />
+          </div>
+          <img
+            src="images/feature/feature-dashboard.png"
+            alt="feature-dashboard"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener("load", () => {
+      const frame = document.querySelector(".morphing-frame");
+      setInterval(() => {
+          if (frame.classList.contains("desktop")) {
+              frame.classList.replace("desktop", "phone");
+              return;
+          }
+          if (frame.classList.contains("phone")) {
+              frame.classList.replace("phone", "tablet");
+              return;
+          }
+          if (frame.classList.contains("tablet")) {
+              frame.classList.replace("tablet", "browser");
+              return;
+          }
+          if (frame.classList.contains("browser")) {
+              frame.classList.replace("browser", "desktop");
+              return;
+          }
+      }, 3000);
+  });
+</script>

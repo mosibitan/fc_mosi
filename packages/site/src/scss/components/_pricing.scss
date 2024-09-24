@@ -1,0 +1,463 @@
+/********** 
+  13. Pricing Page and Section Styles
+**********/
+.pricing {
+  background: $color-secondary;
+  position: relative;
+
+  .shape-carve-top {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 100%;
+
+    @include media-breakpoint-down-xxl {
+      top: -40px;
+    }
+
+    @include media-breakpoint-down-xl {
+      top: -30px;
+    }
+
+    @include media-breakpoint-down-lg {
+      top: -20px;
+    }
+
+    @include media-breakpoint-down-sm {
+      top: -12px;
+    }
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .shape-carve-bottom {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 100%;
+
+    @include media-breakpoint-down-xxl {
+      bottom: -40px;
+    }
+
+    @include media-breakpoint-down-xl {
+      bottom: -30px;
+    }
+
+    @include media-breakpoint-down-lg {
+      bottom: -20px;
+    }
+
+    @include media-breakpoint-down-sm {
+      bottom: -12px;
+    }
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  // start-pticing-item-shape
+  &-shape-one,
+  &-shape-two {
+    position: absolute;
+    top: 21%;
+    left: 25%;
+
+    // animation-name: left-right-animation;
+    // animation-duration: 2.5s;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate;
+    @include media-breakpoint-down-xxl {
+      top: 25%;
+      left: 17%;
+    }
+
+    @include media-breakpoint-down-xl {
+      left: 7%;
+    }
+
+    @include media-breakpoint-down-lg {
+      top: 12%;
+    }
+
+    @include media-breakpoint-down-sm {
+      top: 10%;
+      display: none;
+    }
+  }
+
+  &-shape-two {
+    top: 77%;
+    left: 67%;
+
+    @include media-breakpoint-down-xxl {
+      top: 82%;
+      left: 73%;
+    }
+
+    @include media-breakpoint-down-xl {
+      top: 85%;
+      left: 80%;
+    }
+
+    @include media-breakpoint-down-lg {
+      left: 77%;
+      top: 90%;
+    }
+
+    @include media-breakpoint-down-lg {
+      left: 77%;
+      top: 90%;
+    }
+
+    @include media-breakpoint-down-md {
+      left: 70%;
+      top: 91%;
+    }
+
+    @include media-breakpoint-down-sm {
+      left: 75%;
+      display: none;
+    }
+  }
+
+  // start-section-header
+  .section-header {
+    padding-bottom: 85px;
+
+    h2 {
+      @include media-breakpoint-down-md {
+        font-size: $base-font-size * 2.5;
+        line-height: 1.4;
+      }
+    }
+
+    .shape {
+      top: 75%;
+    }
+  }
+
+  .card {
+    transition: all 0.4s ease-in-out;
+    padding: 46px 40px 55px;
+    background: $color-gray;
+    border-radius: 10px;
+    box-shadow: none;
+    z-index: 100;
+    text-align: left;
+    margin-bottom: 24px;
+    transform: translateY(5px);
+    transform: scale(1);
+    overflow: hidden;
+
+    @include media-breakpoint-down-lg {
+      margin: 0 48px 32px;
+    }
+
+    @include media-breakpoint-down-sm {
+      margin: 0 0 32px;
+      padding: 46px 24px 55px;
+    }
+
+    .price {
+      font-size: 20px;
+      margin-bottom: 26px;
+      transition: all 0.4s ease-in-out;
+      color: $color-black;
+
+      span {
+        font-size: $base-font-size * 2.8;
+        font-family: $font-primary;
+        font-weight: 900;
+        transition: all 0.4s ease-in-out;
+
+        @include media-breakpoint-down-md {
+          font-size: $base-font-size * 2.25;
+        }
+      }
+    }
+
+    .card-title {
+      font-size: $base-font-size * 1.9;
+      font-family: $font-primary;
+      font-weight: $medium-font-weight;
+      color: $color-text;
+      margin-bottom: 16px;
+
+      @include media-breakpoint-down-md {
+        font-size: $base-font-size * 1.5;
+      }
+    }
+
+    .card-text {
+      font-size: $base-font-size * 1.25;
+      line-height: 28px;
+      margin-bottom: 50px;
+
+      @include media-breakpoint-down-md {
+        font-size: $base-font-size;
+      }
+    }
+
+    &-body {
+      padding: 0;
+
+      ul {
+        margin-bottom: 60px;
+
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 27px;
+
+          i {
+            margin-right: 14px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .deactive {
+          color: #ababab;
+        }
+      }
+
+      .link {
+        a {
+          transition: all 0.4s ease-in-out;
+          font-weight: $medium-font-weight;
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      transform: scaleX(0);
+      transition: transform 0.5s ease-in-out;
+      transform-origin: right;
+      background: $color-primary;
+    }
+
+    .link {
+      a {
+        color: $color-primary;
+        background: $color-white;
+
+        &:hover {
+          background: $color-primary;
+          color: $color-white;
+        }
+
+        &:focus,
+        &:hover:focus {
+          color: $color-primary !important;
+          background: $color-white;
+        }
+      }
+    }
+
+    &.featured {
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+
+      .price {
+        color: $color-primary;
+      }
+
+      .link {
+        a {
+          background: $color-primary;
+          color: $color-white;
+
+          &:hover {
+            color: $color-primary;
+            background: $color-white;
+          }
+
+          &:focus,
+          &:hover:focus {
+            color: $color-primary;
+            background: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  /* Pricing in Inner Page section */
+  &-inner {
+    background: transparent;
+    overflow: hidden;
+
+    .section-header {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    .shapes {
+      @include media-breakpoint-down-md {
+        display: none;
+      }
+
+      &-item-1 {
+        position: absolute;
+        left: 20%;
+        top: -20px;
+      }
+
+      &-item-2 {
+        position: absolute;
+        right: 24%;
+        top: -30px;
+      }
+
+      &-item-3 {
+        position: absolute;
+        right: 13%;
+        bottom: 50%;
+      }
+
+      &-item-4 {
+        position: absolute;
+        left: 30%;
+        bottom: 5px;
+      }
+
+      &-item-5 {
+        position: absolute;
+        left: 16%;
+        bottom: -160px;
+      }
+
+      &-item-6 {
+        position: absolute;
+        right: 19%;
+        bottom: 0;
+      }
+    }
+
+    .pricing-shape-one {
+      top: 32%;
+      left: 26%;
+
+      @include media-breakpoint-only-lg {
+        left: 5%;
+      }
+    }
+
+    .pricing-shape-two {
+      top: 86%;
+      left: 68%;
+
+      @include media-breakpoint-only-lg {
+        left: 81%;
+      }
+    }
+
+    &-title {
+      font-size: $base-font-size * 3.125;
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    .card {
+      background: #fdfdfd;
+
+      &.featured {
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+.billing-plans-wrapper {
+  margin: 0 auto;
+  max-width: 55em
+}
+
+.billing-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  grid-gap: 1em
+}
+
+.billing-plan {
+  padding: 1em .5em .5em .5em;
+  border-radius: .5em;
+  transition: all .3s;
+  cursor: pointer;
+  will-change: transform
+}
+
+.billing-plan:hover {
+  box-shadow:0 15px 25px rgba(0,0,0,0.05);
+  transform: scale(1.02);
+  color: $color-text;
+}
+
+.billing-plan-name {
+  font-size: var(--font-size-huge);
+  text-align: center;
+  margin-bottom: .5em;
+  font-weight: 700;
+  letter-spacing: .05em
+}
+
+.billing-plan-price {
+  font-size: var(--font-size-small);
+  margin: 2em 0 1em 0;
+  text-align: center
+}
+
+.billing-cta-button {
+  padding: .8em;
+  text-align: center;
+  border-radius: .5em;
+  display: block;
+  color: $color-primary-dark;
+  font-weight: 700;
+  margin-top: .5em
+}
+
+.billing-cta-button i {
+  transition: all .3s;
+  display: inline-block;
+  width: 1em
+}
+
+.billing-plan:not(:hover) .billing-cta-button i {
+  width: 0;
+  opacity: 0
+}
+
+.billing-tabs button {
+  font-weight: 600;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: inherit;
+  padding: 12px 24px;
+}
+
+.billing-tabs button[aria-current] {
+  background: $color-primary-dark;
+  color: var(--color-white);
+  font-weight: 700
+}
+
+.list-item i {
+  line-height: 1.2em
+}

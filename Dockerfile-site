@@ -1,0 +1,21 @@
+FROM node:16-bullseye
+
+ENV PL_SITE_DIR=/site
+
+WORKDIR /padloc
+
+COPY packages/site/package*.json ./packages/site/
+
+# Install dependencies and bootstrap packages
+RUN npm ci --unsafe-perm
+
+# Now copy over source files and assets
+COPY packages/site/src ./packages/site/src
+COPY packages/site/gulpfile.js ./packages/site/
+
+
+WORKDIR /padloc/packages/site
+
+ENTRYPOINT ["npm", "run"]
+
+CMD ["build"]

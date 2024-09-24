@@ -1,0 +1,97 @@
+/********** 
+ 20. Counter Up Section Styles
+**********/
+.counter-up {
+  background: $color-primary;
+  padding: 120px 0;
+  position: relative;
+  margin-bottom: 180px;
+  @include media-breakpoint-down-lg {
+    padding: 70px 0 40px;
+  }
+  &-bg {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    svg {
+      rect {
+        fill: $color-primary;
+      }
+      path {
+        fill: $color-primary;
+      }
+    }
+  }
+  &-wrapper {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    @include media-breakpoint-only-md {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 32px;
+    }
+    @include media-breakpoint-down-md {
+      display: block;
+    }
+    .counter,
+    .percent {
+      color: $color-white;
+      font-family: $font-primary;
+      font-size: $base-font-size * 4.5;
+      font-weight: 900;
+      line-height: 1.31;
+      letter-spacing: 0.05px;
+      font-variant: lining-nums;
+      @include media-breakpoint-down-xxl {
+        font-size: $base-font-size * 3;
+      }
+      @include media-breakpoint-down-xl {
+        font-size: $base-font-size * 2.25;
+      }
+    }
+  }
+  &-content {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      right: 0;
+      top: 40%;
+      transform: translateY(-50%);
+      height: 83px;
+      background-color: #ebebeb;
+    }
+    &:last-child::after {
+      display: none;
+    }
+    @include media-breakpoint-down-lg {
+      &:nth-child(2n + 2)::after {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down-md {
+      padding: 16px;
+      &::after {
+        width: 83px;
+        right: auto;
+        left: 50%;
+        bottom: 0;
+        top: auto;
+        transform: translatex(-50%);
+        height: 1px;
+      }
+    }
+    p {
+      color: $color-white;
+      font-size: $base-font-size * 1.25;
+      @include media-breakpoint-down-xl {
+        font-size: $base-font-size;
+      }
+    }
+  }
+}

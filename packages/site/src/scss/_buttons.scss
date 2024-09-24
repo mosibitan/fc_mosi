@@ -1,0 +1,232 @@
+/********** 
+  2. Button Styles 
+**********/
+.btn {
+  letter-spacing: $base-letter-spacing;
+  font-weight: $bold-font-weight;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  .btn-check:focus + &,
+  &:focus {
+    color: $color-primary !important;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:active,
+  &.active {
+    color: $color-primary !important;
+    box-shadow: none;
+
+    &:focus {
+      color: $color-primary !important;
+      box-shadow: none;
+    }
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    box-shadow: none;
+  }
+  @include media-breakpoint-down-sm {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+//
+//Over Ride Default Button Styles
+//
+
+.btn {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: $base-transition;
+
+  &-primary {
+    color: $color-white;
+    border: $base-border-width solid transparent;
+    background: $color-primary-dark;
+    border: $base-border-width solid $color-primary-dark;
+    &:hover {
+      color: $color-primary;
+      background: $color-white;
+      border-color: $color-primary;
+    }
+    .btn-check:focus + &,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:hover:focus {
+      color: $color-white !important;
+      background: $color-primary !important;
+      border: $base-border-width solid transparent;
+    }
+  }
+  &-secondary {
+    position: relative;
+    color: $color-primary;
+    text-align: center;
+    text-transform: capitalize;
+    background: $color-white;
+    border: $base-border-width solid $color-primary;
+    transition: 0.3s all ease-in-out;
+    padding: 16px 24px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg, i {
+      margin-right: 10px;
+      transition: 0.3s all ease-in-out;
+      path {
+        transition: 0.3s all ease-in-out;
+        fill: $color-primary;
+      }
+    }
+
+    &:hover {
+      border: $base-border-width solid $color-primary;
+      background: $color-primary;
+      color: $color-white;
+      svg, i {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+    btn-check:focus + &,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:hover:focus {
+      color: $color-white !important;
+      background: $color-primary;
+      border: $base-border-width solid $color-primary;
+      svg, i {
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+
+  &-links {
+    background: $color-white;
+    color: $color-primary-dark;
+    border: $base-border-width solid $color-primary-dark;
+    position: relative;
+    &:hover {
+      background: $color-primary-dark;
+      border: $base-border-width solid $color-primary-dark;
+      color: $color-white;
+    }
+    .btn-check:focus + &,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:hover:focus {
+      color: $color-primary-dark !important;
+      background: none;
+      border: $base-border-width solid $color-primary-dark;
+    }
+  }
+  &-white {
+    background: $color-white;
+    color: $color-primary-dark;
+    border: $base-border-width solid $color-primary-dark;
+    position: relative;
+    &:hover {
+      background: $color-primary-dark;
+      border: $base-border-width solid $color-primary-dark;
+      color: $color-white;
+    }
+    .btn-check:focus + &,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:hover:focus {
+      color: $color-white !important;
+      background: $color-primary-dark;
+      border: $base-border-width solid $color-primary-dark;
+    }
+  }
+}
+
+// Button Sizes
+//
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 16px 24px;
+  font-size: 14px;
+  border-radius: 100px;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 100px;
+}
+.btn-link {
+  text-decoration: underline;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+/* button label Styles */
+.btn-label {
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  line-height: 1.45 !important;
+  font-weight: $bold-font-weight !important;
+  font-size: $base-font-size * 0.875 !important;
+  width: auto;
+}
+.btn-submit {
+  background: $color-primary;
+  color: $color-white;
+  line-height: 1.6;
+  font-size: $base-font-size * 0.875;
+  //font-weight: $font-weight-extbold;
+  padding: 20px 34px !important;
+  &:active,
+  &:focus,
+  &:hover,
+  &:checked + .btn:focus,
+  &:active + .btn:focus,
+  &:active:focus {
+    background: transparent;
+    color: $color-primary !important;
+    border: 1px solid $color-primary;
+  }
+}
+.btn-social {
+  background: $color-white;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  padding: 20px 24px !important;
+  i {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    background: $color-primary;
+    color: $color-white !important;
+    border: 1px solid $color-primary;
+  }
+}

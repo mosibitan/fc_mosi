@@ -1,0 +1,27 @@
+/********** 
+  18. FAQ Section Styles
+**********/
+.faq {
+  position: relative;
+  padding: 72px 0 128px;
+  background: $color-gray;
+  .shape-carve-top {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 100%;
+    @include media-breakpoint-down-lg {
+      top: -40px;
+    }
+    @include media-breakpoint-down-md {
+      top: -35px;
+    }
+    svg {
+      width: 100%;
+      path {
+        fill: $color-gray;
+        stroke: $color-border;
+      }
+    }
+  }
+}

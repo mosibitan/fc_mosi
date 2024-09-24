@@ -1,0 +1,56 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+PROJECT:	JACKCREATIVE
+-------------------------------------------------------------------*/
+/* ====== index =====
+1.  Default Styles
+2.  Button Styles
+3.  Container and widths  Styles 
+4.  Spacing Styles
+5.  Navbar Styles
+6.  Hero Section Styles
+7.  Company Page and Sections Styles
+8.  About Page and Section Styles
+9.  Feature Page nd Section Styles
+10. Access Section Styles
+11. Testimonial Section Styles
+12. Review Section Styles
+13. Pricing Page and Section Styles
+14. Download Page and Section Styles
+15. Footer Section Styles
+16. Blog Page and Section Styles
+17. Pagination Section Styles
+18. FAQ Section Styles
+19. Contact Form Page Styles
+20. Counter Up Section Styles
+21. Team Section Styles
+
+
+===================== */
+
+@import "variables";
+@import "mixins";
+@import "root";
+@import "layout";
+@import "buttons";
+@import "container";
+@import "spacer";
+// //Theme Components
+@import "components/navbar";
+@import "components/hero";
+@import "components/company";
+@import "components/about";
+@import "components/feature";
+@import "components/access";
+@import "components/testimonial";
+@import "components/review";
+@import "components/pricing";
+@import "components/download";
+@import "components/footer";
+@import "components/blog";
+@import "components/pagination";
+@import "components/faq";
+@import "components/contact-form";
+@import "components/counter-up";
+@import "components/team";
+

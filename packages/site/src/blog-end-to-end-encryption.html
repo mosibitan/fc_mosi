@@ -1,0 +1,136 @@
+@@include('header.htm')
+
+@@include('components/navbar.htm',{
+"nav": "blog"
+})
+
+<!-- 
+  ########################## 
+  Blogs Details Page -->
+<section class="blog blog-details pt-20 pt-xl-22 pb-md-16 pb-10">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <article class="blog-post d-flex flex-column justify-content-center position-relative">
+          <div class="blog-post-body  text-center mb-4">
+            <h1 class="blog-post-title blog-post-title-featured">
+              与他人通信
+            </h1>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class=" blog-details-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="blog-details-item-body w-xl-100">
+            <p>
+              电信网络和互联网使与人的交流比以往任何时候都更容易，但也使监控变得更加普遍。如果不采取额外措施来保护您的隐私，每个电话、短信、电子邮件、即时消息、视频和音频聊天以及社交媒体消息都可能容易受到窃听。
+            </p>
+
+            <p>
+              通常，与他人交流最能保护隐私的方式是面对面交流，根本不涉及计算机或电话。因为这并不总是可能的，所以下一个最好的办法是使用端到端加密。
+            </p>
+            <h3 class="main-title">
+              端到端加密的工作原理是什么？
+            </h3>
+            <p>端到端加密确保信息由原始发送者（第一个"端"）转换为秘密消息，并且只能由最终接收者（第二个"端"）解码。这意味着没有人可以"窃听"和监视你的活动，包括Wi-Fi咖啡厅的窥探者、你的互联网服务提供商，甚至是你正在使用的应用程序。这是良好加密的核心特征：即使是设计和部署它的人也无法破解它。</p>
+            <p>SSD 网站上提供指南的许多工具（包括 Tor、Signal 和 WhatsApp）都使用端到端加密。您可以将端到端加密用于任何类型的通信，包括语音和视频通话、消息收发和聊天、文件传输和电子邮件。</p>
+            <div class="notification-banner">
+              <div class="notification-banner-content layout horizontal spacing padded">
+                <div class="notification-icon">
+                  <i class="fa-duotone fa-solid fa-lightbulb fa-lg"></i>
+                </div>
+                <div class="notification-text stretch">
+                  不要与端到端加密混淆的是 传输层加密 .端到端加密可以保护邮件，例如，从您到收件人的整个过程，而传输层加密仅在邮件从您的设备传输到应用程序服务器，以及从应用程序服务器传输到收件人设备时保护邮件。在中间，您的消息传递服务提供商（或您正在浏览的网站或您正在使用的应用程序）可以看到您的消息的未加密副本，但它受到保护，不会受到其他人对网络的监视。
+                </div>
+              </div>
+            </div>
+            <p>在幕后，端到端加密的工作原理是这样的：当两个人想要通过端到端加密进行通信时（例如，Akiko 和 Boris），他们必须各自生成 数据片段 ，称为密钥。这些键可用于将任何人都可以读取的数据转换为只能由具有匹配键的人读取的数据。在 Akiko 向 Boris 发送消息之前，她将其加密为 Boris 的密钥，以便只有 Boris 可以解密它。然后，她通过 Internet 发送此加密消息。如果有人窃听 Akiko 和 Boris，即使他们有权访问 Akiko 用于发送此消息的服务（例如她的电子邮件帐户），他们也只能看到加密数据，而无法阅读消息。当 Boris 收到它时，他必须使用他的密钥将其解密为可读消息。</p>
+            <h3 class="main-title">
+              电话和短信与加密的 Internet 消息锚链接
+            </h3>
+            <p>当您通过固定电话或移动电话拨打电话时，您的通话不会经过端到端加密。当您在手机上发送短信（也称为 SMS）时，文本根本不会加密。两者都允许政府或对电话公司拥有权力的任何其他人阅读您的消息或记录您的通话。如果您的安全计划包括政府拦截，您可能更喜欢使用在 Internet 上运行的加密替代方案。这些加密替代方案中的大多数还提供视频。</p>
+            <p>Signal 和 WhatsApp 是两种最受欢迎的服务，它们提供端到端加密短信以及语音和视频通话。</p>
+            <p>默认情况下不提供端到端加密的一些服务示例包括 WeChat、Slack、Discord、Snapchat 和 QQ。</p>
+            <p>还有一些服务，比如 Telegram，只有在你故意打开它时才提供端到端加密，而其他服务，比如 iMessage，只有在对话中的每个人都使用特定设备时才提供端到端加密（在 iMessage 的情况下，聊天中的每个人都需要使用 iPhone）。</p>
+            <h3 class="main-title">
+              您对消息传递服务的信任程度如何？
+            </h3>
+            <p>端到端加密可以保护您免受黑客和消息服务本身的监视。但是所有这些组织都可能能够在您使用的软件中进行秘密更改，这样即使它声称使用端到端加密，它实际上也会以未加密或加密方式弱化的方式发送您的数据。</p>
+            <div class="notification-banner">
+              <div class="notification-banner-content layout horizontal spacing padded">
+                <div class="notification-icon">
+                  <i class="fa-duotone fa-solid fa-lightbulb fa-lg"></i>
+                </div>
+                <div class="notification-text stretch">
+                  包括 EFF 在内的许多组织都会花时间观察知名提供商，例如 Signal 或 WhatsApp（归 Meta 所有），以确保他们确实提供他们承诺的端到端加密。                </div>
+              </div>
+            </div>
+            <p>还有许多其他聊天服务可能声称使用端到端加密，但如果它们不是开源的或不使用已建立的加密协议（如 Signal 协议），并且不够流行以至于安全研究人员关注，它们可能会带来一些使用风险。</p>
+            <p>一些工具将安全性从第三方公司转移到您身上，例如 PGP 和 OTR，但它们不再常用，并且往往需要技术专业知识才能安全运行。</p>
+            <h3 class="main-title">
+              端到端加密不做什么
+            </h3>
+            <p>端到端加密仅保护您的通信内容，而不是您首先进行通信的事实。它不保护您的元数据 ，其中包括您与谁通信以及何时通信等信息。如果您通过手机拨打电话，则有关您的位置的信息也是元数据。在某些应用程序中，即使是共享链接也会留下数字痕迹。</p>
+            <p>元数据可以提供关于您的极其揭示性的信息，即使您的通信内容仍然是保密的。理想情况下，此元数据仅对通信提供商可用，但在某些情况下，第三方（如政府机构）可能会请求它。有关您电话的元数据可能会泄露一些非常私密和敏感的信息，即使通信的“内容”受到保护。例如，电信提供商不会知道您在这些电话中谈论了什么，但会知道：</p>
+            <ul>
+              <li aria-level="1" _msttexthash="85200947" _msthash="76">您从金门大桥拨打了自杀预防热线。</li>
+              <li aria-level="1" _msttexthash="387549695" _msthash="77">您在同一小时内与一家 HIV 检测服务机构交谈，然后是您的医生，然后是您的健康保险公司。</li>
+              <li aria-level="1" _msttexthash="462614373" _msthash="78">您在当地 NRA 办公室开展反对枪支立法的运动时接到电话，然后立即打电话给您的参议员和国会代表。</li>
+              <li aria-level="1" _msttexthash="404040689" _msthash="79">你打电话给妇科医生，聊了半个小时，然后在当天晚些时候拨打了当地计划生育联合会的电话。</li>
+            </ul>
+            <h3 class="main-title">
+              其他重要功能
+            </h3> 
+            <p>端到端加密非常适合防止公司和政府访问您的消息。但对许多人来说，公司和政府并不是最大的威胁，因此端到端加密可能不是最大的优先事项。</p>  
+            <p>例如，如果有人担心配偶、父母或雇主可以实际访问他们的设备，那么发送短暂的、“消失”的消息的能力可能是他们选择信使的决定因素。其他人可能会担心泄露他们的电话号码，因此使用非电话号码“别名”的能力可能很重要。许多端到端加密聊天应用程序除了加密之外还提供所有这些功能，但考虑您的优先事项仍然是一个好主意。</p>         
+            <p>更一般地说，安全和隐私功能并不是选择安全通信方法时唯一重要的变量。如果您的朋友和联系人都没有使用它，那么它具有强大安全功能的应用程序就毫无价值，而且最受欢迎和使用最广泛的应用程序可能因国家和社区而异。如果某个国家/地区只有一小部分人使用像 Signal 这样的应用程序，或者政府认为该应用程序仅用于特定目的，那么如果用户的使用情况被知道，他们可能会受到威胁。服务质量差或必须为应用程序付费也会使 Messenger 不适合某些人。</p>
+            <p>您越清楚地了解您希望和需要从安全通信方法中获得什么，就越容易浏览大量广泛、相互冲突且有时过时的可用信息。</p>
+          </div>
+          <div class="blog-details-social">
+            <div class="blog-source">
+              <p>本文内容来源: <a href="https://ssd.eff.org/module/communicating-others" target="_blank"
+                  rel="noopener noreferrer">电子前哨基金会 - 与他人通信</a></p>
+            </div>
+            <ul class="list-unstyled list-inline blog-details-social-icons">
+              <li class="list-inline-item">
+                <p>分享到</p>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa-brands fa-weibo fa-xl"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa-brands fa-weixin fa-xl"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa-brands fa-qq fa-xl"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa-brands fa-zhihu fa-xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('components/related-blog.htm')
+
+@@include('components/download.htm')
+
+@@include('components/footer.htm')
+
+@@include('footer.htm')
