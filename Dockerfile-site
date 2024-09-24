@@ -12,5 +12,6 @@ WORKDIR /padloc/packages/site
 
 RUN npm install
 RUN npm run build
+RUN mkdir -p /site
 
 RUN cp -r /padloc/packages/site/dist/* /site
