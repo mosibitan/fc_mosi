@@ -11,7 +11,7 @@ const rimraf = require("rimraf");
 const uglify = require("gulp-uglify");
 const uglifycss = require("gulp-uglifycss");
 
-const out = process.env.PL_SITE_DIR || resolve(__dirname, "dist");
+const out = process.env.PL_SITE_DIR || "dist/";
 
 // Paths
 const path = {
@@ -28,7 +28,7 @@ const path = {
     blur: "src/images/**/*.jpg",
   },
   build: {
-    dir: out,
+    dir: "dist/",
   },
 };
 

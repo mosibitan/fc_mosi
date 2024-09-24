@@ -5,13 +5,14 @@ ENV PL_SITE_DIR=/site
 WORKDIR /padloc
 
 COPY packages/site/package*.json ./packages/site/
+
+RUN npm install
+
 COPY packages/site/src ./packages/site/src
 COPY packages/site/gulpfile.js ./packages/site/
 
 WORKDIR /padloc/packages/site
 
-RUN npm install
+RUN npm run build
 
-ENTRYPOINT ["npm", "run"]
-
-CMD ["build"]
+RUN cp -r /padloc/packages/site/dist/* /site
