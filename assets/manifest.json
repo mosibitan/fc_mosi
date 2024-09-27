@@ -1,10 +1,10 @@
 {
     "name": "摩斯连接",
     "background_color": "#ffffff",
-    "description": "A modern password manager for individuals and teams",
-    "appId": "app.padloc",
-    "scheme": "padloc",
-    "author": "Martin Kleinschrodt <martin@maklesoft.com>",
+    "description": "一个面向个人和团队的现代密码管理器",
+    "appId": "app.mosilink",
+    "scheme": "mosilink",
+    "author": "墨思笔谈 <mosibitan@163.com>",
     "icon_background": "#f1f1f1",
-    "terms_of_service": "https://mosi.link/tos"
+    "terms_of_service": "https://mosi.link/terms.html"
 }

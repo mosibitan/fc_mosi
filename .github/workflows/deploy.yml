@@ -3,15 +3,6 @@ name: Update Dockerhub
 on:
   workflow_dispatch:
 
-  push:
-    branches:
-      - "main"
-    paths:
-      - "packages/app/**"
-      - "packages/core/**"
-      - "packages/locale/**"
-      - "assets/**"
-
 jobs:
   update_dockerhub:
     runs-on: ubuntu-latest
