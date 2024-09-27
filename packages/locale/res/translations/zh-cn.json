@@ -2562,5 +2562,9 @@
   [
     "Email Verification (Request ID: {0})",
     "电子邮件验证（请求 ID：{0}）"
+  ],
+  [
+    "You",
+    "您"
   ]
 ]
