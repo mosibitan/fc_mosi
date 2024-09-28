@@ -154,7 +154,7 @@ module.exports = {
                         })
                         .toBuffer();
 
-                    compilation.assets["favicon.png"] = {
+                    Compilation.hooks.processAssets["favicon.png"] = {
                         source: () => icon,
                         size: () => Buffer.byteLength(icon),
                     };

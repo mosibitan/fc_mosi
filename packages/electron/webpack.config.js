@@ -51,7 +51,7 @@ module.exports = [
                     // emit is asynchronous hook, tapping into it using tapAsync, you can use tapPromise/tap(synchronous) as well
                     compiler.hooks.emit.tapPromise("InjectAppPackage", async (compilation, callback) => {
                         // Insert this list into the webpack build as a new file asset:
-                        compilation.assets["package.json"] = {
+                        Compilation.hooks.processAssets["package.json"] = {
                             source: () => package,
                             size: () => package.length,
                         };

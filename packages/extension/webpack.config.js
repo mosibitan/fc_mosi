@@ -97,7 +97,7 @@ module.exports = {
                         4
                     );
 
-                    compilation.assets["manifest.json"] = {
+                    Compilation.hooks.processAssets["manifest.json"] = {
                         source: () => jsonString,
                         size: () => jsonString.length,
                     };
@@ -110,12 +110,12 @@ module.exports = {
                     const iconNormal = await baseIcon.png().toBuffer();
                     const iconGrayscale = await baseIcon.grayscale(true).png().toBuffer();
 
-                    compilation.assets["icon.png"] = {
+                    Compilation.hooks.processAssets["icon.png"] = {
                         source: () => iconNormal,
                         size: () => Buffer.byteLength(iconNormal),
                     };
 
-                    compilation.assets["icon-grayscale.png"] = {
+                    Compilation.hooks.processAssets["icon-grayscale.png"] = {
                         source: () => iconGrayscale,
                         size: () => Buffer.byteLength(iconGrayscale),
                     };

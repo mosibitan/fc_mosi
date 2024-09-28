@@ -122,7 +122,7 @@ module.exports = {
                                 .png({ quality: 100 })
                                 .toBuffer();
 
-                            compilation.assets[`res/icons/ios/app-icon-${size}.png`] = {
+                            Compilation.hooks.processAssets[`res/icons/ios/app-icon-${size}.png`] = {
                                 source: () => icon,
                                 size: () => Buffer.byteLength(icon),
                             };
@@ -136,7 +136,7 @@ module.exports = {
                                 .png({ quality: 100 })
                                 .toBuffer();
 
-                            compilation.assets[`res/icons/android/app-icon-${size}.png`] = {
+                            Compilation.hooks.processAssets[`res/icons/android/app-icon-${size}.png`] = {
                                 source: () => icon,
                                 size: () => Buffer.byteLength(icon),
                             };
@@ -151,7 +151,7 @@ module.exports = {
                         .jpeg({ quality: 100 })
                         .toBuffer();
 
-                    compilation.assets[`res/icons/ios/app-icon-1024.jpg`] = {
+                    Compilation.hooks.processAssets[`res/icons/ios/app-icon-1024.jpg`] = {
                         source: () => storeIcon,
                         size: () => Buffer.byteLength(storeIcon),
                     };
@@ -160,7 +160,7 @@ module.exports = {
 <resources>
     <color name="background">${icon_background || background_color || "#ffffff"}</color>
 </resources>`;
-                    compilation.assets["res/icons/android/colors.xml"] = {
+                    Compilation.hooks.processAssets["res/icons/android/colors.xml"] = {
                         source: () => colors,
                         size: () => colors.length,
                     };
