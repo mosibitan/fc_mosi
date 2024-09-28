@@ -24,6 +24,7 @@
     },
     "devDependencies": {
         "clean-webpack-plugin": "3.0.0",
+        "cross-env": "7.0.3",
         "css-loader": "5.2.6",
         "file-loader": "6.2.0",
         "html-webpack-plugin": "5.3.1",
@@ -44,7 +45,7 @@
     "description": "Padloc Progressive Web App",
     "scripts": {
         "build": "webpack",
-        "dev": "webpack serve",
+        "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack serve",
         "start": "http-server ${PL_PWA_DIR:-dist} -s -p ${PL_PWA_PORT:-8080} --proxy ${PL_PWA_URL:-http://0.0.0.0:${PL_PWA_PORT:-8080}}?",
         "start-w": "cross-env-shell PL_PWA_DIR=${PL_PWA_DIR:-dist} PL_PWA_PORT=${PL_PWA_PORT:-8080} PL_PWA_URL=${PL_PWA_URL:-http://0.0.0.0:$PL_PWA_PORT} \"http-server %PL_PWA_DIR% -s -p %PL_PWA_PORT% --proxy %PL_PWA_URL%?\"",
         "build_and_start": "npm run build && npm start"
