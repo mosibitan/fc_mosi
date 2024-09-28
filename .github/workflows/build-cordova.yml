@@ -34,20 +34,20 @@ jobs:
         runs-on: ubuntu-latest
         environment: ${{ github.event.inputs.environment || 'Local' }}
         steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-java@v4
+            - uses: actions/checkout@v3
+            - uses: actions/setup-java@v3
               with:
                   distribution: "temurin"
-                  java-version: "17"  # 更新 Java 版本
+                  java-version: "11"  # 降级到 Java 11
             - uses: gradle/gradle-build-action@v2
               with:
-                  gradle-version: 7.6
-            - uses: android-actions/setup-android@v3
+                  gradle-version: 7.1.1  # 使用与 Cordova 项目兼容的 Gradle 版本
+            - uses: android-actions/setup-android@v2
             - name: Install Android Build Tools
               run: |
                 yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
                 $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "build-tools;30.0.3"
-            - uses: actions/setup-node@v4
+            - uses: actions/setup-node@v3
               with:
                   node-version-file: ".nvmrc"
             - name: Install dependencies
