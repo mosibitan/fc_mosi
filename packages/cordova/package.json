@@ -64,6 +64,7 @@
         "cordova": "11.0.0",
         "cordova-android": "10.1.2",
         "cordova-plugin-keyboard": "1.2.0",
+        "cross-env": "7.0.3",
         "css-loader": "5.2.6",
         "dotenv": "10.0.0",
         "file-loader": "6.2.0",
@@ -79,7 +80,7 @@
     },
     "scripts": {
         "patch-ios": "sed -i '' s/UIApplication\\.openSettingsURLString/UIApplicationOpenSettingsURLString/g ./plugins/cordova-plugin-qrscanner/src/ios/QRScanner.swift ./platforms/ios/Padloc/Plugins/cordova-plugin-qrscanner/QRScanner.swift",
-        "prepare-build": "webpack && node ./update-config-xml.js && cordova prepare",
+        "prepare-build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack && node ./update-config-xml.js && cordova prepare",
         "start:android": "npm run prepare-build && cordova run android",
         "start:ios": "npm run prepare-build && npm run patch-ios && cordova run ios",
         "build": "npm run prepare-build && cordova build",
