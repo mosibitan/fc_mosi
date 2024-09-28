@@ -29,37 +29,37 @@
         <preference name="android-minSdkVersion" value="22"/>
         <preference name="android-targetSdkVersion" value="30"/>
         <preference name="StatusBarStyle" value="lightcontent"/>
-        <resource-file src="www/res/icons/android/colors.xml" target="/app/src/main/res/values/colors.xml"/>
-        <icon background="@color/background" density="ldpi" foreground="www/res/icons/android/app-icon-36.png"/>
-        <icon background="@color/background" density="mdpi" foreground="www/res/icons/android/app-icon-48.png"/>
-        <icon background="@color/background" density="hdpi" foreground="www/res/icons/android/app-icon-72.png"/>
-        <icon background="@color/background" density="xhdpi" foreground="www/res/icons/android/app-icon-96.png"/>
-        <icon background="@color/background" density="xxhdpi" foreground="www/res/icons/android/app-icon-144.png"/>
-        <icon background="@color/background" density="xxxhdpi" foreground="www/res/icons/android/app-icon-192.png"/>
+        <resource-file src="res/android/colors.xml" target="/app/src/main/res/values/colors.xml"/>
+        <icon background="@color/background" density="ldpi" foreground="res/android/icon/app-icon-ldpi.png"/>
+        <icon background="@color/background" density="mdpi" foreground="res/android/icon/app-icon-mdpi.png"/>
+        <icon background="@color/background" density="hdpi" foreground="res/android/icon/app-icon-hdpi.png"/>
+        <icon background="@color/background" density="xhdpi" foreground="res/android/icon/app-icon-xhdpi.png"/>
+        <icon background="@color/background" density="xxhdpi" foreground="res/android/icon/app-icon-xxhdpi.png"/>
+        <icon background="@color/background" density="xxxhdpi" foreground="res/android/icon/app-icon-xxxhdpi.png"/>
     </platform>
     <platform name="ios">
         <preference name="Fullscreen" value="true"/>
         <preference name="deployment-target" value="11.0"/>
         <preference name="StatusBarStyle" value="default"/>
-        <icon height="20" src="www/res/icons/ios/app-icon-20.png" width="20"/>
-        <icon height="29" src="www/res/icons/ios/app-icon-29.png" width="29"/>
-        <icon height="40" src="www/res/icons/ios/app-icon-40.png" width="40"/>
-        <icon height="50" src="www/res/icons/ios/app-icon-50.png" width="50"/>
-        <icon height="57" src="www/res/icons/ios/app-icon-57.png" width="57"/>
-        <icon height="58" src="www/res/icons/ios/app-icon-58.png" width="58"/>
-        <icon height="60" src="www/res/icons/ios/app-icon-60.png" width="60"/>
-        <icon height="72" src="www/res/icons/ios/app-icon-72.png" width="72"/>
-        <icon height="76" src="www/res/icons/ios/app-icon-76.png" width="76"/>
-        <icon height="80" src="www/res/icons/ios/app-icon-80.png" width="80"/>
-        <icon height="87" src="www/res/icons/ios/app-icon-87.png" width="87"/>
-        <icon height="100" src="www/res/icons/ios/app-icon-100.png" width="100"/>
-        <icon height="114" src="www/res/icons/ios/app-icon-114.png" width="114"/>
-        <icon height="120" src="www/res/icons/ios/app-icon-120.png" width="120"/>
-        <icon height="144" src="www/res/icons/ios/app-icon-144.png" width="144"/>
-        <icon height="152" src="www/res/icons/ios/app-icon-152.png" width="152"/>
-        <icon height="167" src="www/res/icons/ios/app-icon-167.png" width="167"/>
-        <icon height="180" src="www/res/icons/ios/app-icon-180.png" width="180"/>
-        <icon height="1024" src="www/res/icons/ios/app-icon-1024.jpg" width="1024"/>
+        <icon height="20" src="res/ios/icon/app-icon-20.png" width="20"/>
+        <icon height="29" src="res/ios/icon/app-icon-29.png" width="29"/>
+        <icon height="40" src="res/ios/icon/app-icon-40.png" width="40"/>
+        <icon height="50" src="res/ios/icon/app-icon-50.png" width="50"/>
+        <icon height="57" src="res/ios/icon/app-icon-57.png" width="57"/>
+        <icon height="58" src="res/ios/icon/app-icon-58.png" width="58"/>
+        <icon height="60" src="res/ios/icon/app-icon-60.png" width="60"/>
+        <icon height="72" src="res/ios/icon/app-icon-72.png" width="72"/>
+        <icon height="76" src="res/ios/icon/app-icon-76.png" width="76"/>
+        <icon height="80" src="res/ios/icon/app-icon-80.png" width="80"/>
+        <icon height="87" src="res/ios/icon/app-icon-87.png" width="87"/>
+        <icon height="100" src="res/ios/icon/app-icon-100.png" width="100"/>
+        <icon height="114" src="res/ios/icon/app-icon-114.png" width="114"/>
+        <icon height="120" src="res/ios/icon/app-icon-120.png" width="120"/>
+        <icon height="144" src="res/ios/icon/app-icon-144.png" width="144"/>
+        <icon height="152" src="res/ios/icon/app-icon-152.png" width="152"/>
+        <icon height="167" src="res/ios/icon/app-icon-167.png" width="167"/>
+        <icon height="180" src="res/ios/icon/app-icon-180.png" width="180"/>
+        <icon height="1024" src="res/ios/icon/app-icon-1024.jpg" width="1024"/>
         <config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
             <false/>
         </config-file>
