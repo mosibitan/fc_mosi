@@ -1,17 +1,13 @@
 [package]
 name = "mosilink"
-version = "4.2.0"
-description = "Mosilink"
-authors = [ "Jhon Smith <mosibitan@163.com>" ]
+version = "4.3.0"
+description = "mosilink"
+authors = [ "mosibitan <mosibitan@163.com>" ]
 license = "GPL-3.0"
 repository = "https://github.com/mosibitan/mosi"
 default-run = "mosilink"
 edition = "2021"
 build = "src/build.rs"
-
-[[bin]]
-name = "mosilink"
-path = "src/main.rs"
 
 [build-dependencies.tauri-build]
 version = "1.2.1"

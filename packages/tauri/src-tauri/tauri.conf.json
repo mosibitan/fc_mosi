@@ -1,7 +1,7 @@
 {
     "package": {
-        "productName": "Mosilink",
-        "version": "1.0.0"
+        "productName": "mosilink",
+        "version": "4.3.0"
     },
     "build": {
         "distDir": "../dist",
@@ -56,16 +56,18 @@
         },
         "updater": {
             "active": true,
-            "endpoints": ["https://github.com/mosibitan/mosi/releases/download/latest/tauri-update.json"],
+            "endpoints": [
+                "https://github.com/mosibitan/mosi/releases/latest/download/tauri-update.json"
+            ],
             "dialog": true,
-            "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDM5NDMxQ0I3MTA3NDU3RjIKUldUeVYzUVF0eHhET1ZpNUZDYWY3Zlk1aUN1ZkpXcU5wS0pSTERSay91ODBpWlBIcTViNk11RHgK"
+            "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IENGM0JGOEEzMzUxQ0ZFRDMKUldUVC9odzFvL2c3ei9jRkVSTjNUOUZqcVFsYXJyR0gyZDY2S2F1WVVlcFFXSVF2a1ozMWdWTlcK"
         },
         "allowlist": {
             "all": false
         },
         "windows": [
             {
-                "title": "Mosilink",
+                "title": "mosilink",
                 "width": 1024,
                 "height": 768,
                 "resizable": true,

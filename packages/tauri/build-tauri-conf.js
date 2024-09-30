@@ -19,7 +19,7 @@ const manifest = require(manifestFilePath);
 const vendorVersion = process.env.PL_VENDOR_VERSION || version;
 const vendorName = manifest.name;
 const vendorNameLowercase = vendorName.toLowerCase();
-const vendorBaseUrl = process.env.PL_VENDOR_BASE_URL || "https://github.com/padloc/padloc";
+const vendorBaseUrl = process.env.PL_VENDOR_BASE_URL || "https://github.com/mosibitan/mosi";
 
 tauriConfig.package.version = vendorVersion;
 tauriConfig.package.productName = vendorName;
