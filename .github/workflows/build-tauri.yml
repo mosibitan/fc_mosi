@@ -87,6 +87,10 @@ jobs:
                   PL_SERVER_URL: ${{ secrets.PL_SERVER_URL }}
                   TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
                   TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+            - name: List build artifacts
+              run: ls -R packages/tauri/src-tauri/target/debug/bundle/
+            - name: List build artifacts
+              run: ls -R packages/tauri/src-tauri/target/debug/bundle/appimage/              
             - name: Archive AppImage
               uses: actions/upload-artifact@v4
               if: matrix.config.os == 'ubuntu-latest'
