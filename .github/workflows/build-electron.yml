@@ -69,25 +69,25 @@ jobs:
                   path: packages/electron/dist/*.AppImage
                   if-no-files-found: error
             - name: Archive deb
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   name: padloc-linux-${{ github.sha }}-unsigned.deb
                   path: packages/electron/dist/*.deb
                   if-no-files-found: error
             - name: Archive snap
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   name: padloc-linux-${{ github.sha }}-unsigned.snap
                   path: packages/electron/dist/*.snap
                   if-no-files-found: error
             - name: Archive flatpak
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   name: padloc-linux-${{ github.sha }}-unsigned.flatpak
                   path: packages/electron/dist/*.flatpak
                   if-no-files-found: error
             - name: Archive Unpacked
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   name: padloc-linux-${{ github.sha }}-unpacked
                   path: packages/electron/dist/linux-unpacked
