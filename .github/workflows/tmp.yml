@@ -1,0 +1,94 @@
+jobs:
+  build:
+    environment: ${{ github.event.inputs.environment || 'Local' }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - os: ubuntu-latest
+            arch: x86_64
+            rust_target: x86_64-unknown-linux-gnu
+          - os: macos-latest
+            arch: x86_64
+            rust_target: x86_64-apple-darwin
+          - os: macos-latest
+            arch: aarch64
+            rust_target: aarch64-apple-darwin
+          - os: windows-latest
+            arch: x86_64
+            rust_target: x86_64-pc-windows-msvc
+
+    runs-on: ${{ matrix.config.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: "Setup Rust"
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.config.rust_target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.config.rust_target }}
+      - name: Install webkit2gtk (ubuntu only)
+        if: matrix.config.os == 'ubuntu-latest'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y webkit2gtk-4.0
+      - name: Install dependencies
+        run: |
+          npm i -g npm@8.2.0
+          npm ci
+      - name: Set Node.js options
+        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
+      - name: Build (debug)
+        if: github.event.inputs.environment != 'Production'
+        run: npm run tauri:build:debug
+        env:
+          PL_SERVER_URL: ${{ secrets.PL_SERVER_URL }}
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+      - name: Build (production)
+        if: github.event.inputs.environment == 'Production'
+        run: npm run tauri:build
+        env:
+          PL_SERVER_URL: ${{ secrets.PL_SERVER_URL }}
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+      - name: Archive AppImage
+        uses: actions/upload-artifact@v4
+        if: matrix.config.os == 'ubuntu-latest'
+        with:
+          name: padloc-linux-${{ github.sha }}-unsigned.AppImage
+          path: packages/tauri/src-tauri/target/debug/bundle/appimage/padloc*.AppImage
+          if-no-files-found: error
+      - name: Archive deb
+        uses: actions/upload-artifact@v4
+        if: matrix.config.os == 'ubuntu-latest'
+        with:
+          name: padloc-linux-${{ github.sha }}-unsigned.deb
+          path: packages/tauri/src-tauri/target/debug/bundle/deb/*.deb
+          if-no-files-found: error
+      - name: Archive dmg
+        uses: actions/upload-artifact@v4
+        if: matrix.config.os == 'macos-latest'
+        with:
+          name: padloc-macos-${{ matrix.config.arch }}-${{ github.sha }}-unsigned.dmg
+          path: packages/tauri/src-tauri/target/debug/bundle/dmg/*.dmg
+          if-no-files-found: error
+      - name: Archive app
+        uses: actions/upload-artifact@v4
+        if: matrix.config.os == 'macos-latest'
+        with:
+          name: padloc-macos-${{ matrix.config.arch }}-${{ github.sha }}-unsigned.app
+          path: packages/tauri/src-tauri/target/debug/bundle/macos/*.app
+          if-no-files-found: error
+      - name: Archive msi
+        uses: actions/upload-artifact@v4
+        if: matrix.config.os == 'windows-latest'
+        with:
+          name: padloc-windows-${{ github.sha }}-unsigned.msi
+          path: packages/tauri/src-tauri/target/debug/bundle/msi/*.msi
+          if-no-files-found: error

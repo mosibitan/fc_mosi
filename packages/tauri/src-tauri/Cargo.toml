@@ -1,13 +1,17 @@
 [package]
-name = "padloc"
+name = "mosilink"
 version = "4.2.0"
-description = "Padloc"
+description = "Mosilink"
 authors = [ "Martin Kleinschrodt <martin@maklesoft.com>" ]
 license = "GPL-3.0"
-repository = "https://github.com/padloc/padloc"
-default-run = "padloc"
+repository = "https://github.com/mosibian/mosi"
+default-run = "mosilink"
 edition = "2021"
 build = "src/build.rs"
+
+[[bin]]
+name = "mosilink"
+path = "src/main.rs"
 
 [build-dependencies.tauri-build]
 version = "1.2.1"

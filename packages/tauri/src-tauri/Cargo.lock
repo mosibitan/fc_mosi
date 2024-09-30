@@ -1571,7 +1571,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "padloc"
+name = "mosilink"
 version = "4.2.0"
 dependencies = [
  "tauri",
