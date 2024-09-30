@@ -27,6 +27,7 @@ packages/server/attachments
 /pwa
 /data
 packages/extension/dist
+packages/tauri/.env
 packages/tauri/dist
 packages/tauri/src-tauri/icons
 packages/tauri/tauri-update.json
