@@ -61,9 +61,8 @@ jobs:
             - name: Setup Python virtual environment (macOS only)
               if: matrix.config.os == 'macos-latest'
               run: |
-                    python3 -m venv venv
-                    source venv/bin/activate
-                    pip install --upgrade pip setuptools               
+                python3 -m pip install --upgrade pip setuptools wheel
+                python3 -m pip install distutils                     
             - name: Install dependencies
               run: |
                   npm i -g npm@8.2.0
