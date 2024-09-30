@@ -2,9 +2,9 @@
 name = "mosilink"
 version = "4.2.0"
 description = "Mosilink"
-authors = [ "Martin Kleinschrodt <martin@maklesoft.com>" ]
+authors = [ "Jhon Smith <mosibitan@163.com>" ]
 license = "GPL-3.0"
-repository = "https://github.com/mosibian/mosi"
+repository = "https://github.com/mosibitan/mosi"
 default-run = "mosilink"
 edition = "2021"
 build = "src/build.rs"

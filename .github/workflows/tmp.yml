@@ -1,3 +1,24 @@
+name: Build Tauri
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        default: "Local"
+
+  push:
+    branches:
+      - "main"
+      - "feature/**"
+      - "fix/**"
+    paths:
+      - "packages/app/**"
+      - "packages/core/**"
+      - "packages/tauri/**"
+      - "packages/locale/**"
+      - "assets/**"
+
 jobs:
   build:
     environment: ${{ github.event.inputs.environment || 'Local' }}
@@ -37,12 +58,15 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y webkit2gtk-4.0
+      - name: Install Python setuptools (macOS only)
+        if: matrix.config.os == 'macos-latest'
+        run: |
+          python3 -m ensurepip
+          python3 -m pip install --upgrade pip setuptools
       - name: Install dependencies
         run: |
           npm i -g npm@8.2.0
           npm ci
-      - name: Set Node.js options
-        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
       - name: Build (debug)
         if: github.event.inputs.environment != 'Production'
         run: npm run tauri:build:debug
