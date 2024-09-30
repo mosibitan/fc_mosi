@@ -13,9 +13,9 @@
         "npm": "8.x"
     },
     "scripts": {
-        "build": "rm -rf app build dist && webpack && node ./prepare-build.js && electron-builder --config build/build.json",
+        "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider rm -rf app build dist && webpack && node ./prepare-build.js && electron-builder --config build/build.json",
         "build:flatpak": "electron-builder --config build/build-flatpak.json",
-        "build:release": "rm -rf app build dist && webpack && node ./prepare-build.js && electron-builder --config build/build.json --publish always",
+        "build:release": "cross-env NODE_OPTIONS=--openssl-legacy-provider rm -rf app build dist && webpack && node ./prepare-build.js && electron-builder --config build/build.json --publish always",
         "build:flatpak:release": "electron-builder --config build/build-flatpak.json --publish always",
         "start": "webpack && electron app/main.js"
     },
@@ -29,6 +29,7 @@
     },
     "devDependencies": {
         "clean-webpack-plugin": "3.0.0",
+        "cross-env": "7.0.3",
         "css-loader": "5.2.6",
         "electron": "19.0.5",
         "electron-builder": "23.1.0",
