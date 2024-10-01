@@ -49,7 +49,7 @@ jobs:
                 $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "build-tools;30.0.3"
             - uses: actions/setup-node@v3
               with:
-                  node-version-file: ".nvmrc"
+                  node-version: '16.13.1'
             - name: Install dependencies
               run: |
                   npm i -g npm@8.2.0

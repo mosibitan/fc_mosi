@@ -32,7 +32,7 @@ jobs:
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
               with:
-                  node-version-file: ".nvmrc"
+                  node-version: '16.13.1'
             - name: Install dependencies
               run: |
                   npm i -g npm@8.2.0 web-ext@6.6.0
@@ -48,15 +48,15 @@ jobs:
             #   run: cd packages/extension/dist && web-ext sign --id="${{ secrets.PL_WEB_EXTENSION_FIREFOX_ID }}" --channel=unlisted --api-key=${{ secrets.PL_WEB_EXTENSION_FIREFOX_API_KEY }} --api-secret=${{ secrets.PL_WEB_EXTENSION_FIREFOX_API_SECRET }}
             # - name: Archive Signed Web Extension (Firefox)
             #   if: github.event.inputs.environment == 'Beta' || github.event.inputs.environment == 'Production'
-            #   uses: actions/upload-artifact@v2
+            #   uses: actions/upload-artifact@v4
             #   with:
-            #       name: padloc-web-extension-${{ github.sha }}-signed.xpi
+            #       name: mosilink-web-extension-${{ github.sha }}-signed.xpi
             #       path: packages/extension/dist/web-ext-artifacts/*.xpi
             #       if-no-files-found: error
             - name: Archive Unsigned Web Extension (Chrome/Edge/Firefox)
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
-                  name: padloc-web-extension-${{ github.sha }}-unsigned
+                  name: mosilink-web-extension-${{ github.sha }}-unsigned
                   path: |
                       packages/extension/dist
                       !packages/extension/dist/web-ext-artifacts
@@ -66,17 +66,17 @@ jobs:
               uses: cardinalby/webext-buildtools-pack-extension-dir-action@v1
               with:
                   extensionDir: packages/extension/dist
-                  zipFilePath: packages/extension/padloc.zip
+                  zipFilePath: packages/extension/mosilink.zip
                   zipIgnore: web-ext-artifacts/**|*.xpi
             - name: Sign for Chrome/Edge
               uses: cardinalby/webext-buildtools-chrome-crx-action@v2
               with:
-                  zipFilePath: packages/extension/padloc.zip
-                  crxFilePath: packages/extension/padloc-signed.crx
+                  zipFilePath: packages/extension/mosilink.zip
+                  crxFilePath: packages/extension/mosilink-signed.crx
                   privateKey: ${{ secrets.PL_WEB_EXTENSION_CHROME_CRX_PRIVATE_KEY }}
             - name: Archive Signed Web Extension (Chrome/Edge)
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
-                  name: padloc-web-extension-${{ github.sha }}-signed.crx
-                  path: packages/extension/padloc-signed.crx
+                  name: mosilink-web-extension-${{ github.sha }}-signed.crx
+                  path: packages/extension/mosilink-signed.crx
                   if-no-files-found: error

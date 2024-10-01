@@ -8,7 +8,7 @@
     "homepage": "https://mosi.link/",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/padloc/padloc.git"
+        "url": "git+https://github.com/mosibitan/mosi.git"
     },
     "engines": {
         "node": "16.x",

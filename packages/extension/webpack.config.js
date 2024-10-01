@@ -63,7 +63,7 @@ module.exports = {
             PL_BILLING_ENABLED: null,
             PL_BILLING_DISABLE_PAYMENT: null,
             PL_BILLING_STRIPE_PUBLIC_KEY: null,
-            PL_SUPPORT_EMAIL: "support@padloc.app",
+            PL_SUPPORT_EMAIL: "mosibitan@163.com",
             PL_VERSION: version,
             PL_VENDOR_VERSION: version,
             PL_DISABLE_SW: true,
@@ -97,7 +97,7 @@ module.exports = {
                         4
                     );
 
-                    Compilation.hooks.processAssets["manifest.json"] = {
+                    compilation.hooks.processAssets["manifest.json"] = {
                         source: () => jsonString,
                         size: () => jsonString.length,
                     };
@@ -110,12 +110,12 @@ module.exports = {
                     const iconNormal = await baseIcon.png().toBuffer();
                     const iconGrayscale = await baseIcon.grayscale(true).png().toBuffer();
 
-                    Compilation.hooks.processAssets["icon.png"] = {
+                    compilation.hooks.processAssets["icon.png"] = {
                         source: () => iconNormal,
                         size: () => Buffer.byteLength(iconNormal),
                     };
 
-                    Compilation.hooks.processAssets["icon-grayscale.png"] = {
+                    compilation.hooks.processAssets["icon-grayscale.png"] = {
                         source: () => iconGrayscale,
                         size: () => Buffer.byteLength(iconGrayscale),
                     };

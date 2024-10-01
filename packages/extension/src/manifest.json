@@ -25,13 +25,13 @@
             "suggested_key": {
                 "default": "Ctrl+Shift+Right"
             },
-            "description": "Open Next Vault Item"
+            "description": "打开下一个保险库项目"
         },
         "open-previous": {
             "suggested_key": {
                 "default": "Ctrl+Shift+Left"
             },
-            "description": "Open Previous Vault Item"
+            "description": "打开上一个保险库项目"
         }
     }
 }
