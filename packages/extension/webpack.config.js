@@ -97,10 +97,10 @@ module.exports = {
                         4
                     );
 
-                    compilation.hooks.processAssets["manifest.json"] = {
+                    compilation.emitAsset("manifest.json", {
                         source: () => jsonString,
-                        size: () => jsonString.length,
-                    };
+                        size: () => jsonString.length
+                    });
 
                     const baseIcon = await sharp(resolve(__dirname, assetsDir, "app-icon.png")).resize({
                         width: 128,
@@ -110,15 +110,15 @@ module.exports = {
                     const iconNormal = await baseIcon.png().toBuffer();
                     const iconGrayscale = await baseIcon.grayscale(true).png().toBuffer();
 
-                    compilation.hooks.processAssets["icon.png"] = {
+                    compilation.emitAsset("icon.png", {
                         source: () => iconNormal,
                         size: () => Buffer.byteLength(iconNormal),
-                    };
+                    });
 
-                    compilation.hooks.processAssets["icon-grayscale.png"] = {
+                    compilation.emitAsset("icon-grayscale.png", {
                         source: () => iconGrayscale,
                         size: () => Buffer.byteLength(iconGrayscale),
-                    };
+                    });
 
                     return true;
                 });
