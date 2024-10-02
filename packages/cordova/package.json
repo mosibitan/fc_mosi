@@ -80,7 +80,7 @@
     },
     "scripts": {
         "patch-ios": "sed -i '' s/UIApplication\\.openSettingsURLString/UIApplicationOpenSettingsURLString/g ./plugins/cordova-plugin-qrscanner/src/ios/QRScanner.swift ./platforms/ios/Padloc/Plugins/cordova-plugin-qrscanner/QRScanner.swift",
-        "prepare-build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack && node ./update-config-xml.js && cordova prepare",
+        "prepare-build": "webpack && node ./update-config-xml.js && cordova prepare",
         "start:android": "npm run prepare-build && cordova run android",
         "start:ios": "npm run prepare-build && npm run patch-ios && cordova run ios",
         "build": "npm run prepare-build && cordova build",
