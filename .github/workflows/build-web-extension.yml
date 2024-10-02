@@ -74,6 +74,7 @@ jobs:
                   zipFilePath: packages/extension/mosilink.zip
                   crxFilePath: packages/extension/mosilink-signed.crx
                   privateKey: ${{ secrets.PL_WEB_EXTENSION_CHROME_CRX_PRIVATE_KEY }}
+                  privateKeyFormat: 'pem'
             - name: Archive Signed Web Extension (Chrome/Edge)
               uses: actions/upload-artifact@v4
               with:
