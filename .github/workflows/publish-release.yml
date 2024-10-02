@@ -284,6 +284,12 @@ jobs:
                   version: 7.2
             - uses: android-actions/setup-android@v2
               if: matrix.platform == 'ubuntu-latest'
+            # 添加以下步骤来安装必要的 Android SDK 组件
+            - name: Install Android SDK components
+              if: matrix.platform == 'ubuntu-latest'
+              run: |
+                  sdkmanager "build-tools;30.0.3"
+                  sdkmanager "platforms;android-30"
             - uses: actions/setup-node@v3
               with:
                   node-version: '16.13.1'
