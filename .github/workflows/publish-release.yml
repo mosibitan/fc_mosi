@@ -80,7 +80,7 @@ jobs:
             # - name: Upload Signed Web Extension (Firefox)
             #   uses: svenstaro/upload-release-action@2.2.1
             #   with:
-            #       repo_token: ${{ secrets.GITHUB_TOKEN }}
+            #       repo_token: ${{ secrets.MYTOKEN }}
             #       tag: "v${{ env.PL_VENDOR_VERSION }}"
             #       file: packages/extension/dist/web-ext-artifacts/mosilink-${{ env.PL_VENDOR_VERSION }}.${{ env.RELEASE_BUILD }}.xpi
             #       asset_name: mosilink_${{ env.PL_VENDOR_VERSION }}_web-extension_firefox.xpi
@@ -94,7 +94,7 @@ jobs:
             - name: Upload Unsigned Web Extension (Chrome/Edge)
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/extension/mosilink.zip
                   asset_name: mosilink_${{ env.PL_VENDOR_VERSION }}_web-extension_unsigned.zip
@@ -108,7 +108,7 @@ jobs:
             - name: Upload Signed Web Extension (Chrome/Edge)
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/extension/mosilink-signed.crx
                   asset_name: mosilink_${{ env.PL_VENDOR_VERSION }}_web-extension_chrome.crx
@@ -120,7 +120,7 @@ jobs:
             # - name: Upload checksum (xpi)
             #   uses: svenstaro/upload-release-action@2.2.1
             #   with:
-            #       repo_token: ${{ secrets.GITHUB_TOKEN }}
+            #       repo_token: ${{ secrets.MYTOKEN }}
             #       tag: "v${{ env.PL_VENDOR_VERSION }}"
             #       file: packages/extension/dist/web-ext-artifacts/sha256sum-xpi.txt
             #       asset_name: sha256sum-xpi.txt
@@ -132,7 +132,7 @@ jobs:
             - name: Upload checksum (crx)
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/extension/sha256sum-crx.txt
                   asset_name: sha256sum-crx.txt
@@ -185,7 +185,7 @@ jobs:
             - uses: tauri-apps/tauri-action@v0.3.1
               env:
                   PL_SERVER_URL: ${{ secrets.PL_SERVER_URL }}
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.MYTOKEN }}
                   TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
                   TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
                   ENABLE_CODE_SIGNING: true
@@ -206,7 +206,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/tauri/src-tauri/target/release/bundle/appimage/sha256sum-appimage.txt
                   asset_name: sha256sum-tauri-appimage.txt
@@ -220,7 +220,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/tauri/src-tauri/target/release/bundle/deb/sha256sum-deb.txt
                   asset_name: sha256sum-tauri-deb.txt
@@ -234,7 +234,7 @@ jobs:
               if: matrix.platform == 'macos-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/tauri/src-tauri/target/release/bundle/dmg/sha256sum-dmg.txt
                   asset_name: sha256sum-tauri-dmg.txt
@@ -248,7 +248,7 @@ jobs:
               if: matrix.platform == 'windows-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/tauri/src-tauri/target/release/bundle/msi/sha256sum-msi.txt
                   asset_name: sha256sum-tauri-msi.txt
@@ -296,7 +296,7 @@ jobs:
                   CSC_KEY_PASSWORD: ${{ secrets.PL_MACOS_SIGNING_CERT_PASSWORD }}
                   PL_MACOS_NOTARIZE_APPLE_ID: ${{ secrets.PL_MACOS_NOTARIZE_APPLE_ID }}
                   PL_MACOS_NOTARIZE_PASSWORD: ${{ secrets.PL_MACOS_NOTARIZE_PASSWORD }}
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GH_TOKEN: ${{ secrets.MYTOKEN }}
                   EP_PRE_RELEASE: true
             - name: Build Flatpak
               if: matrix.platform == 'ubuntu-latest'
@@ -304,7 +304,7 @@ jobs:
                   npm run electron:build:flatpak
               env:
                   PL_PWA_URL: ${{ secrets.PL_PWA_URL }}
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GH_TOKEN: ${{ secrets.MYTOKEN }}
                   EP_PRE_RELEASE: true
             - name: Generate checksum (AppImage)
               if: matrix.platform == 'ubuntu-latest'
@@ -315,7 +315,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/electron/dist/sha256sum-appimage.txt
                   asset_name: sha256sum-electron-appimage.txt
@@ -329,7 +329,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/electron/dist/sha256sum-deb.txt
                   asset_name: sha256sum-electron-deb.txt
@@ -343,7 +343,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/electron/dist/sha256sum-snap.txt
                   asset_name: sha256sum-electron-snap.txt
@@ -357,7 +357,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/electron/dist/sha256sum-flatpak.txt
                   asset_name: sha256sum-electron-flatpak.txt
@@ -371,7 +371,7 @@ jobs:
               if: matrix.platform == 'macos-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/electron/dist/sha256sum-dmg.txt
                   asset_name: sha256sum-electron-dmg.txt
@@ -385,7 +385,7 @@ jobs:
               if: matrix.platform == 'windows-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/electron/dist/sha256sum-exe.txt
                   asset_name: sha256sum-electron-exe.txt
@@ -499,7 +499,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/cordova/platforms/android/app/build/outputs/apk/release/app-release.apk
                   asset_name: mosilink_${{ env.PL_VENDOR_VERSION }}_android.apk
@@ -508,7 +508,7 @@ jobs:
             #   if: matrix.platform == 'macos-latest'
             #   uses: svenstaro/upload-release-action@2.2.1
             #   with:
-            #       repo_token: ${{ secrets.GITHUB_TOKEN }}
+            #       repo_token: ${{ secrets.MYTOKEN }}
             #       tag: "v${{ env.PL_VENDOR_VERSION }}"
             #       file: packages/cordova/platforms/ios/build/device/mosilink.ipa
             #       asset_name: mosilink_${{ env.PL_VENDOR_VERSION }}_ios.ipa
@@ -522,7 +522,7 @@ jobs:
               if: matrix.platform == 'ubuntu-latest'
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/cordova/platforms/android/app/build/outputs/apk/release/sha256sum-apk.txt
                   asset_name: sha256sum-apk.txt
@@ -536,7 +536,7 @@ jobs:
             #   if: matrix.platform == 'macos-latest'
             #   uses: svenstaro/upload-release-action@2.2.1
             #   with:
-            #       repo_token: ${{ secrets.GITHUB_TOKEN }}
+            #       repo_token: ${{ secrets.MYTOKEN }}
             #       tag: "v${{ env.PL_VENDOR_VERSION }}"
             #       file: packages/cordova/platforms/ios/build/device/sha256sum-ipa.txt
             #       asset_name: sha256sum-ipa.txt
@@ -585,7 +585,7 @@ jobs:
             - name: Upload pwa.tar.gz
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/pwa/pwa.tar.gz
                   asset_name: mosilink_${{ env.PL_VENDOR_VERSION }}_pwa.tar.gz
@@ -597,7 +597,7 @@ jobs:
             - name: Upload checksums
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: packages/pwa/dist/sha256sums-web.txt
                   asset_name: sha256sums-web.txt
@@ -605,7 +605,7 @@ jobs:
             - name: Upload CSP parser
               uses: svenstaro/upload-release-action@2.2.1
               with:
-                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  repo_token: ${{ secrets.MYTOKEN }}
                   tag: "v${{ env.PL_VENDOR_VERSION }}"
                   file: docs/checksums/web/parse-csp.ts
                   asset_name: parse-csp.ts
