@@ -50,6 +50,7 @@ jobs:
                   draft: false
                   files: packages/tauri/tauri-update.json
                   fail_on_unmatched_files: true
+                  token: ${{ secrets.RELEASE_TOKEN }}
 
     release_web_extension:
         name: "Release web extension"
