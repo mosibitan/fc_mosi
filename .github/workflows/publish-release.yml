@@ -277,6 +277,13 @@ jobs:
               with:
                   distribution: "adopt"
                   java-version: "11"
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: '3.9'
+            - name: Install Python dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install setuptools wheel
             - uses: sdkman/sdkman-action@master
               if: matrix.platform == 'ubuntu-latest'
               with:
@@ -284,7 +291,6 @@ jobs:
                   version: 7.2
             - uses: android-actions/setup-android@v2
               if: matrix.platform == 'ubuntu-latest'
-            # 添加以下步骤来安装必要的 Android SDK 组件
             - name: Install Android SDK components
               if: matrix.platform == 'ubuntu-latest'
               run: |
@@ -293,14 +299,11 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: '16.13.1'
-            # - name: Install coreutils
-            #   if: matrix.platform == 'macos-latest'
-            #   run: |
-            #       brew install coreutils
             - name: Install dependencies
               run: |
                   npm i -g npm@8.2.0
-                  npm ci
+                  npm ci --ignore-scripts
+                  npm rebuild
             - name: Create android-upload-key.keystore
               if: matrix.platform == 'ubuntu-latest'
               run: |
